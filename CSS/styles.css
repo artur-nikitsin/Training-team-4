@@ -1,0 +1,56 @@
+body {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.login-form {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -200px;
+    height: 430px;
+    width: 400px;
+    border-radius: 5px;
+    background: white;
+}
+
+.inputs {
+    position: inherit;
+    top: 40px;
+    left: 75px
+}
+
+.inputs button {
+    position: relative;
+    top: 30px;
+    width: 100px;
+    left: 75px
+}
+
+.inputs p {
+    position: relative;
+    text-align: center;
+    color: black;
+
+    font-size: 25px;
+}
+
+.inputs input {
+    background: white;
+    width: 250px
+}
+
+.inputs input.correct {
+    background: #00800082;
+    width: 250px
+}
+
+.inputs input.incorrect {
+    background: #dc1c1ca6;
+    width: 250px
+}
+
+.inputs label {
+    position: relative;
+    margin-top: 15px;
+    color: black;
+}
