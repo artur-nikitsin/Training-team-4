@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+<title>
+    Login form
+</title>
+<script type="text/javascript">
+    function validate_form() {
+        valid = true;
+        if (document.contact_form.Login.value == "") {
+            alert("Поле 'Login' обязательно к заполнению!");
+            valid = false;
+        }
+        if (document.contact_form.EMail.value == "") {
+            alert("Поле 'Email' обязательно к заполнению!");
+            valid = false;
+        }
+        if (document.contact_form.Password.value != "") {
+        } else {
+            alert("Поле 'Password' обязательно к заполнению!");
+            valid = false;
+        }
+        return valid;
+    }
+</script>
+<body>
+<div class="LoginForm">
+    <form name="contact_form" method="post" action="createprofile.html" class="rf" onsubmit="return validate_form ( );">
+        <div class="FormHeaderTitle">HR APP</div>
+
+        <label for="Login">Login:</label>
+        <input type="text" class="rfield" title='Поле обязательно для заполнения!' id="Login">
+
+        <label for="Email">Email:</label>
+        <input type="text" class="rfield" title='Поле обязательно для заполнения!' id="EMail">
+
+        <label for="Password">Password:</label>
+        <input type="text" class="rfield" title='Поле обязательно для заполнения!' id="Password">
+
+        <input type="submit" value="Submit" class="btn_submit">
+    </form>
+</div>
+</body>
+</html>

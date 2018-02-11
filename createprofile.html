@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="javascript/jquery.maskedinput.js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#phone").mask("+375(99) 999-99-99");
+    });
+</script>
+<script type="text/javascript">
+    function validate_form() {
+        valid = true;
+        if (document.CreateProfile_form.Name.value == "") {
+            alert("Поле 'Name' обязательно к заполнению!");
+            valid = false;
+        }
+        if (document.CreateProfile_form.Surname.value == "") {
+            alert("Поле 'Surname' обязательно к заполнению!");
+            valid = false;
+        }
+        if (document.CreateProfile_form.phone.value != "") {
+        } else {
+            alert("Поле 'Phone' обязательно к заполнению!");
+            valid = false;
+        }
+        return valid;
+    }
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<title>
+    Create Profile
+</title>
+<div class="FormHeaderTitle">CREATE PROFILE</div>
+<body>
+
+<div class="IMGForm">
+    <img class="myImage" src="img/white-arrow-clip-art-18125.jpg" alt="">
+    <label for="uploadbtn" class="uploadButton">Download</label>
+    <input style="opacity: 0; z-index: -1;" type="file" name="upload" id="uploadbtn"
+           src="img/white-arrow-clip-art-18125.jpg">
+</div>
+
+<div class="CreateProfile">
+    <form name="CreateProfile_form" method="post" action="#" class="rf" onsubmit="return validate_form ( );">
+        <label for="Name">Name:</label>
+        <input type="text" class="rfield" title='Поле обязательно для заполнения!' id="Name">
+
+        <label for="Surname">Surname:</label>
+        <input type="text" class="rfield" title='Поле обязательно для заполнения!' id="Surname">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone"
+               title='Поле обязательно для заполнения!'>
+    </form>
+</div>
+<input type="submit" value="Create" class="btn_submit1" onclick="return validate_form ( );">
+</body>
+</html>
