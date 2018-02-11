@@ -40,7 +40,6 @@
     padding: 7px 7px 8px;
     width: 300px;
     margin-bottom: 20px;
-
 }
 
 .LoginForm input:focus, .CreateProfile input:focus {
@@ -78,7 +77,6 @@
     text-align: center;
     height: 37px;
     margin: 100px auto;
-
 }
 
 .uploadButton {
@@ -96,7 +94,6 @@
     text-align: center;
     height: 37px;
     margin: 20px auto;
-
 }
 
 img.myImage {
