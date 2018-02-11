@@ -1,0 +1,80 @@
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    background: #777;
+}
+
+.container-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    min-height: 20%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #ff656c;
+    margin: 0 auto;
+}
+
+.container-login h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.container-login input {
+    width: 100%;
+    font-size: 100%;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #eee;
+    color: #777;
+    transition: all .2s ease-in;
+}
+
+.container-login input:focus {
+    outline: 0;
+    border-color: #ccc;
+}
+
+.container-login.field {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.container-login .btn {
+    border: 0;
+    font-size: 0.75rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 1.5rem;
+    color: white;
+    background: #3fff38;
+    text-transform: uppercase;
+    border-radius: .25rem;
+    letter-spacing: .2em;
+    transition: background .2s;
+}
+
+/* To change buttons color when they under mouse */
+.container-login .btn:focus {
+    outline: 0;
+}
+
+.container-login .btn:hover,
+.container-login .btn:focus {
+    background: #acff9f;
+}
+
+.container-login .footer {
+    padding-top: 1em;
+}
