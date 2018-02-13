@@ -2,55 +2,130 @@ body {
     background: rgba(0, 0, 0, 0.3);
 }
 
-.login-form {
+#loginForm {
     position: absolute;
     top: 20%;
     left: 50%;
     margin-left: -200px;
-    height: 430px;
+    height: 450px;
     width: 400px;
     border-radius: 5px;
     background: white;
 }
 
-.inputs {
-    position: inherit;
-    top: 40px;
-    left: 75px
+.inputsForUserData {
+    position: absolute;
+    top:50px;
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+
 }
 
-.inputs button {
-    position: relative;
-    top: 30px;
+.inputsForUserData button,
+.inputsForUserData button:focus,
+.inputsForUserData button:active {
+    position: absolute;
+    background: #4cae4c;
+    top: 250px;
+    left: 100px;
+    height: 40px;
     width: 100px;
-    left: 75px
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    border-color: #4cae4c;
+
 }
 
-.inputs p {
-    position: relative;
+#loginForm p {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
     text-align: center;
     color: black;
-
     font-size: 25px;
 }
 
-.inputs input {
-    background: white;
-    width: 250px
-}
-
-.inputs input.correct {
-    background: #00800082;
-    width: 250px
-}
-
-.inputs input.incorrect {
-    background: #dc1c1ca6;
-    width: 250px
-}
-
-.inputs label {
-    position: relative;
-    margin-top: 15px;
+#loginForm a {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
     color: black;
+    font-size: 15px;
 }
+
+#loginForm a:focus,
+#loginForm a:active,
+#loginForm a:hover{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+.inputsForUserData input {
+    height: 40px;
+    width: 300px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+.inputsForUserData input:hover,
+.inputsForUserData input:focus {
+    height: 40px;
+    width: 300px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid royalblue;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+
+.inputsForUserData input.correctUserData {
+    height: 40px;
+    width: 300px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid green;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+.inputsForUserData input.incorrectUserData{
+    height: 40px;
+    width: 300px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid red;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+

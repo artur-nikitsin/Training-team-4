@@ -1,48 +1,47 @@
 (function ($) {
     $(document).ready(function () {
 
-        $("#submitBtn").on('click', function () {
+        $("#submitButton").on('click', function () {
 
             $(".inputsForUserData").find("input").each(function () {
 
-                var inputValue = $(this).val();
+                var inputValue = $(this);
 
-                if (!inputValue == "") {
+                if (!inputValue.val() == "") {
 
-                    if ($(this).hasClass("incorrect")) {
+                    if ($(inputValue).hasClass("incorrectUserData")) {
 
-                        $(this).removeClass("incorrect");
+                        $(inputValue).removeClass("incorrectUserData");
 
-                        $(this).addClass("correct");
+                        $(inputValue).addClass("correctUserData");
                         setTimeout(function () {
-                            $(".inputsForUserData").find("input").removeClass("correct");
+                            $(".inputsForUserData").find("input").removeClass("correctUserData");
                         }, 500);
 
                     } else {
 
-                        $(this).addClass("correct");
+                        $(inputValue).addClass("correctUserData");
                         setTimeout(function () {
-                            $(".inputsForUserData").find("input").removeClass("correct");
+                            $(".inputsForUserData").find("input").removeClass("correctUserData");
                         }, 500);
                     }
                     ;
 
                 } else {
-                    if ($(this).hasClass("correct")) {
+                    if ($(inputValue).hasClass("correctUserData")) {
 
-                        $(this).removeClass("correct");
+                        $(inputValue).removeClass("correctUserData");
 
-                        $(this).addClass("incorrect");
+                        $(inputValue).addClass("incorrectUserData");
 
                     } else {
 
-                        $(this).addClass("incorrect");
+                        $(inputValue).addClass("incorrectUserData");
                     }
                     ;
 
-
                     setTimeout(function () {
-                        $(".inputsForUserData").find("input").removeClass("incorrect");
+                        $(".inputsForUserData").find("input").removeClass("incorrectUserData");
                     }, 500);
 
                 }

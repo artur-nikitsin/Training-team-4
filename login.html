@@ -3,36 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Login page</title>
+    <link rel="stylesheet" href="CSS/stylesForLoginForm.css">
     <script src="JS/jquery-3.3.1.min.js"></script>
-    <script src="JS/validation.js"></script>
+    <script src="JS/validationForLoginForm.js"></script>
 </head>
 
 <body>
-    <div class="login-form container">
+<div id="loginForm">
+    <p>Sign in</p>
+    <div class="inputsForUserData">
 
-        <div class="inputs">
+        <input id="loginInput" type="text" title="Введите свой логин" placeholder="Login">
 
-            <p>Вход</p>
+        <input id="emailInput" type="email" title="Введите свой e-mail" placeholder="e-mail">
 
-            <label for="login">Login:</label>
+        <input id="passwordInput" type="password" title="Введите свой пароль" placeholder="Password">
 
-            <input id="login" class="form-control" type="text" title="Введите свой логин">
+        <button id="submitButton">Submit</button>
 
-            <label for="email">E-mail:</label>
+        <a href="profile.html">Not registered?</a>
 
-            <input id="email" class="form-control" type="email" title="Введите свой e-mail">
-
-            <label for="password">Password:</label>
-
-            <input id="password" class="form-control" type="password" title="Введите свой пароль">
-
-            <button id="submitBtn" class="btn btn-success">Submit</button>
-
-        </div>
     </div>
+</div>
 </body>
 
 </html>
