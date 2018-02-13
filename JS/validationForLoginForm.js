@@ -1,9 +1,9 @@
 (function ($) {
     $(document).ready(function () {
 
-        $('#submitBtn').on('click', function () {
+        $("#submitBtn").on('click', function () {
 
-            $(".login-form").find('input').each(function () {
+            $(".inputsForUserData").find("input").each(function () {
 
                 var inputValue = $(this).val();
 
@@ -15,16 +15,17 @@
 
                         $(this).addClass("correct");
                         setTimeout(function () {
-                            $(".login-form").find('input').removeClass("correct");
+                            $(".inputsForUserData").find("input").removeClass("correct");
                         }, 500);
 
                     } else {
 
                         $(this).addClass("correct");
                         setTimeout(function () {
-                            $(".login-form").find('input').removeClass("correct");
+                            $(".inputsForUserData").find("input").removeClass("correct");
                         }, 500);
-                    };
+                    }
+                    ;
 
                 } else {
                     if ($(this).hasClass("correct")) {
@@ -36,14 +37,16 @@
                     } else {
 
                         $(this).addClass("incorrect");
-                    };
+                    }
+                    ;
 
 
                     setTimeout(function () {
-                        $(".login-form").find('input').removeClass("incorrect");
+                        $(".inputsForUserData").find("input").removeClass("incorrect");
                     }, 500);
 
-                };
+                }
+                ;
 
             });
 
