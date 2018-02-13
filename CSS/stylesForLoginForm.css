@@ -10,12 +10,12 @@ body {
     height: 450px;
     width: 400px;
     border-radius: 5px;
-    background: white;
+    background: #fff;
 }
 
 .inputsForUserData {
     position: absolute;
-    top:50px;
+    top: 50px;
     height: 300px;
     width: 300px;
     margin: 50px;
@@ -35,6 +35,7 @@ body {
     font-size: 20px;
     outline: none;
     border-color: #4cae4c;
+    cursor: pointer;
 
 }
 
@@ -45,7 +46,7 @@ body {
     margin-left: -50px;
     width: 100px;
     text-align: center;
-    color: black;
+    color: #000000;
     font-size: 25px;
 }
 
@@ -57,13 +58,13 @@ body {
     width: 100px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: #000000;
     font-size: 15px;
 }
 
 #loginForm a:focus,
 #loginForm a:active,
-#loginForm a:hover{
+#loginForm a:hover {
     position: absolute;
     top: 300px;
     left: 50%;
@@ -75,20 +76,12 @@ body {
     font-size: 15px;
 }
 
-
-
-
-
-
-
-
-
 .inputsForUserData input {
     height: 40px;
     width: 300px;
     margin: 5px;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #000000;
     outline: none;
     background: #fff;
     font-size: 20px;
@@ -100,30 +93,29 @@ body {
     width: 300px;
     margin: 5px;
     border: none;
-    border-bottom: 2px solid royalblue;
+    border-bottom: 2px solid #2e6da4;
     outline: none;
     background: #fff;
     font-size: 20px;
 }
-
 
 .inputsForUserData input.correctUserData {
     height: 40px;
     width: 300px;
     margin: 5px;
     border: none;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid #4cae4c;
     outline: none;
     background: #fff;
     font-size: 20px;
 }
 
-.inputsForUserData input.incorrectUserData{
+.inputsForUserData input.incorrectUserData {
     height: 40px;
     width: 300px;
     margin: 5px;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #c9302c;
     outline: none;
     background: #fff;
     font-size: 20px;
