@@ -1,9 +1,6 @@
 (function ($) {
     $(document).ready(function () {
 
-
-
-
         $("#submitButton").on("click", function () {
 
             $(".inputsForUserData").find("input").each(function () {
