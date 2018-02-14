@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="CSS/stylesForProfilePage.css">
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/validationForPageCreateForm.js"></script>
+</head>
+<body>
+
+<div id="createProfileWindow">
+    <p>CREATE PROFILE</p>
+    <div id="inputForUserPhoto">
+
+        <img id="userPhoto" src="" alt="">
+        <label id="buttonToChangeProfilePhoto" for="inputForImage">Upload a photo</label>
+        <input id="inputForImage" type="file" accept="image">
+
+    </div>
+
+    <form id="inputsForUserData">
+        <div>
+            <input id="userNameInput" type="text" placeholder="Name" pattern="[A-Za-zА-Яа-яЁё]{}">
+        </div>
+        <div>
+
+            <input id="userSurnameInput" type="text" placeholder="Surname" pattern="[A-Za-zА-Яа-яЁё]{}">
+        </div>
+
+        <div>
+            <input id="userPhoneNumberInput" type="tel" placeholder="Phone number: +375(xx)xxx-xx-xx"  pattern="\+\d{3}\(\d{2}\)\d{7}">
+        </div>
+
+    </form>
+
+    <button id="createProfileButton" form="inputsForUserData">Create profile</button>
+</div>
+
+
+</body>
+</html>
