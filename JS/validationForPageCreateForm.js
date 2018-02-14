@@ -3,6 +3,9 @@
 
         $("#createProfileButton").on("click", function () {
 
+            
+
+
             $("#inputsForUserData").find("input").each(function () {
 
                 var inputValue = $(this);

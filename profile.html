@@ -19,22 +19,22 @@
 
     </div>
 
-    <div id="inputsForUserData">
+    <form id="inputsForUserData">
         <div>
-            <input id="userNameInput" type="text" placeholder="Name">
+            <input id="userNameInput" type="text" placeholder="Name" pattern="[A-Za-zА-Яа-яЁё]{}">
         </div>
         <div>
 
-            <input id="userSurnameInput" type="text" placeholder="Surname">
+            <input id="userSurnameInput" type="text" placeholder="Surname" pattern="[A-Za-zА-Яа-яЁё]{}">
         </div>
 
         <div>
-            <input id="userPhoneNumberInput" type="tel" placeholder="Phone number" >
+            <input id="userPhoneNumberInput" type="tel" placeholder="Phone number: +375(xx)xxx-xx-xx"  pattern="\+\d{3}\(\d{2}\)\d{7}">
         </div>
 
-    </div>
+    </form>
 
-    <button id="createProfileButton">Create profile</button>
+    <button id="createProfileButton" form="inputsForUserData">Create profile</button>
 </div>
 
 

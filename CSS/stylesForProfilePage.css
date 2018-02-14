@@ -73,7 +73,7 @@ body {
 
 #inputsForUserData div input {
     height: 30px;
-    width: 300px;
+    width: 320px;
     margin: 5px;
     border: none;
     border-bottom: 2px solid #000000;
@@ -84,7 +84,7 @@ body {
 
 #inputsForUserData div input.correctUserData {
     height: 30px;
-    width: 300px;
+    width: 320px;
     margin: 5px;
     border: none;
     border-bottom: 2px solid #4cae4c;
@@ -95,7 +95,7 @@ body {
 
 #inputsForUserData div input.incorrectUserData {
     height: 30px;
-    width: 300px;
+    width: 320px;
     margin: 5px;
     border: none;
     border-bottom: 2px solid #c9302c;
@@ -107,7 +107,7 @@ body {
 #inputsForUserData div input:hover,
 #inputsForUserData div input:focus {
     height: 30px;
-    width: 300px;
+    width: 320px;
     margin: 5px;
     border: none;
     border-bottom: 2px solid #2e6da4;
