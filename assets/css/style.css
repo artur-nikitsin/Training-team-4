@@ -1,0 +1,105 @@
+.FormHeaderTitle {
+    font-size: 33px;
+    font-weight: bold;
+    color: #adadad;
+    text-align: center;
+    height: 70px;
+    margin: 40px auto;
+}
+
+.LoginForm {
+    width: 300px;
+    margin: 40px auto;
+}
+
+.IMGForm {
+    margin: auto;
+    float: left;
+    width: 200px;
+    padding-left: 250px;
+    height: 50px;
+}
+
+.CreateProfile {
+    width: 200px;
+    padding-left: 700px;
+}
+
+.LoginForm label, .CreateProfile label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #adadad;
+    display: block;
+}
+
+.LoginForm input, .CreateProfile input {
+    display: block;
+    border: 2px solid #cfcfcf;
+    font-size: 14px;
+    color: #5e5e5e;
+    padding: 7px 7px 8px;
+    width: 300px;
+    margin-bottom: 20px;
+
+}
+
+.LoginForm input:focus, .CreateProfile input:focus {
+    outline: none;
+    border-color: #717171;
+}
+
+.LoginForm .btn_submit {
+    border: none;
+    width: 130px;
+    text-align: center;
+    background: #979797;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+    line-height: 28px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.btn_submit1 {
+    display: block;
+    position: relative;
+    border: 1px solid white;
+    padding: 0 1rem;
+    width: 250px;
+    background: #979797;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+    height: 37px;
+    margin: 100px auto;
+
+}
+
+.uploadButton {
+    display: block;
+    position: relative;
+    border: 1px solid white;
+    padding: 0 1rem;
+    width: 200px;
+    background: #979797;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+    height: 37px;
+    margin: 20px auto;
+
+}
+
+img.myImage {
+    width: 230px;
+    height: 190px;
+}
