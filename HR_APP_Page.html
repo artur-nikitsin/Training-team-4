@@ -3,22 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>HR APP Page</title>
-    <link rel="stylesheet" href="CSS/stylesForHRAPP.css">
+    <link rel="stylesheet" href="assets/css/stylesForHRAPP.css">
 </head>
 <body>
 
 <div id="searchPanel">
-
+    <label for="searchInput">&#128269;</label>
+    <input id="searchInput" type="text" placeholder=" Search for vacancies,candidates...">
+    <div>
+        <a href=""> &#128276; </a>
+        <a href=""> &#8658;</a>
+    </div>
 </div>
 
 <div id="filterPanel">
+
+    <p>Vacancies</p>
+
+    <div id="sortBy-Inputs">
+
+        <div><input type="text">
+            <button id="buttonToSelectSortBy">&#9660;</button>
+        </div>
+
+        <div><input type="text">
+            <button id="buttonToReset"> &#10006</button>
+        </div>
+        <div><input type="text">
+            <button id="buttonToReset"> &#10006</button>
+        </div>
+
+    </div>
 
 </div>
 
 
 <div id="sideBar">
 
-
+    <p>HR APP</p>
     <table>
         <tr>
             <th><a href="">Interview</a></th>
@@ -35,10 +57,12 @@
 
 
     </table>
-    
+
 </div>
 
 <div id="listsBody">
+
+
     <table>
         <tr>
 
@@ -101,8 +125,25 @@
 
     </table>
 
-    <div id="navigationPanel">
+    <div id="pagesNavigationPanel">
+        <div>
+            <p>Rows per page:</p>
+            <input type="text">
+            <p>
+                <button> &#9660;</button>
+            </p>
+            <p>1-10 of 100</p>
+            <p>
+                <button>&#9668;</button>
+            </p>
+            <p>
+                <button> &#9658;</button>
+            </p>
 
+        </div>
+
+
+        <button id="addPositionButton">+</button>
     </div>
 
 
