@@ -8,22 +8,75 @@
 </head>
 <body>
 <div class="sidenav">
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
+    <div id="title">HR APP</div>
+    <a href="#">Interview</a>
+    <a href="#">Vacancies</a>
+    <a href="#">Candidates</a>
 </div>
-
 <div class="container">
     <div class="header">
-        <h2>Header</h2>
+        <div class="searchElement">
+            <form>
+                <input type="text" name="search" placeholder="Search..">
+            </form>
+        </div>
+        <h3>Vacancies</h3>
+        <div class="filter">
+            Filter by:
+            <select name="Filter">
+                <option value="0">param1</option>
+                <option value="1">param2</option>
+                <option value="2">param3</option>
+            </select>
+            <input type="search" value=""/>
+            <input type="search" value=""/>
+        </div>
     </div>
     <div class="content">
-        <h2>CSS Template</h2>
-        <p>A topnav, content and a footer.</p>
-    </div>
+        <table>
+            <tr>
+                <th>Vacancies</th>
+                <th>Skills</th>
+                <th>Project</th>
+                <th>Candidates</th>
+            </tr>
+            <tr>
+                <td>Java Developer</td>
+                <td>2</td>
+                <td>3</td>
+                <td><a href="#">View candidates</a></td>
+            </tr>
+            <tr>
+                <td>Java Developer</td>
+                <td>2</td>
+                <td>3</td>
+                <td><a href="#">View candidates</a></td>
+            </tr>
+            <tr>
+                <td>Java Developer</td>
+                <td>2</td>
+                <td>3</td>
+                <td><a href="#">View candidates</a></td>
+            </tr>
+        </table>
 
-    <div class="footer">
-        <p>Footer</p>
+        <div class="navigationPanel">
+            <div>
+                <p>Rows per page:</p>
+                <input type="text">
+                <p>
+                    <button> &#9660;</button>
+                </p>
+                <p>1-10 of 100</p>
+                <p>
+                    <button>&#9668;</button>
+                </p>
+                <p>
+                    <button> &#9658;</button>
+                </p>
+            </div>
+            <button id="addButton">+</button>
+        </div>
     </div>
 </div>
 </body>
