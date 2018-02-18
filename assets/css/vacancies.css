@@ -1,0 +1,199 @@
+body{
+	/*background-color: #eee;*/
+}
+.menu{
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background-color: #eee;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	font-family: sans-serif, arial, serif;
+}
+.menu a{
+	background-color: #eee;
+	color: black;
+	display: block;
+	padding: 22px;
+	padding-left: 40px;
+	font-size: 22px;
+	text-decoration: none;
+}
+.menu a:hover{
+	background-color: #ccc;
+}
+.menu a:active{
+	background-color: #bfbfbf; 
+	color: white;
+}
+.menu a.active{
+	background-color: #bfbfbf;
+}
+.menu label{
+	background-color: #eee;
+	color: #a6a6a6;
+	display: block;
+	padding: 22px;
+	padding-left: 40px;
+	font-size: 28px;
+	text-decoration: none;
+}
+.searchBar{
+	position: fixed;
+	margin-left: 300px;
+	width: 100vw;
+	height: 60px;
+	background-color: #eee;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+input[type=text]{
+	position: fixed;
+    width: 70vw;
+    height: 60px;
+    margin-left: 60px;
+    box-sizing: border-box;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #eee;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+.icon{
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.notificationButton{
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 74vw;
+	background-color: #eee;
+	border: none;
+}
+.exitButton{
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 77vw;
+	background-color: #eee;
+	border: none;
+}
+.filterBar{
+	height: 156px;
+	width: 100vw;
+	background-color: white;
+	position: fixed;
+	margin-left: 300px;
+	margin-top: 60px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.filterBar label{
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 25px;
+	font-family: sans-serif, arial, serif;
+	font-size: 24px;
+}
+
+.filterBar select{
+	text-align-last: center;
+	margin-top: 70px;
+	margin-left: 25px;
+    overflow: hidden;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    background-color: #d9d9d9;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+.table{
+	font-family: sans-serif, arial,serif;
+	color: #666666;
+	position: fixed;
+	margin-left: 300px;
+	margin-top: 216px;
+	width: 100vw;
+	height: 706px;
+	overflow: auto;
+}
+table, th, td{
+	border-top: 1px solid #ddd;
+	border-collapse: collapse;
+}
+th{
+	width: 21vw;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+td{
+	text-align: center;
+	padding-top: 44px;
+	padding-bottom: 44px;
+}
+.bottomBar{
+	position: fixed;
+	width: 100vw;
+	height: 8vh;
+	margin-left: 300px;
+	margin-top: 924px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.bottomBar label{
+	position: fixed;
+	margin-left: 30px;
+	margin-top: 20px;
+	font-size: 14px;
+	font-family: sans-serif, arial, serif;
+}
+.bottomBar select{
+	position: fixed;
+	margin-top: 20px;
+	margin-left: 150px;
+	border: none;
+    box-shadow: none;
+    background-color: white;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+.bottomBar input{
+	position: fixed;
+	margin-top: 20px;
+	margin-left: 210px;	
+	width: 100px;
+	height: 20px;
+	border: none;
+}
+.leftArrow{
+	position: fixed;
+	margin-left: 350px;
+	margin-top: 15px;
+	border: none;
+	background-color: white;
+}
+.rightArrow{
+	position: fixed;
+	margin-left: 400px;
+	margin-top: 15px;	
+	border: none;
+	background-color: white;
+}
+.addButton{
+	position: absolute;
+	margin-left: 92vw;
+	margin-top: 88vh;
+	border: none;
+	background-color: transparent;
+	border-radius: 50%;
+}
+.addButton img{
+	width: 75px;
+	height: 75px;
+}
