@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+.Menu {
+    background-color: #e0e0e0;
+    width: 15%;
+    border-bottom-color: black;
+    float: left;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+    overflow: hidden;
+}
+
+.Content {
+    width: 85%;
+    float: right;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+    overflow: hidden;
+}
+
+.FormHeaderTitle {
+    font-weight: bold;
+    color: #8f8f8f;
+    font-size: 29px;
+    margin-left: 30px;
+    font-family: "Trebuchet MS";
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    text-align: left;
+    display: block;
+    height: 50px;
+    font-family: "Trebuchet MS";
+    padding-left: 30px;
+}
+
+nav ul li a:hover {
+    background: #c9c9c9;
+    text-decoration: none;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+}
+
+.search input {
+    border: none;
+}
+
+.search .input {
+    width: 100%;
+    background-color: #e0e0e0;
+    font-family: "Trebuchet MS";
+    padding: 15px 15px 15px 37px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.search .ring {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 37px;
+    height: 100%;
+    cursor: pointer;
+    background: url(https://icon-icons.com/icons2/510/PNG/32/ios7-bell_icon-icons.com_50334.png) 50% no-repeat;
+    opacity: 0.5;
+}
+
+.search .rightarrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 37px;
+    height: 100%;
+    cursor: pointer;
+    background: url(https://png.icons8.com/win10/50/enter-2.png) 50% no-repeat;
+    opacity: 0.5;
+}
+
+.search .submit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 100%;
+    cursor: pointer;
+    background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+    opacity: 0.5;
+}
+
+h3 {
+    text-decoration: none;
+    color: #5e5e5e;
+    text-align: left;
+    font-family: "Trebuchet MS";
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.Filter_By {
+    color: #000000;
+    text-align: left;
+    font-family: "Trebuchet MS";
+    margin-left: 10px;
+    padding-bottom: 15px;
+}
+
+.FilterBy {
+    background-color: #e0e0e0;
+    font-family: "Trebuchet MS";
+    width: 155px;
+    border-radius: 30%;
+    margin-left: 10px;
+    height: 25px;
+}
+
+.Textbox {
+    font-family: "Trebuchet MS";
+    width: 155px;
+    border-radius: 30%;
+    margin-left: 15px;
+    height: 25px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    border-width: 2px;
+}
+
+.table-style {
+    width: 100%;
+    text-align: left;
+    font-family: "Trebuchet MS";
+    padding-top: 10px;
+    color: #5e5e5e;
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+.table-style th, td {
+    border-left: none;
+    border-bottom: 1px solid;
+    height: 60px;
+    padding-left: 10px;
+}
+
+.BottomMenu {
+    width: 100%;
+    color: #8f8f8f;
+    font-family: "Trebuchet MS";
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.RowsPerPage {
+    font-family: "Trebuchet MS";
+    border: none;
+    margin-left: 10px;
+    height: 25px;
+    color: #8f8f8f;
+}
+
+a.btn-left, a.btn-right {
+    margin-left: 10px;
+    color: #8f8f8f;
+    font-family: "Trebuchet MS";
+}
