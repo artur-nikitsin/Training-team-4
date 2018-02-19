@@ -1,0 +1,57 @@
+.fields {
+    text-align: left;
+    float: right;
+}
+
+.photoInput {
+    float: left;
+    padding-right: 5em;
+}
+
+.photo {
+    background: #B5D9E1;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.photoUpload {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 15px;
+}
+
+.photoUpload input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+#pic {
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+}
+
+.container-register {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 400px;
+    min-height: 20%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #ff656c;
+    margin: 0 auto;
+
+}
+
+.submit {
+    position: absolute;
+    font-size: 18px;
+}
