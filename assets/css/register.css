@@ -1,0 +1,83 @@
+      body{
+        background: #E5E1E1;
+      }
+      fieldset{
+        width: 520px;
+        background: white; 
+      }
+      .fields{
+      	text-align: left;
+        float: right;
+        } 
+      .photoInput{
+        float: left;
+      }
+      .submitButton{
+        -webkit-border-radius: 60;
+        -moz-border-radius: 60;
+        border-radius: 60px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 16px;
+        background: #B5D9E1;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+      }
+      .submitButton:hover{
+        background: #3cb0fd;
+        text-decoration: none;
+      }
+      .submit{
+        width: 70px;
+        padding: 10px;
+        margin-top:200px;
+        margin-left: 190px;
+        text-align: center;
+      }
+      .title{
+        text-align: center;
+      }
+      .photo{
+        margin-left: 50px;
+        background: #B5D9E1;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        border: 1px solid black;
+        box-shadow: 0 0 7px #666;
+      }
+      .form{
+        margin-top: 15%;
+        margin-left: 35%;
+
+      }
+      .photoUpload{
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        margin-top:20px;
+        margin-left: 40px;
+      }
+      .uploadButton{
+        -webkit-border-radius: 60;
+        -moz-border-radius: 60;
+        border-radius: 60px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 16px;
+        background: #B5D9E1;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+      }
+      .photoUpload input[type=file]{
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+      }
+      #pic{
+        border-radius: 60px;
+        width: 120px;
+        height: 120px;
+      }
