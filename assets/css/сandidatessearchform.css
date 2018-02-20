@@ -3,7 +3,7 @@
     margin: 0
 }
 
-.Menu {
+.menu {
     background-color: #e0e0e0;
     width: 15%;
     border-bottom-color: black;
@@ -13,15 +13,15 @@
     overflow: hidden;
 }
 
-.Content {
+.content {
     width: 85%;
     float: right;
-    padding-bottom: 5000px;
-    margin-bottom: -5000px;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
     overflow: hidden;
 }
 
-.FormHeaderTitle {
+.form-header-title {
     font-weight: bold;
     color: #8f8f8f;
     font-size: 29px;
@@ -39,7 +39,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
     text-align: left;
     display: block;
     height: 50px;
@@ -81,7 +81,7 @@ nav ul li a:hover {
     opacity: 0.5;
 }
 
-.search .rightarrow {
+.search .right-arrow {
     position: absolute;
     top: 0;
     right: 0;
@@ -113,7 +113,7 @@ h3 {
     margin-bottom: 25px;
 }
 
-.Filter_By {
+.filter-by {
     color: #000000;
     text-align: left;
     font-family: "Trebuchet MS";
@@ -121,7 +121,7 @@ h3 {
     padding-bottom: 15px;
 }
 
-.FilterBy {
+.filter-second {
     background-color: #e0e0e0;
     font-family: "Trebuchet MS";
     width: 155px;
@@ -130,7 +130,7 @@ h3 {
     height: 25px;
 }
 
-.Textbox {
+.textbox {
     font-family: "Trebuchet MS";
     width: 155px;
     border-radius: 30%;
@@ -158,7 +158,7 @@ h3 {
     padding-left: 10px;
 }
 
-.BottomMenu {
+.bottom-menu {
     width: 100%;
     color: #8f8f8f;
     font-family: "Trebuchet MS";
@@ -166,7 +166,7 @@ h3 {
     margin-top: 25px;
 }
 
-.RowsPerPage {
+.rows-per-page {
     font-family: "Trebuchet MS";
     border: none;
     margin-left: 10px;
