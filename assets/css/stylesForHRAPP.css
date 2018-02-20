@@ -1,0 +1,237 @@
+
+#sideBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background: #e8e8e8;
+    box-shadow: 0 0 15px #999999;
+    z-index: 100;
+}
+
+#sideBar p {
+    text-align: center;
+}
+
+#sideBar table {
+    position: center;
+    width: 100%;
+    height: 30%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#sideBar table th {
+    padding-left: 30px;
+}
+
+#sideBar table th:hover,
+#sideBar table th:active,
+#sideBar table th:focus {
+    padding-left: 30px;
+    background: #9d9d9d;
+}
+
+#sideBar table th a,
+#sideBar table th a:hover,
+#sideBar table th a:active,
+#sideBar table th a:focus {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+}
+
+#searchPanel {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    width: 90%;
+    height: 5%;
+    padding-left: 30px;
+    background: #e8e8e8;
+    box-shadow: 0 0 15px #999999;
+    z-index: 100;
+}
+
+#searchPanel input {
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    height: 50%;
+    width: 80%;
+    background: #e8e8e8;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    box-shadow: none;
+}
+
+#searchPanel input:hover,
+#searchPanel input:active,
+#searchPanel input:focus {
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    height: 50%;
+    width: 80%;
+    background: #e8e8e8;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 15px #999999;
+}
+
+#searchPanel label {
+    position: absolute;
+    top: 25%;
+    text-decoration: none;
+}
+
+#searchPanel div {
+    position: absolute;
+    top: 25%;
+    left: 90%;
+
+}
+
+#searchPanel div a {
+    display: inline-block;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+#filterPanel {
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    width: 90%;
+    height: 15%;
+    background: #fff;
+    z-index: 99;
+}
+
+#filterPanel p {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 20px;
+}
+
+#filterPanel #sortBy-Inputs {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    height: 30px;
+}
+
+#filterPanel #sortBy-Inputs > div {
+    display: inline-block;
+    height: 25px;
+    width: 240px;
+    border-radius: 10px;
+    margin: 0 20px 0 0;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+
+}
+
+#filterPanel #sortBy-Inputs > div > input {
+    top: 50%;
+    margin-bottom: -10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+    outline: none;
+    border: none;
+    padding-left: 5%;
+}
+
+#filterPanel #sortBy-Inputs > div > button {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: #fff;
+}
+
+#listsBody {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    width: 90%;
+    height: 80%;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+}
+
+#listsBody table {
+    position: center;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    height: 85%;
+}
+
+#listsBody table th {
+    height: 40px;
+}
+
+#listsBody table td {
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    height: 90px;
+    width: 25%;
+}
+
+#pagesNavigationPanel {
+    position: fixed;
+    top: 92%;
+    height: 5%;
+    width: 100%;
+    padding-left: 5%;
+}
+
+#pagesNavigationPanel > div p {
+    display: inline-block;
+    margin: 20px 20px 0 0;
+}
+
+#pagesNavigationPanel > div > p > button {
+    border-radius: 100%;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: #fff;
+}
+
+#pagesNavigationPanel input {
+    width: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #e8e8e8;
+
+}
+
+#pagesNavigationPanel #addPositionButton {
+    position: fixed;
+    text-align: center;
+    top: 90%;
+    left: 90%;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    background: #e8e8e8;
+    box-shadow: 5px 5px 10px rgba(122, 122, 122, 0.5);
+
+}

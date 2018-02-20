@@ -1,0 +1,136 @@
+body {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#createProfileWindow {
+    position: absolute;
+    background: #fff;
+    height: 450px;
+    width: 750px;
+    margin-left: -400px;
+    top: 20%;
+    left: 50%;
+    border: 1px solid #000000;
+}
+
+#createProfileWindow p {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    margin-left: -100px;
+    left: 50%;
+    top: 20px;
+    font-size: 20px;
+    color: #000000;
+}
+
+#inputForUserPhoto {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 300px;
+    width: 250px;
+}
+
+#inputForUserPhoto img {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -90px;
+    height: 180px;
+    width: 180px;
+    border-radius: 100px;
+    border: 1px solid #000000;
+}
+
+#inputForUserPhoto #buttonToChangeProfilePhoto {
+    position: absolute;
+    padding: 5px;
+    background: #4cae4c;
+    top: 250px;
+    left: 50%;
+    margin-left: -50px;
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+#inputsForUserData {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    padding: 20px;
+    height: 260px;
+    width: 350px;
+}
+
+#inputsForUserData div {
+    margin: 20px;
+    width: 340px;
+}
+
+#inputsForUserData div input {
+    height: 30px;
+    width: 320px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+#inputsForUserData div input.correctUserData {
+    height: 30px;
+    width: 320px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #4cae4c;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+#inputsForUserData div input.incorrectUserData {
+    height: 30px;
+    width: 320px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #c9302c;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+#inputsForUserData div input:hover,
+#inputsForUserData div input:focus {
+    height: 30px;
+    width: 320px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #2e6da4;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+#createProfileButton {
+    position: absolute;
+    background: #4cae4c;
+    top: 370px;
+    left: 50%;
+    margin-left: -75px;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    outline: none;
+    border-color: #4cae4c;
+    cursor: pointer;
+}
+
+#inputForImage {
+    display: none;
+}
+
