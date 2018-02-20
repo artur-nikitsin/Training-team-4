@@ -1,0 +1,52 @@
+.FormHeaderTitle {
+    font-size: 33px;
+    font-weight: bold;
+    color: #adadad;
+    text-align: center;
+    height: 70px;
+}
+
+.LoginForm {
+    width: 300px;
+    margin: 40px auto;
+    margin: 40px auto;
+}
+
+.LoginForm label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #adadad;
+    display: block;
+}
+
+.LoginForm input {
+    display: block;
+    border: 2px solid #cfcfcf;
+    font-size: 14px;
+    color: #adadad;
+    padding: 7px 7px 8px;
+    width: 300px;
+    margin-bottom: 20px;
+
+}
+
+.LoginForm input:focus {
+    outline: none;
+    border-color: #717171;
+}
+
+.LoginForm .btn_submit {
+    border: none;
+    width: 130px;
+    text-align: center;
+    background: #979797;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    height: 35px;
+    line-height: 28px;
+    padding: 0;
+    margin: 0 auto;
+
+}
