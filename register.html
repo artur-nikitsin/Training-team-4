@@ -3,16 +3,18 @@
 <meta charset="utf-8">
 <script type="text/javascript">
     function validate_form() {
+        var form = document.getElementById('create-profile');
+        if (!form) return;
         valid = true;
-        if (document.CreateProfile_form.Name.value == "") {
+        if (form.Name.value == "") {
             alert("Поле 'Name' обязательно к заполнению!");
             valid = false;
         }
-        if (document.CreateProfile_form.Surname.value == "") {
+        if (form.Surname.value == "") {
             alert("Поле 'Surname' обязательно к заполнению!");
             valid = false;
         }
-        if (document.CreateProfile_form.phone.value != "") {
+        if (form.phone.value != "") {
         } else {
             alert("Поле 'Phone' обязательно к заполнению!");
             valid = false;
@@ -23,20 +25,20 @@
 
 <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 <title>
-    Create Profile
+    CREATE PROFILE
 </title>
-<div class="FormHeaderTitle">CREATE PROFILE</div>
+<div class="form-header-title">CREATE PROFILE</div>
 <body>
 
-<div class="IMGForm">
-    <img class="myImage" src="assets/img/white-arrow-clip-art-18125.jpg" alt="">
-    <label for="uploadbtn" class="uploadButton">Download</label>
+<div class="img-form">
+    <img class="my-image" src="assets/img/white-arrow-clip-art-18125.jpg" alt="">
+    <label for="uploadbtn" class="upload-button">Download</label>
     <input style="opacity: 0; z-index: -1;" type="file" name="upload" id="uploadbtn"
            src="assets/img/white-arrow-clip-art-18125.jpg">
 </div>
 
-<div class="CreateProfile">
-    <form name="CreateProfile_form" method="post" action="#" class="rf" onsubmit="return validate_form ( );">
+<div class="create-profile">
+    <form id="create-profile" name="create-profile_form" method="post" action="#" class="rf" method="POST" onsubmit="return validate_form ( );">
         <label for="Name">Name:</label>
         <input type="text" class="rfield" title='Поле обязательно для заполнения!' id="Name">
 
@@ -48,6 +50,6 @@
                title='Поле обязательно для заполнения!'>
     </form>
 </div>
-<input type="submit" value="Create" class="btn_submit1" onclick="return validate_form ( );">
+<input type="submit" value="Create" class="btn_submit-register" onclick="return validate_form ( );">
 </body>
 </html>
