@@ -1,4 +1,4 @@
-.FormHeaderTitle {
+.form-header-title {
     font-size: 33px;
     font-weight: bold;
     color: #adadad;
@@ -7,12 +7,12 @@
     margin: 40px auto;
 }
 
-.LoginForm {
+.login-form {
     width: 300px;
     margin: 40px auto;
 }
 
-.IMGForm {
+.img-form {
     margin: auto;
     float: left;
     width: 200px;
@@ -20,19 +20,19 @@
     height: 50px;
 }
 
-.CreateProfile {
+.create-profile {
     width: 200px;
     padding-left: 700px;
 }
 
-.LoginForm label, .CreateProfile label {
+.login-form label, .create-profile label {
     font-size: 20px;
     font-weight: bold;
     color: #adadad;
     display: block;
 }
 
-.LoginForm input, .CreateProfile input {
+.login-form input, .create-profile input {
     display: block;
     border: 2px solid #cfcfcf;
     font-size: 14px;
@@ -43,12 +43,12 @@
 
 }
 
-.LoginForm input:focus, .CreateProfile input:focus {
+.login-form input:focus, .create-profile input:focus {
     outline: none;
     border-color: #717171;
 }
 
-.LoginForm .btn_submit {
+.login-form .btn-submit {
     border: none;
     width: 130px;
     text-align: center;
@@ -63,7 +63,7 @@
     margin: 0 auto;
 }
 
-.btn_submit1 {
+.btn_submit-register {
     display: block;
     position: relative;
     border: 1px solid white;
@@ -81,7 +81,7 @@
 
 }
 
-.uploadButton {
+.upload-button {
     display: block;
     position: relative;
     border: 1px solid white;
@@ -99,7 +99,7 @@
 
 }
 
-img.myImage {
+img.my-image {
     width: 230px;
     height: 190px;
 }
