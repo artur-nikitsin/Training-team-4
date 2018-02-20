@@ -15,8 +15,8 @@
 }
 
 #sideBar table {
-    position: center;
-    width: 100%;
+    position: fixed;
+    width: 10%;
     height: 30%;
     border-collapse: collapse;
     text-align: left;
