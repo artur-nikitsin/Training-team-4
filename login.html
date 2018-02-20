@@ -3,20 +3,22 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="assets/css/style.css">
 <title>
-    Login form
+    LOGIN
 </title>
 <script type="text/javascript">
     function validate_form() {
+        var form = document.getElementById('login-profile');
+        if (!form) return;
         valid = true;
-        if (document.contact_form.Login.value == "") {
+        if (form.Login.value == "") {
             alert("Поле 'Login' обязательно к заполнению!");
             valid = false;
         }
-        if (document.contact_form.EMail.value == "") {
+        if (form.EMail.value == "") {
             alert("Поле 'Email' обязательно к заполнению!");
             valid = false;
         }
-        if (document.contact_form.Password.value != "") {
+        if (form.Password.value != "") {
         } else {
             alert("Поле 'Password' обязательно к заполнению!");
             valid = false;
@@ -25,9 +27,9 @@
     }
 </script>
 <body>
-<div class="LoginForm">
-    <form name="contact_form" method="post" action="createprofile.html" class="rf" onsubmit="return validate_form ( );">
-        <div class="FormHeaderTitle">HR APP</div>
+<div class="login-form">
+    <form name="contact_form" method="post" action="register.html" class="rf" id="login-profile" onsubmit="return validate_form ( );">
+        <div class="form-header-title">HR APP</div>
 
         <label for="Login">Login:</label>
         <input type="text" class="rfield" title='Поле обязательно для заполнения!' id="Login">
@@ -38,7 +40,7 @@
         <label for="Password">Password:</label>
         <input type="password" class="rfield" title='Поле обязательно для заполнения!' id="Password">
 
-        <input type="submit" value="Submit" class="btn_submit">
+        <input type="submit" value="Submit" class="btn-submit">
     </form>
 </div>
 </body>
