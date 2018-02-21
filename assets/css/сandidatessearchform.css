@@ -8,8 +8,8 @@
     width: 15%;
     border-bottom-color: black;
     float: left;
-    padding-bottom: 2000px;
-    margin-bottom: -2000px;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
     overflow: hidden;
 }
 
@@ -77,7 +77,7 @@ nav ul li a:hover {
     width: 37px;
     height: 100%;
     cursor: pointer;
-    background: url(https://icon-icons.com/icons2/510/PNG/32/ios7-bell_icon-icons.com_50334.png) 50% no-repeat;
+    background: url(../img/ring.png) 50% no-repeat;
     opacity: 0.5;
 }
 
@@ -88,7 +88,7 @@ nav ul li a:hover {
     width: 37px;
     height: 100%;
     cursor: pointer;
-    background: url(https://png.icons8.com/win10/50/enter-2.png) 50% no-repeat;
+    background: url(../img/enter-2.png) 50% no-repeat;
     opacity: 0.5;
 }
 
@@ -99,7 +99,7 @@ nav ul li a:hover {
     width: 37px;
     height: 100%;
     cursor: pointer;
-    background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+    background: url(../img/go.png) 50% no-repeat;
     opacity: 0.5;
 }
 
