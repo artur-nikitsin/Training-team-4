@@ -2,7 +2,7 @@ body {
     background: rgba(0, 0, 0, 0.3);
 }
 
-.loginForm {
+.login-form {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -13,7 +13,7 @@ body {
     background: #fff;
 }
 
-.inputsForUserData {
+.inputs-for-user-data {
     position: absolute;
     top: 50px;
     height: 300px;
@@ -22,9 +22,9 @@ body {
 
 }
 
-.inputsForUserData button,
-.inputsForUserData button:focus,
-.inputsForUserData button:active {
+.inputs-for-user-data button,
+.inputs-for-user-data button:focus,
+.inputs-for-user-data button:active {
     position: absolute;
     background: #4cae4c;
     top: 250px;
@@ -39,7 +39,7 @@ body {
 
 }
 
-.loginForm p {
+.login-form p {
     position: absolute;
     top: 40px;
     left: 50%;
@@ -51,7 +51,7 @@ body {
     font-size: 25px;
 }
 
-.loginForm a {
+.login-form a {
     position: absolute;
     top: 300px;
     left: 50%;
@@ -63,9 +63,9 @@ body {
     font-size: 15px;
 }
 
-.loginForm a:focus,
-.loginForm a:active,
-.loginForm a:hover {
+.login-form a:focus,
+.login-form a:active,
+.login-form a:hover {
     position: absolute;
     top: 300px;
     left: 50%;
@@ -77,7 +77,7 @@ body {
     font-size: 15px;
 }
 
-.inputsForUserData input {
+.inputs-for-user-data input {
     height: 40px;
     width: 300px;
     margin: 5px;
@@ -88,8 +88,8 @@ body {
     font-size: 20px;
 }
 
-.inputsForUserData input:hover,
-.inputsForUserData input:focus {
+.inputs-for-user-data input:hover,
+.inputs-for-user-data input:focus {
     height: 40px;
     width: 300px;
     margin: 5px;
@@ -100,7 +100,7 @@ body {
     font-size: 20px;
 }
 
-.inputsForUserData input.correctUserData {
+.inputs-for-user-data input.correctUserData {
     height: 40px;
     width: 300px;
     margin: 5px;
@@ -111,7 +111,7 @@ body {
     font-size: 20px;
 }
 
-.inputsForUserData input.incorrectUserData {
+.inputs-for-user-data input.incorrectUserData {
     height: 40px;
     width: 300px;
     margin: 5px;
