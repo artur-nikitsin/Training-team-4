@@ -23,7 +23,7 @@
     color: #ccc;
 }
 
-#title{
+#title {
     text-align: center;
     color: #eeeeee;
     font-size: 18px;
@@ -31,7 +31,8 @@
     margin-top: 5px;
     margin-bottom: 20px;
 }
-.searchElement input[type=text] {
+
+.search-element input[type=text] {
     width: 80%;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -46,12 +47,13 @@
     transition: width 0.4s ease-in-out;
 }
 
-.header select{
+.header select {
     border-radius: 10px;
     outline: none;
     border: 1px solid #e8e8e8;
 }
-.container{
+
+.container {
     position: fixed;
     left: 10%;
     width: 100%;
@@ -92,7 +94,7 @@
     width: 25%;
 }
 
-.navigationPanel {
+.navigation-panel {
     position: fixed;
     top: 92%;
     height: 5%;
@@ -100,12 +102,12 @@
     padding-left: 5%;
 }
 
-.navigationPanel > div p {
+.navigation-panel > div p {
     display: inline-block;
     margin: 20px 20px 0 0;
 }
 
-.navigationPanel > div > p > button {
+.navigation-panel > div > p > button {
     border-radius: 100%;
     font-size: 15px;
     outline: none;
@@ -121,7 +123,8 @@
     border: 1px solid #e8e8e8;
 
 }
-.navigationPanel input {
+
+.navigation-panel input {
     width: 40px;
     padding-left: 10px;
     border-radius: 10px;
@@ -130,7 +133,7 @@
 
 }
 
-.navigationPanel #addButton {
+.navigation-panel #addButton {
     position: fixed;
     text-align: center;
     top: 90%;

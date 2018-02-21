@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <title>Register page</title>
     <link rel="stylesheet" href="assets/css/registerStyle.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/validationScript.js"></script>
 </head>
 <body>
 <div class="container-register">
     <h1>Create profile</h1>
+
     <form onsubmit="validate()">
-        <div class="photoInput">
+        <div class="photo-input">
             <div class="photo">
                 <img id="pic" src="#"><br>
             </div>
 
-            <div class="photoUpload">
+            <div class="photo-upload">
                 <button class="uploadButton">Upload Photo</button>
                 <input id="picInput" type="file" name="photo" accept="image/*">
             </div>
@@ -24,6 +25,7 @@
         <div class="fields">
             <div class="field">
                 <input type="text" id="name" required placeholder="Name">
+
                 <p id="demo"></p>
                 <span id="nameStatus"></span>
             </div>

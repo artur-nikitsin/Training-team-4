@@ -4,7 +4,6 @@ function validate() {
     var status = false;
 
     if (name.length < 2) {
-        console.log(name);
         document.getElementById("nameStatus").innerHTML =
             " <img src='../img/unchecked.gif'/> Please enter your name";
         status = false;
