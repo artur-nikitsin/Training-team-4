@@ -13,12 +13,8 @@ function validateFunction() {
         submitEvent.preventDefault();
 
         for (i = 0; i < numOfInputs; i++) {
-            if (inputs[i] == null)
-                continue
 
-            else {
-
-                if (inputs[i].value !== "") {
+                if (inputs[i].value) {
 
                     if (inputs[i].getAttribute("class") == "incorrectUserData") {
                         inputs[i].removeAttribute('class', 'incorrectUserData');
@@ -45,20 +41,16 @@ function validateFunction() {
 
                     for (i = 0; i < numOfInputs; i++) {
 
-                        if (inputs[i] == null) continue
-                        else {
-
                             if (inputs[i].getAttribute("class") == "correctUserData") {
                                 inputs[i].removeAttribute('class', 'correctUserData');
                             }
                             if (inputs[i].getAttribute("class") == "incorrectUserData") {
                                 inputs[i].removeAttribute('class', 'incorrectUserData');
                             }
-                        }
+
                     }
                 }, 500)
 
-            }
         }
 
     }
