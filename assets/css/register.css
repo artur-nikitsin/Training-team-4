@@ -1,5 +1,5 @@
       body{
-        background: #E5E1E1;
+        background: #e5e1e1;
       }
       fieldset{
         width: 520px;
@@ -9,21 +9,21 @@
       	text-align: left;
         float: right;
         } 
-      .photoInput{
+      .photo-input{
         float: left;
       }
-      .submitButton{
+      .submit-button{
         -webkit-border-radius: 60;
         -moz-border-radius: 60;
         border-radius: 60px;
         font-family: Arial;
-        color: #ffffff;
+        color: #fff;
         font-size: 16px;
-        background: #B5D9E1;
+        background: #b5d9e1;
         padding: 10px 20px 10px 20px;
         text-decoration: none;
       }
-      .submitButton:hover{
+      .submit-button:hover{
         background: #3cb0fd;
         text-decoration: none;
       }
@@ -39,7 +39,7 @@
       }
       .photo{
         margin-left: 50px;
-        background: #B5D9E1;
+        background: #b5d9e1;
         width: 120px;
         height: 120px;
         border-radius: 60px;
@@ -51,32 +51,32 @@
         margin-left: 35%;
 
       }
-      .photoUpload{
+      .photo-upload{
         position: relative;
         overflow: hidden;
         display: inline-block;
         margin-top:20px;
         margin-left: 40px;
       }
-      .uploadButton{
+      .upload-button{
         -webkit-border-radius: 60;
         -moz-border-radius: 60;
         border-radius: 60px;
         font-family: Arial;
-        color: #ffffff;
+        color: #fff;
         font-size: 16px;
-        background: #B5D9E1;
+        background: #b5d9e1;
         padding: 10px 20px 10px 20px;
         text-decoration: none;
       }
-      .photoUpload input[type=file]{
+      .photo-upload input[type=file]{
         font-size: 100px;
         position: absolute;
         left: 0;
         top: 0;
         opacity: 0;
       }
-      #pic{
+      .pic{
         border-radius: 60px;
         width: 120px;
         height: 120px;

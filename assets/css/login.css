@@ -1,5 +1,5 @@
       body{
-        background: #E5E1E1;
+        background: #e5e1e1;
       }
       fieldset{
         background: white;
@@ -8,45 +8,42 @@
       .title{
       	text-align: center;
       }
-      .SignInButton{-webkit-border-radius: 60;
-        -moz-border-radius: 60;
+      .sign-in-button{
         border-radius: 60px;
         font-family: Arial;
-        color: #ffffff;
+        color: #fff;
         font-size: 16px;
-        background: #B5D9E1;
+        background: #b5d9e1;
         padding: 10px 20px 10px 20px;
         text-decoration: none;
       }
-      .SignInButton:hover{
+      .sign-in-button:hover{
         background: #3cb0fd;
         text-decoration: none;
       }
-      .SignIn{
+      .sign-in{
       	text-align: center;
       }
       .field{
       	text-align: center;
       }
-      .SignUpButton{  
-      	-webkit-border-radius: 60;
-        -moz-border-radius: 60;
+      .sign-up-button{
         border-radius: 60px;
         font-family: Arial;
-        color: #ffffff;
+        color: #fff;
         font-size: 16px;
-        background: #B5D9E1;
+        background: #b5d9e1;
         padding: 10px 20px 10px 20px;
         text-decoration: none;
       }
-      .SignUpButton:hover{
+      .sign-up-button:hover{
         background: #3cb0fd;
         text-decoration: none;
       }
-      .SignUp{
+      .sign-up{
       	text-align: center;
       }
-      .form{
+      .form-block{
       	margin-top: 15%;
       	margin-left: 42%;
       }
