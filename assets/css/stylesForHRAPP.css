@@ -1,5 +1,5 @@
 
-#sideBar {
+.side-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,39 +10,39 @@
     z-index: 100;
 }
 
-#sideBar p {
+.side-bar p {
     text-align: center;
 }
 
-#sideBar table {
-    position: center;
-    width: 100%;
+.side-bar table {
+    position: fixed;
+    width: 10%;
     height: 30%;
     border-collapse: collapse;
     text-align: left;
 }
 
-#sideBar table th {
+.side-bar table th {
     padding-left: 30px;
 }
 
-#sideBar table th:hover,
-#sideBar table th:active,
-#sideBar table th:focus {
+.side-bar table th:hover,
+.side-bar table th:active,
+.side-bar table th:focus {
     padding-left: 30px;
     background: #9d9d9d;
 }
 
-#sideBar table th a,
-#sideBar table th a:hover,
-#sideBar table th a:active,
-#sideBar table th a:focus {
+.side-bar table th a,
+.side-bar table th a:hover,
+.side-bar table th a:active,
+.side-bar table th a:focus {
     text-decoration: none;
     font-size: 20px;
     color: #000000;
 }
 
-#searchPanel {
+.search-panel {
     position: fixed;
     top: 0;
     left: 10%;
@@ -54,7 +54,7 @@
     z-index: 100;
 }
 
-#searchPanel input {
+.search-panel input {
     position: absolute;
     top: 20%;
     left: 4%;
@@ -69,9 +69,9 @@
     box-shadow: none;
 }
 
-#searchPanel input:hover,
-#searchPanel input:active,
-#searchPanel input:focus {
+.search-panel input:hover,
+.search-panel input:active,
+.search-panel input:focus {
     position: absolute;
     top: 20%;
     left: 4%;
@@ -86,26 +86,26 @@
     box-shadow: 0 0 15px #999999;
 }
 
-#searchPanel label {
+.search-panel label {
     position: absolute;
     top: 25%;
     text-decoration: none;
 }
 
-#searchPanel div {
+.search-panel div {
     position: absolute;
     top: 25%;
     left: 90%;
 
 }
 
-#searchPanel div a {
+.search-panel div a {
     display: inline-block;
     margin-left: 15px;
     text-decoration: none;
 }
 
-#filterPanel {
+.filter-panel {
     position: fixed;
     top: 5%;
     left: 10%;
@@ -115,21 +115,21 @@
     z-index: 99;
 }
 
-#filterPanel p {
+.filter-panel p {
     position: absolute;
     top: 10%;
     left: 5%;
     font-size: 20px;
 }
 
-#filterPanel #sortBy-Inputs {
+.filter-panel .sort-by-inputs {
     position: absolute;
     top: 50%;
     left: 5%;
     height: 30px;
 }
 
-#filterPanel #sortBy-Inputs > div {
+.filter-panel .sort-by-inputs > div {
     display: inline-block;
     height: 25px;
     width: 240px;
@@ -140,7 +140,7 @@
 
 }
 
-#filterPanel #sortBy-Inputs > div > input {
+.filter-panel .sort-by-inputs > div > input {
     top: 50%;
     margin-bottom: -10px;
     border-radius: 10px;
@@ -151,7 +151,7 @@
     padding-left: 5%;
 }
 
-#filterPanel #sortBy-Inputs > div > button {
+.filter-panel .sort-by-inputs > div > button {
     height: 20px;
     width: 20px;
     border-radius: 100%;
@@ -161,7 +161,7 @@
     background: #fff;
 }
 
-#listsBody {
+.lists-body {
     position: fixed;
     top: 20%;
     left: 10%;
@@ -171,7 +171,7 @@
     border: 1px solid #e8e8e8;
 }
 
-#listsBody table {
+.lists-body table {
     position: center;
     text-align: center;
     border-collapse: collapse;
@@ -179,18 +179,18 @@
     height: 85%;
 }
 
-#listsBody table th {
+.lists-body table th {
     height: 40px;
 }
 
-#listsBody table td {
+.lists-body table td {
     border-bottom: 1px solid #e8e8e8;
     border-top: 1px solid #e8e8e8;
     height: 90px;
     width: 25%;
 }
 
-#pagesNavigationPanel {
+.pages-navigation-panel {
     position: fixed;
     top: 92%;
     height: 5%;
@@ -198,12 +198,12 @@
     padding-left: 5%;
 }
 
-#pagesNavigationPanel > div p {
+.pages-navigation-panel > div p {
     display: inline-block;
     margin: 20px 20px 0 0;
 }
 
-#pagesNavigationPanel > div > p > button {
+.pages-navigation-panel > div > p > button {
     border-radius: 100%;
     font-size: 15px;
     outline: none;
@@ -211,7 +211,7 @@
     background: #fff;
 }
 
-#pagesNavigationPanel input {
+.pages-navigation-panel input {
     width: 40px;
     padding-left: 10px;
     border-radius: 10px;
@@ -220,7 +220,7 @@
 
 }
 
-#pagesNavigationPanel #addPositionButton {
+.pages-navigation-panel #add-position-button {
     position: fixed;
     text-align: center;
     top: 90%;
