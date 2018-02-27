@@ -13,7 +13,7 @@ $(document).ready(function () {
                 $("#vacancies-table").append(vacanciesData)
             })
             .fail(function (jqxhr, textStatus, error) {
-                var err = textStatus + ', ' + error;
+                var err = textStatus + ", " + error;
                 console.log("Request Failed: " + err);
             });
         $("#search-input").on("keyup", function () {
