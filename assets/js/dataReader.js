@@ -16,9 +16,9 @@ $(document).ready(function () {
                 var err = textStatus + ", " + error;
                 console.log("Request Failed: " + err);
             });
-        $("#searchInput").on("keyup", function () {
+        $("#search-input").on("keyup", function () {
             var value = $(this).val().toLowerCase();
-            $("table tr").filter(function (index) {
+            $("#vacancies-table tr").filter(function (index) {
                 if (index > 0) {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 }
