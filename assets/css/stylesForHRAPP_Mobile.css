@@ -16,6 +16,12 @@
 .glyphicon-search {
   cursor: pointer;
 }
+.pages-navigation-panel,
+.navigation {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
 .navigation {
   padding: 0;
   padding-left: 15px;
@@ -95,13 +101,14 @@ input[type="radio"]:checked + .menu-nav-checkbox{
 }
 .content-body > h3 {
   padding: 40px;
+  padding-left: 20px;
 }
 .content-body {
+  padding-left: 20px;
   flex-grow: 1;
 }
 .candidates {
   width: 100%;
-  margin-left: 20px;
 }
 .candidates th,
 .candidates td {
@@ -122,22 +129,51 @@ select {
   border: 1px solid var(--color_border_input);
   border-radius: 10px;
 }
-.select-candidates {
-  border: 1px solid var(--color_border_input);
-  border-radius: 10px;
-  text-indent: 10px;
+.button-add-candidat {
+  position: fixed;
+  right: 30px;
+  bottom: 70px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: var(--bacground_button_add_cand);
+  outline: none;
 }
-select[name="select-vacancies"],
-select[name="select-skills"],
-select[name="select-pay"],
+.button-add-candidat:active {
+  background: var(--bacground_button_add_cand_active);
+}
+.button-add-candidat:before,
+.button-add-candidat:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 1px;
+  border: 2px solid var(--color_plus_button_add_cand);
+  left: 10px;
+  bottom: 23px;
+}
+.button-add-candidat:after {
+  transform: rotate(90deg);
+  bottom: 23px;
+  left: 10px;
+}
+.select-vacancies,
+.select-skills,
+.select-pay,
 .select-candidates {
   width: 100px;
   font-weight: normal;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -40px);
+  transform: translate(-50%);
+  top: -40px;
   color: var(--color_gray_word);
   outline: none;
+  border: 1px solid var(--color_border_input);
+  border-radius: 10px;
+  text-indent: 10px;
 }
 .pages-navigation-panel > div {
   padding: 20px;
@@ -195,7 +231,31 @@ select[name="select-pay"],
   font-size: 80%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .navigation-menu {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navigation-menu {
+    width: 115px;
+  }
+  .navbar-brand,
+  .menu-nav-checkbox {
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 432px) and (max-width: 500px) {
+  .search-input-label {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 432px) {
+  .search-input-label {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 767px) {
   .navbar-brand {
     display: none;
   }
@@ -211,11 +271,14 @@ select[name="select-pay"],
   }
   .search-input-label{
     margin-left: 70px;
-    width: 120px;
+  }
+  .search-panel {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .search-panel > div {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
   .search-input {
     white-space: nowrap;
@@ -250,23 +313,42 @@ select[name="select-pay"],
     padding-left: 3px;
     padding-right: 3px;
   }
-  select[name="select-vacancies"],
-  select[name="select-skills"],
-  select[name="select-pay"],
+  .button-add-candidat {
+    bottom: 35px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+  .button-add-candidat:before,
+  .button-add-candidat:after {
+    width: 24px;
+  }
+  .button-add-candidat:before {
+    left: 8px;
+    bottom: 19px;
+  }
+  .button-add-candidat:after {
+    left: 8px;
+    bottom: 19px;
+  }
+  .select-vacancies,
+  .select-skills,
+  .select-pay,
   .select-candidates {
     width: 30px;
     transition: all .5s;
     height: 20px;
   }
-  select[name="select-vacancies"]:focus,
-  select[name="select-skills"]:focus,
-  select[name="select-pay"]:focus,
-  .select-candidates:focus {
-    width: 100px;
+  .select-skills {
+    left: 28%;
   }
-}
-@media screen and (width: 320px) {
-  select[name="select-pay"] {
-    transform: translate(-50%, -60px);
+  .select-vacancies:focus,
+  .select-skills:focus,
+  .select-pay:focus,
+  .select-candidates:focus {
+    width: 80px;
+  }
+  .pages-navigation-panel > div {
+    padding-left: 5px;
   }
 }

@@ -7,7 +7,7 @@
     <title>HR APP</title>
     <link rel="stylesheet" href="assets/css/color.css">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/stylesForHRAPP.css">
+    <link rel="stylesheet" href="assets/css/stylesForHRAPP_Mobile.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,7 +19,7 @@
   <body>
     <div class="container">
       <div class="row page-wrapper">
-        <div class="col-lg-2 col-md-3 col-sm-3 navigation" >
+        <div class="col-lg-2 col-md-2 col-sm-2 navigation" >
           <div class="container-fluid navigation-menu">
             <div class="navbar navbar-default ">
               <div class="navbar-header header-name">
@@ -61,7 +61,7 @@
             </div>
           </div>
         </div> 
-        <div class="col-lg-10 col-md-9 hr-content">  
+        <div class="col-lg-10 col-md-10 col-sm-10 hr-content">  
           <div class="row">
             <div class="search-panel">
               <label class="search-input-label">
@@ -85,27 +85,15 @@
                 <tr>
                   <th>
                     <span>Vacancies</span>
-                    <select name="select-vacancies">
-                      <option>Java Developer</option>
-                      <option>C++ Developer</option>
-                      <option>PHP Developer</option>
-                    </select>
+                    <input type="text" class="select-vacancies">
                   </th>
                   <th>
                     <span>Skills</span>
-                    <select name="select-skills">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                    </select>
+                    <input type="text" class="select-skills">
                   </th>
                   <th>
                     <span>Pay</span>
-                    <select name="select-pay">
-                      <option>100</option>
-                      <option>200</option>
-                      <option>300</option>
-                    </select>
+                    <input type="text" class="select-pay">
                   </th>
                   <th>
                     <span>Candidates</span>
@@ -152,6 +140,7 @@
                 </tr>
               </tbody>
             </table>
+            <button class="button-add-candidat"></button>
           </div>
           <div class="row pages-navigation-panel">
             <div>
