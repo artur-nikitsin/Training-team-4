@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HR APP Page</title>
+    <link rel="stylesheet" href="assets/css/stylesForHRAPP.css">
+    <link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/dataReader.js"></script>
+</head>
+<body>
+
+<div class="search-panel">
+    <label for="search-input">&#128269;</label>
+    <input id="search-input" class="search-input" type="text" placeholder=" Search for vacancies,candidates...">
+    <div>
+        <a href=""> &#128276; </a>
+        <a href=""> &#8658;</a>
+    </div>
+</div>
+
+<div class="filter-panel">
+
+    <p>Vacancies</p>
+
+    <div class="sort-by-inputs">
+
+        <div><input type="text">
+            <button id="button-to-select-sort-by">&#9660;</button>
+        </div>
+
+        <div><input type="text">
+            <button id="button-to-reset"> &#10006;</button>
+        </div>
+        <div><input type="text">
+            <button id="button-to-reset2"> &#10006;</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="side-bar">
+
+    <p>HR APP</p>
+    <table>
+        <tr>
+            <th><a href="">Interview</a></th>
+        </tr>
+        <tr>
+            <th><a href="">Vacancies</a></th>
+        </tr>
+        <tr>
+            <th><a href="">Candidates</a></th>
+        </tr>
+        <tr>
+            <th><a href="">Managment</a></th>
+        </tr>
+
+
+    </table>
+
+</div>
+
+<div class="lists-body">
+
+    <div class="table-responsive">
+        <table class="table table-hover" id="vacancies-table">
+            <tr>
+                <th>Vacancies</th>
+                <th>Skills</th>
+                <th>Pay</th>
+                <th>Candidates</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="pages-navigation-panel">
+        <div>
+            <p>Rows per page:</p>
+            <input type="text">
+            <p>
+                <button> &#9660;</button>
+            </p>
+            <p>1-10 of 100</p>
+            <p>
+                <button>&#9668;</button>
+            </p>
+            <p>
+                <button> &#9658;</button>
+            </p>
+
+        </div>
+
+
+        <button id="add-position-button">+</button>
+    </div>
+
+
+</div>
+
+
+
+</body>
+
+
+</html>
