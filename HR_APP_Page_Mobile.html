@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="assets/css/color.css">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_Mobile.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/dataReader.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -80,7 +81,7 @@
           </div>
           <div class="row content-body">
             <h3>Vacancies</h3>
-            <table class="candidates">
+            <table class="candidates" id="vacancies-table">
               <thead>
                 <tr>
                   <th>
@@ -102,42 +103,6 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Java Developer</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>View candidates</td>
-                </tr>
-                <tr>
-                  <td>Java Developer</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>View candidates</td>
-                </tr>
-                <tr>
-                  <td>Java Developer</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>View candidates</td>
-                </tr>
-                <tr>
-                  <td>Java Developer</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>View candidates</td>
-                </tr>
-                <tr>
-                  <td>Java Developer</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>View candidates</td>
-                </tr>
-                <tr>
-                  <td>Java Developer</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>View candidates</td>
-                </tr>
               </tbody>
             </table>
             <button class="button-add-candidat"></button>
@@ -160,8 +125,6 @@
         </div>
       </div>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.js"></script>
   </body>
