@@ -16,13 +16,13 @@ $(document).ready(function () {
                 var err = textStatus + ", " + error;
                 console.log("Request Failed: " + err);
             });
-        $("#search-input").on("keyup", function () {
-            var value = $(this).val().toLowerCase();
-            $("#vacancies-table tr").filter(function (index) {
-                if (index > 0) {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                }
-            });
-        });
+        // $("#search-input").on("keyup", function () {
+        //     var value = $(this).val().toLowerCase();
+        //     $("#vacancies-table tr").filter(function (index) {
+        //         if (index > 0) {
+        //             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        //         }
+        //     });
+        // });
     }
 );
