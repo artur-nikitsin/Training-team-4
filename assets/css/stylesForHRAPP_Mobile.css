@@ -30,7 +30,7 @@
 .navigation {
     padding: 0;
 
-    /*padding-left: 0px;*/
+    padding-left: 10px;
 }
 
 .navigation-menu {
@@ -439,5 +439,5 @@ select {
 }
 
 #vacancies-table_length {
-    
+
 }
