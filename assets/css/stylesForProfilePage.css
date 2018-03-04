@@ -2,7 +2,7 @@ body {
     background: rgba(0, 0, 0, 0.3);
 }
 
-#createProfileWindow {
+#create-profile-window {
     position: absolute;
     background: #fff;
     height: 450px;
@@ -13,9 +13,13 @@ body {
     border: 1px solid #000000;
 }
 
-#createProfileWindow p {
+
+
+
+#create-profile-window p {
     position: absolute;
     text-align: center;
+    text-transform: uppercase;
     width: 200px;
     margin-left: -100px;
     left: 50%;
@@ -24,7 +28,7 @@ body {
     color: #000000;
 }
 
-#inputForUserPhoto {
+#input-for-user-photo {
     position: absolute;
     top: 50px;
     left: 50px;
@@ -32,7 +36,7 @@ body {
     width: 250px;
 }
 
-#inputForUserPhoto img {
+#input-for-user-photo img {
     position: absolute;
     top: 50px;
     left: 50%;
@@ -43,7 +47,7 @@ body {
     border: 1px solid #000000;
 }
 
-#inputForUserPhoto #buttonToChangeProfilePhoto {
+#input-for-user-photo #button-to-change-profile-photo {
     position: absolute;
     padding: 5px;
     background: #4cae4c;
@@ -57,7 +61,7 @@ body {
     cursor: pointer;
 }
 
-#inputsForUserData {
+#inputs-for-user-data {
     position: absolute;
     top: 50px;
     left: 300px;
@@ -66,12 +70,12 @@ body {
     width: 350px;
 }
 
-#inputsForUserData div {
+#inputs-for-user-data div {
     margin: 20px;
     width: 340px;
 }
 
-#inputsForUserData div input {
+#inputs-for-user-data div input {
     height: 30px;
     width: 320px;
     margin: 5px;
@@ -82,7 +86,7 @@ body {
     font-size: 20px;
 }
 
-#inputsForUserData div input.correctUserData {
+#inputs-for-user-data div input.correctUserData {
     height: 30px;
     width: 320px;
     margin: 5px;
@@ -93,7 +97,7 @@ body {
     font-size: 20px;
 }
 
-#inputsForUserData div input.incorrectUserData {
+#inputs-for-user-data div input.incorrectUserData {
     height: 30px;
     width: 320px;
     margin: 5px;
@@ -104,8 +108,8 @@ body {
     font-size: 20px;
 }
 
-#inputsForUserData div input:hover,
-#inputsForUserData div input:focus {
+#inputs-for-user-data div input:hover,
+#inputs-for-user-data div input:focus {
     height: 30px;
     width: 320px;
     margin: 5px;
@@ -116,7 +120,7 @@ body {
     font-size: 20px;
 }
 
-#createProfileButton {
+#create-profile-button {
     position: absolute;
     background: #4cae4c;
     top: 370px;
@@ -130,7 +134,7 @@ body {
     cursor: pointer;
 }
 
-#inputForImage {
+#input-for-image {
     display: none;
 }
 
