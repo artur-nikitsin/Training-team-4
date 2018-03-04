@@ -1,14 +1,14 @@
 $(document).ready(function () {
-        $.getJSON('assets/js/data.json')
+        $.getJSON("assets/js/data.json")
             .done(function (data) {
-                var vacanciesData = '';
+                var vacanciesData = "";
                 $.each(data, function (key, value) {
-                    vacanciesData += '<tr>';
-                    vacanciesData += '<td>' + value.vacancy + '</td>';
-                    vacanciesData += '<td>' + value.skill + '</td>';
-                    vacanciesData += '<td>' + value.pay + '</td>';
-                    vacanciesData += '<td>' + value.fullname + '</td>';
-                    vacanciesData += '</tr>';
+                    vacanciesData += "<tr>";
+                    vacanciesData += "<td>" + value.vacancy + "</td>";
+                    vacanciesData += "<td>" + value.skill + "</td>";
+                    vacanciesData += "<td>" + value.pay + "</td>";
+                    vacanciesData += "<td>" + value.fullname + "</td>";
+                    vacanciesData += "</tr>";
                 });
                 $("#vacancies-table").append(vacanciesData)
             })

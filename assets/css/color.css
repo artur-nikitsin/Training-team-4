@@ -1,0 +1,11 @@
+:root {
+  --background_sidebar: #E9E9E9;
+  --white: #FFFFFF;
+  --background_sidebar_hover: #DDDDDD;
+  --color_gray_word: #696866;
+  --color_glyphicon: #747474;
+  --color_border_input: #EDEDED;
+  --bacground_button_add_cand: var(--background_sidebar_hover);
+  --color_plus_button_add_cand: #989897;
+  --bacground_button_add_cand_active: #d3d3d3;
+}
