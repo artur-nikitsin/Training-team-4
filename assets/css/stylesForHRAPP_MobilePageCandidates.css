@@ -1,0 +1,81 @@
+.content-body > .page-candidates > h3 {
+  padding-left: 0;
+}
+.page-candidates-filter-candidates > span {
+  font-weight: bold;
+  font-size: 12px;
+}
+.page-candidates-filter-candidates-input {
+  outline: none;
+  border:1px solid var(--color_border_input);
+  border-radius: 10px;
+  text-indent: 10px;
+  margin-left: 15px;
+}
+.page-candidates-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-candidates-mini-profile {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 22%;
+  min-width: 140px;
+  max-width: 300px;
+  box-shadow: 0 0 10px var(--color_plus_button_add_cand);
+  cursor: pointer;
+}
+.mini-profile-stage-interview {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  padding: 0 5px;
+  font-weight: bold;
+  margin-right: 15px;
+  background: var(--background-stage-interview);
+}
+.page-candidates-mini-profile > img {
+  width: 100%;
+}
+.mini-profile-info {
+  padding: 0 15px;
+  padding-bottom: 10px;
+}
+.mini-profile-info > p {
+  margin-bottom: 3px
+}
+.mini-profile-info >.mini-profile-info-job-applicant {
+  margin-bottom: 1px;
+  color: var(--color_gray_word);
+  font-size: 13px;
+}
+.mini-profile-info-name-candidate {
+  font-weight: bold;
+  color: var(--black);
+}
+.mini-profile-info-name-candidate,
+.mini-profile-info-salary {
+  font-size: 18px;
+}
+.mini-profile-info-date-creation {
+  text-align: right;
+  font-size: 10px;
+  color: var(--color_gray_word);
+}
+@media screen and (max-width: 767px) {
+  .page-candidates-mini-profile {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 486px) {
+  .page-candidates-body {
+    justify-content: space-around;
+  }
+}
