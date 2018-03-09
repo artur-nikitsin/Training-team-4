@@ -1,276 +1,240 @@
 * {
-    font-family: sans-serif;
-    box-sizing: border-box;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
-
 .page-wrapper,
 .navigation-menu,
 .navigation,
 .hr-content {
-    min-height: 100vh;
+  min-height: 100vh;
 }
-
+.stage-interview {
+  width: 100%;
+}
+.page-wrapper {
+  padding-left: 0;
+}
 .navbar-brand {
-    padding-left: 40px;
-    width: 100%;
+  padding-left: 40px;
+  width: 100%;
 }
-
 .menu-nav-label,
 .glyphicon-search {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 .pages-navigation-panel,
 .navigation {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
-
 .navigation {
-    padding: 0;
-    padding-left: 10px;
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  padding-left: 15px;
 }
-
 .navigation-menu {
-    position: fixed;
-    z-index: 1;
-    background: var(--background_sidebar);
-    padding: 0;
-    width: 185px;
-    box-shadow: 4px 0 10px var(--background_sidebar_hover);
+  background: var(--background_sidebar);
+  padding: 0;;
+  box-shadow: 4px 0 10px var(--background_sidebar_hover);
 }
-
 [name$="menu-nav"] {
-    display: none;
+  display: none;
 }
-
 .menu-nav-checkbox {
-    height: 45px;
-    padding-left: 40px;
-    padding-top: 15px;
+  height: 45px;
+  padding-left: 40px;
+  padding-top: 15px;
 }
-
 .responsive-menu {
-    background: var(--background_sidebar);
-    padding: 0;
+  background: var(--background_sidebar);
+  padding: 0;
 }
-
 .responsive-menu label {
-    display: block;
+  display: block;
 }
-
-input[type="radio"]:checked + .menu-nav-checkbox {
-    background: var(--background_sidebar_hover);
+input[type="radio"]:checked + .menu-nav-checkbox{
+  background: var(--background_sidebar_hover);
 }
-
 .navbar-default {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 }
-
 .header-name {
-    float: none;
+  float: none;
 }
 
 .hr-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
 .search-input {
-    font-weight: normal;
-    border: none;
-    width: 300px;
-    outline: none;
-    text-indent: 10px;
-    background: var(--background_sidebar);
+  font-weight: normal;
+  border: none;
+  width: 300px;
+  outline: none;
+  text-indent: 10px;
+  background: var(--background_sidebar);
 }
-
 .search-panel,
 .search-input-label {
-    display: flex;
+  display: flex;
 }
-
 .search-panel {
-    justify-content: space-between;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background: var(--background_sidebar);
-    box-shadow: 0 5px 10px var(--background_sidebar);
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: var(--background_sidebar);
+  box-shadow: 0 5px 10px var(--background_sidebar);
 }
-
 .glyphicon {
-    color: var(--color_glyphicon);
-    font-size: 130%;
+  color: var(--color_glyphicon);
+  font-size: 130%;
 }
-
 .search-panel-notification,
 .search-panel-log-in {
-    margin-left: 15px;
+  margin-left: 15px;
 }
-
 .search-panel-notification:hover,
 .search-panel-log-in:hover,
 .search-panel-notification:focus,
 .search-panel-log-in:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-.content-body > h3 {
-    padding: 40px;
-    padding-left: 20px;
+.content-body > div > h3 {
+  padding: 40px;
+  padding-left: 20px;
 }
-
 .content-body {
-    padding-left: 20px;
-    flex-grow: 1;
+  padding-left: 20px;
+  flex-grow: 1;
 }
-
 .candidates {
-    width: 100%;
+  width: 100%;
 }
-
 .candidates th,
 .candidates td {
-    width: 25%;
+  width: 25%;
 }
-
 .candidates th {
     text-align: center;
     height: 50px;
     position: relative;
 }
-
 .candidates td {
-    height: 55px;
+  height: 55px;
 }
-
 .candidates tr {
-    border-top: 1px solid var(--color_border_input);
-    border-bottom: 1px solid var(--color_border_input);
+  border-top: 1px solid var(--color_border_input);
+  border-bottom: 1px solid var(--color_border_input);
 }
-
 select {
-    border: 1px solid var(--color_border_input);
-    border-radius: 10px;
+  border: 1px solid var(--color_border_input);
+  border-radius: 10px;
 }
-
 .button-add-candidat {
-    position: fixed;
-    right: 30px;
-    bottom: 70px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    background: var(--bacground_button_add_cand);
-    outline: none;
+  position: fixed;
+  right: 30px;
+  bottom: 70px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: var(--bacground_button_add_cand);
+  outline: none;
+  box-shadow: 1px 1px 7px var(--color_plus_button_add_cand);
 }
-
 .button-add-candidat:active {
-    background: var(--bacground_button_add_cand_active);
+  background: var(--bacground_button_add_cand_active);
 }
-
 .button-add-candidat:before,
 .button-add-candidat:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 30px;
-    height: 1px;
-    border: 2px solid var(--color_plus_button_add_cand);
-    left: 10px;
-    bottom: 23px;
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 1px;
+  border: 2px solid var(--color_plus_button_add_cand);
+  left: 10px;
+  bottom: 23px;
 }
-
 .button-add-candidat:after {
-    transform: rotate(90deg);
-    bottom: 23px;
-    left: 10px;
+  transform: rotate(90deg);
+  bottom: 23px;
+  left: 10px;
 }
-
 .select-vacancies,
 .select-skills,
 .select-pay,
 .select-candidates {
-    width: 100px;
-    font-weight: normal;
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%);*/
-    top: -40px;
-    color: var(--color_gray_word);
-    outline: none;
-    border: 1px solid var(--color_border_input);
-    border-radius: 10px;
-    text-indent: 10px;
-
+  width: 100px;
+  font-weight: normal;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 40px;
+  color: var(--color_gray_word);
+  outline: none;
+  border: 1px solid var(--color_border_input);
+  border-radius: 10px;
+  text-indent: 10px;
 }
-
 .pages-navigation-panel > div {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    font-weight: bold;
-    font-size: 80%;
-    color: var(--color_gray_word);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 80%;
+  color: var(--color_gray_word);
 }
-
 .pages-navigation-panel {
-    height: 80px;
+  height: 80px;
 }
-
 .select-quantity select {
-    width: 40px;
-    -webkit-appearance: none;
-    background: transparent;
-    border: none;
+  width: 40px;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
 }
-
 .select-quantity {
-    width: 30px;
-    height: 20px;
-    position: relative;
-    margin-right: 15px;
-    margin-left: 10px;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin-right: 15px;
+  margin-left: 10px;
 }
-
 .select-quantity:before,
 .select-quantity:after {
-    content: '';
-    width: 10px;
-    height: 1px;
-    border: 1px solid var(--color_gray_word);
-    border-radius: 10px;
-    display: block;
-    position: absolute;
-    z-index: -1;
+  content: '';
+  width: 10px;
+  height: 1px;
+  border: 1px solid var(--color_gray_word);
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  z-index: -1;
 }
-
 .select-quantity:before {
-    transform: rotate(45deg);
-    left: 72%;
-    top: 35%;
+  transform: rotate(45deg);
+  left: 72%;
+  top: 35%;
 }
-
 .select-quantity:after {
-    transform: rotate(-45deg);
-    left: 92%;
-    bottom: 55%;
+  transform: rotate(-45deg);
+  left: 92%;
+  bottom: 55%;
 }
-
 .pages-navigation-left-button,
 .pages-navigation-right-button {
-    background: transparent;
-    border: none;
-    outline: none;
-    width: 10px;
-    height: 10px;
-    margin-left: 10px;
-    font-size: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  font-size: 80%;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -281,6 +245,10 @@ select {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand,
+  .menu-nav-checkbox {
+    padding-left: 10px;
+  }
     .navigation-menu {
         width: 115px;
     }
@@ -291,138 +259,116 @@ select {
     }
 
 }
-
 @media screen and (min-width: 432px) and (max-width: 500px) {
-    .search-input-label {
-        width: 200px;
-    }
-
+  .search-input-label {
+    width: 200px;
+  }
 }
-
 @media screen and (max-width: 432px) {
-    .search-input-label {
-        width: 120px;
-    }
+  .search-input-label {
+    width: 120px;
+  }
 }
-
 @media screen and (max-width: 767px) {
-    .navbar-brand {
-        display: none;
-    }
-
-    .hr-content {
-        padding: 0;
-    }
-
-    .navigation-menu,
-    .navigation {
-        min-height: 50px;
-        background: transparent;
-        height: auto;
-        box-shadow: none;
-    }
-
-    .search-input-label {
-        margin-left: 70px;
-    }
-
-    .search-panel {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .search-panel > div {
-        display: flex;
-        padding-bottom: 5px;
-    }
-
-    .search-input {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis
-    }
-
-    .navigation {
-        position: absolute;
-        margin-right: 15px;
-    }
-
-    .navigation,
-    .navigation-menu,
-    .navbar-header {
-        width: 60px;
-    }
-
-    .responsive-menu {
-        width: 200px;
-        border-radius: 10px;
-    }
-
-    .row {
-        margin: 0;
-    }
-
-    .container {
-        padding: 0;
-    }
-
-    .candidates {
-        margin-left: 0;
-    }
-
-    .candidates th,
-    .candidates td {
-        width: auto;
-        padding-left: 3px;
-        padding-right: 3px;
-    }
-
-    .button-add-candidat {
-        bottom: 35px;
-        right: 15px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .button-add-candidat:before,
-    .button-add-candidat:after {
-        width: 24px;
-    }
-
-    .button-add-candidat:before {
-        left: 8px;
-        bottom: 19px;
-    }
-
-    .button-add-candidat:after {
-        left: 8px;
-        bottom: 19px;
-    }
-
-    .select-vacancies,
-    .select-skills,
-    .select-pay,
-    .select-candidates {
-        width: 30px;
-        transition: all .5s;
-        height: 20px;
-    }
-
-    .select-skills {
-        left: 28%;
-    }
-
-    .select-vacancies:focus,
-    .select-skills:focus,
-    .select-pay:focus,
-    .select-candidates:focus {
-        width: 80px;
-    }
-
-    .pages-navigation-panel > div {
-        padding-left: 5px;
-    }
+  .page-wrapper {
+    padding-right: 0;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .hr-content {
+    padding: 0;
+  }
+  .navigation-menu,
+  .navigation {
+    min-height: 50px;
+    background: transparent;
+    height: auto;
+    box-shadow: none;
+  }
+  .search-input-label{
+    margin-left: 70px;
+  }
+  .search-panel {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .search-panel > div {
+    display: flex;
+    padding-bottom: 5px;
+  }
+  .search-input {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .navigation {
+    margin-right: 15px;
+  }
+  .navigation,
+  .navigation-menu,
+  .navbar-header {
+    width: 60px;
+  }
+  .responsive-menu {
+    width: 200px;
+    border-radius: 10px;
+  }
+  .row {
+    margin: 0;
+  }
+  .container {
+    padding: 0;
+  }
+  .candidates {
+    margin-left: 0;
+  }
+  .candidates th,
+  .candidates td {
+    width: auto;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .button-add-candidat {
+    bottom: 35px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+  .button-add-candidat:before,
+  .button-add-candidat:after {
+    width: 24px;
+  }
+  .button-add-candidat:before {
+    left: 8px;
+    bottom: 19px;
+  }
+  .button-add-candidat:after {
+    left: 8px;
+    bottom: 19px;
+  }
+  .select-vacancies,
+  .select-skills,
+  .select-pay,
+  .select-candidates {
+    width: 30px;
+    transition: all .5s;
+    height: 20px;
+  }
+  .select-skills {
+    left: 28%;
+  }
+  .select-vacancies:focus,
+  .select-skills:focus,
+  .select-pay:focus,
+  .select-candidates:focus {
+    width: 80px;
+  }
+  .pages-navigation-panel > div {
+    padding-left: 5px;
+  }
 }
+
 
 .results tr[visible='false'],
 .no-result {
