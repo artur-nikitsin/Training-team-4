@@ -21,23 +21,7 @@ $(document).ready(function () {
                     }
                 );
 
-                // table.on( 'draw', function () {
-                //     console.log( 'Redraw occurred at: '+new Date().getTime() );
-                // } );
 
-
-                // $('#vacancies-table').DataTable(
-                //     {
-                //         "pagingType": "simple_numbers",
-                //         "searching": false,
-                //         "scrollY": true,
-                //         "scrollY": "600px",
-                //         "info": false,
-                //         "lengthMenu": [ 10, 20, 50 ],
-                //         "responsive": true
-                //
-                //     }
-                // );
 
 
             })
