@@ -16,6 +16,13 @@ server.use(restify.plugins.acceptParser(server.acceptable));
 server.use(restify.plugins.queryParser());
 server.use(restify.plugins.bodyParser());
 
+server.get('/\/.*/', restify.plugins.serveStatic({
+        directory: __dirname + "/public/",
+        default: './HR_APP_Page_Mobile.html'
+
+    })
+);
+
 
 server.listen(8070, function () {
     console.log('%s listening at %s', server.name, server.url);
