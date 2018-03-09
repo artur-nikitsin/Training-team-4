@@ -7,15 +7,27 @@
     <title>HR APP</title>
     <link rel="stylesheet" href="assets/css/color.css">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/stylesForHRAPP_Mobile.css">
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageCandidates.css">
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageOneCandidate.css">
+    <link rel="stylesheet" href="assets/css/stylesForHRAPP_Mobile.css">
 
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.css"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="assets/js/dataReader.js"></script>
+    <script src="assets/js/searchScript.js"></script>
+    <!--<script type="text/javascript" charset="utf8"-->
+    <!--src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>-->
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.js"></script>
+    <script src="assets/js/pages-navigation-script.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -33,41 +45,29 @@
                 <a class="navbar-brand" href="#">HR APP</a>
               </div>
               <div class="collapse navbar-collapse responsive-menu" id="responsive-menu">
-                <ul class="nav navbar-menu">
+                <ul class="nav navbar-menu" id="navbar-menu">
                   <li>
-                    <label class="menu-nav-label">
-                      <input type="radio" name="menu-nav" checked>
-                      <div class="menu-nav-checkbox">Interview</div>
-                    </label>
+                      <a href="#" id="Interview" class="menu-nav-checkbox">Interview</a>
                   </li>
                   <li>
-                    <label class="menu-nav-label">
-                      <input type="radio" name="menu-nav">
-                      <div class="menu-nav-checkbox">Vacancies</div>
-                    </label>
+                      <a href="#" id="page-vacancies" class="menu-nav-checkbox">Vacancies</a>
                   </li>
                   <li>
-                    <label class="menu-nav-label">
-                      <input type="radio" name="menu-nav">
-                      <div class="menu-nav-checkbox">Candidates</div>
-                    </label>
+                      <a href="HR_APP_Page_Mobile_Candidates.html" id="page-candidates" class="menu-nav-checkbox">Candidates</a>
                   </li>
                   <li>
-                    <label class="menu-nav-label">
-                      <input type="radio" name="menu-nav">
-                      <div class="menu-nav-checkbox">Managment</div>
-                    </label>
+                      <a href="#" id="Managment" class="menu-nav-checkbox">Managment</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-        </div> 
-        <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 hr-content">  
+        </div>
+        <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 hr-content">
           <div class="row">
             <div class="search-panel">
               <label class="search-input-label">
-                <span class="glyphicon glyphicon-search"></span> 
+                <span class="glyphicon glyphicon-search"></span>
                 <input id="search-input" class="search-input" type="text" placeholder=" Search for vacancies,candidates...">
               </label>
               <div>
@@ -82,97 +82,49 @@
           </div>
           <div class="row content-body">
             <div class="page-vacancies">
-              <h3>Vacancies</h3>
-              <table class="candidates">
-                <thead>
-                  <tr>
-                    <th>
-                      <span>Vacancies</span>
-                      <input type="text" class="select-vacancies">
-                    </th>
-                    <th>
-                      <span>Skills</span>
-                      <input type="text" class="select-skills">
-                    </th>
-                    <th>
-                      <span>Pay</span>
-                      <input type="text" class="select-pay">
-                    </th>
-                    <th>
-                      <span>Candidates</span>
-                      <input type="text" class="select-candidates">
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Java Developer</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>View candidates</td>
-                  </tr>
-                  <tr>
-                    <td>Java Developer</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>View candidates</td>
-                  </tr>
-                  <tr>
-                    <td>Java Developer</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>View candidates</td>
-                  </tr>
-                  <tr>
-                    <td>Java Developer</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>View candidates</td>
-                  </tr>
-                  <tr>
-                    <td>Java Developer</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>View candidates</td>
-                  </tr>
-                  <tr>
-                    <td>Java Developer</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>View candidates</td>
-                  </tr>
-                  <tr>
-                    <td>Java Developer</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>View candidates</td>
-                  </tr>
-                  <tr>
-                    <td>Java Developer</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>View candidates</td>
-                  </tr>
-                  <tr>
-                    <td>Java Developer</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>View candidates</td>
-                  </tr>
-                  <tr>
-                    <td>Java Developer</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>View candidates</td>
-                  </tr>
-                  <tr>
-                    <td>Java Developer</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>View candidates</td>
-                  </tr>
-                </tbody>
-              </table>
+                <h3>Vacancies</h3>
+
+                <table class="candidates" id="vacancies-table">
+                    <thead>
+                    <tr class='table-filters'>
+
+                        <th>
+                            <span>Vacancies</span>
+
+                            <input type="text" class="select-vacancies" id="1">
+                        </th>
+                        <th>
+                            <span>Skills</span>
+
+                            <input type="text" class="select-skills" id="2">
+                        </th>
+                        <th>
+                            <span>Pay</span>
+
+                            <input type="text" class="select-pay" id="3">
+                        </th>
+                        <th>
+                            <span>Candidates</span>
+
+                            <input type="text" class="select-candidates" id="4">
+                        </th>
+
+                    </tr>
+
+
+                    <tr class="no-result">
+                        <td>No results found</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    </thead>
+
+                    <tbody class="table-data">
+
+                    </tbody>
+                </table>
               <button class="button-add-candidat"></button>
             </div>
             <div class="page-candidates">
@@ -272,7 +224,7 @@
                     <option>New</option>
                     <option>CV-Rejected</option>
                     <option>Accept for interview</option>
-                  </select> 
+                  </select>
                   <div class="page-candidates-mini-profile">
                     <img src="images/default_profile.jpg">
                     <div class="mini-profile-info">
@@ -413,27 +365,24 @@
               </div>
             </div>
           </div>
-          <div class="row pages-navigation-panel">
-            <div>
-              <p>Rows per page:</p>
-              <div class="select-quantity">
-                <select>
-                  <option>10</option>
-                  <option>20</option>
-                  <option>30</option>
-                </select>
-              </div>
-              <p>1-10 of 100</p>
-              <button class="glyphicon glyphicon-chevron-left pages-navigation-left-button"></button>
-              <button class="glyphicon glyphicon-chevron-right pages-navigation-right-button"></button>
-            </div>
-          </div>
-        </div>
-      </div>
+          <!--<div class="row pages-navigation-panel">-->
+            <!--<div>-->
+              <!--<p>Rows per page:</p>-->
+              <!--<div class="select-quantity">-->
+                <!--<select>-->
+                  <!--<option>10</option>-->
+                  <!--<option>20</option>-->
+                  <!--<option>30</option>-->
+                <!--</select>-->
+              <!--</div>-->
+              <!--<p>1-10 of 100</p>-->
+              <!--<button class="glyphicon glyphicon-chevron-left pages-navigation-left-button"></button>-->
+              <!--<button class="glyphicon glyphicon-chevron-right pages-navigation-right-button"></button>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.js"></script>
-  </body>
+</div>
+</div>
+
+</body>
 </html>

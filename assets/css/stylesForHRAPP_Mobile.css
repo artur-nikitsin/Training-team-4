@@ -18,7 +18,7 @@
   padding-left: 40px;
   width: 100%;
 }
-.menu-nav-label,
+.menu-nav-checkbox,
 .glyphicon-search {
   cursor: pointer;
 }
@@ -36,26 +36,22 @@
 }
 .navigation-menu {
   background: var(--background_sidebar);
-  padding: 0;;
-  box-shadow: 4px 0 10px var(--background_sidebar_hover);
+  padding: 0;
+  box-shadow: 4px 0 10px var(--background_sidebar_active);
 }
-[name$="menu-nav"] {
-  display: none;
-}
-.menu-nav-checkbox {
+.nav .menu-nav-checkbox {
   height: 45px;
   padding-left: 40px;
   padding-top: 15px;
+  font-weight: bold;
+  color: var(--black);
+}
+.nav .menu-nav-checkbox:hover {
+  background: var(--background_sidebar_hover);
 }
 .responsive-menu {
   background: var(--background_sidebar);
   padding: 0;
-}
-.responsive-menu label {
-  display: block;
-}
-input[type="radio"]:checked + .menu-nav-checkbox{
-  background: var(--background_sidebar_hover);
 }
 .navbar-default {
   background: none;
@@ -63,6 +59,18 @@ input[type="radio"]:checked + .menu-nav-checkbox{
 }
 .header-name {
   float: none;
+}
+.navbar-menu > li:nth-of-type(2) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(3) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(4) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(2) .menu-nav-checkbox {
+  background: var(--background_sidebar_active);
 }
 
 .hr-content {
@@ -119,8 +127,9 @@ input[type="radio"]:checked + .menu-nav-checkbox{
   width: 25%;
 }
 .candidates th {
-  height: 35px;
-  position: relative;
+    text-align: center;
+    height: 50px;
+    position: relative;
 }
 .candidates td {
   height: 55px;
@@ -173,7 +182,7 @@ select {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: -40px;
+  top: 40px;
   color: var(--color_gray_word);
   outline: none;
   border: 1px solid var(--color_border_input);
@@ -238,9 +247,14 @@ select {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-brand,
-  .menu-nav-checkbox {
+  .nav .menu-nav-checkbox {
     padding-left: 10px;
   }
+  .navbar-brand,
+  .nav .menu-nav-checkbox {
+      padding-left: 10px;
+  }
+
 }
 @media screen and (min-width: 432px) and (max-width: 500px) {
   .search-input-label {
@@ -350,4 +364,22 @@ select {
   .pages-navigation-panel > div {
     padding-left: 5px;
   }
+}
+
+
+.results tr[visible='false'],
+.no-result {
+    display: none;
+}
+
+.results tr[visible='true'] {
+    display: table-row;
+}
+
+#vacancies-table_paginate {
+    float: left;
+}
+
+#vacancies-table_length {
+
 }

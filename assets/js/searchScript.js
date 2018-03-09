@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#search-input").keyup(function () {
         var index = 0;
         _this = this;
-        $.each($("#filter-table tbody tr"), function () {
+        $.each($("#vacancies-table tbody tr"), function () {
             if ($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1) {
                 $(this).hide();
             } else {
@@ -22,7 +22,9 @@ $(document).ready(function () {
     });
 
     function filterTable($table) {
-        var $filters = $table.find('.table-filters td');
+
+
+        var $filters = $table.find('.table-filters th');
         var $rows = $table.find('.table-data tr');
         var index = 0;
         $rows.each(function (rowIndex) {
