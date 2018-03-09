@@ -1,0 +1,24 @@
+{
+  "name": "training-team-4",
+  "version": "1.0.0",
+  "description": "hr-app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexKolonitsky/Training-team-4.git"
+  },
+  "author": "team-4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexKolonitsky/Training-team-4/issues"
+  },
+  "homepage": "https://github.com/AlexKolonitsky/Training-team-4#readme",
+  "dependencies": {
+    "mysql": "^2.15.0",
+    "restify": "^6.3.4",
+    "restify-plugins": "^1.6.0"
+  }
+}
