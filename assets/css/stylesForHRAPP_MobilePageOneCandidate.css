@@ -1,0 +1,117 @@
+.page-one-candidate h4 {
+  color: var(--color-h4-grey);
+}
+.navigation-page-one-candidate {
+  padding: 10px;
+  color: var(--color_gray_word);
+  cursor: default;
+}
+.navigation-back-to-vacancies,
+.navigation-back-to-vacancies + span {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.navigation-back-to-vacancies:after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  border-right: none;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid var(--color_gray_word);
+  margin-left: 5px;
+}
+.one-candidate-information {
+  border-top: 1px solid var(--border-information-full);
+  position: relative;
+}
+.mini-and-contact-information {
+  border-right: 1px solid var(--border-information-full);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.one-candidate-information .page-candidates-mini-profile {
+  width: 100%;
+  box-shadow: none;
+}
+.candidate-phone > p:first-of-type,
+.candidate-email > p:first-of-type,
+.candidate-address > p:first-of-type {
+  font-weight: bold;
+  font-size: 11px;
+  margin-bottom: 0;
+  color: var(--color_gray_word);
+}
+.overwriting-p {
+  color: var(--black);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.overwriting {
+  width: 100%;
+  height: calc(100% + 5px);
+  flex-grow: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  resize: none;
+  overflow: hidden;
+  display: none;
+}
+.Experience-h4 {
+  margin: 30px;
+}
+.column-experience-candidate {
+  padding: 20px;
+}
+.row-experience-candidate {
+  display: flex;
+  margin-bottom: 15px;
+}
+.work-time-candidate.overwriting-p {
+  border: 1px solid var(--border-information-full);
+  border-radius: 10px;
+  width: 135px;
+  text-align: center;
+  margin: 15px 15px 5px 0;
+}
+.position-candidate.overwriting-p {
+  color: var(--color_gray_word);
+  font-size: 12px;
+  text-align: right;
+  margin-right: 15px;
+}
+.description-work-candidate {
+  padding: 10px;
+  border: 1px solid var(--border-information-full);
+  border-radius: 10px;
+  margin-left: 15px;
+  color: var(--black);
+}
+.name-organization-candidate {
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.skills-candidate {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-candidate-p {
+  border: 1px solid var(--border-information-full);
+  border-radius: 10px;
+  margin-right: 15px;
+  padding: 0 10px;
+  color: var(--color_gray_word);
+}
+.overwriting {
+  color: var(--black) !important;
+  outline: none;
+  border: 1px solid var(--black) !important;
+  border-radius: 0;
+}

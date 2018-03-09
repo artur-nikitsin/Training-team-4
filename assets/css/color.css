@@ -8,4 +8,8 @@
   --bacground_button_add_cand: var(--background_sidebar_hover);
   --color_plus_button_add_cand: #989897;
   --bacground_button_add_cand_active: #d3d3d3;
+  --black: #000000;
+  --background-stage-interview: #F4F4F4;
+  --border-information-full: #F1F1F1;
+  --color-h4-grey: #777;
 }
