@@ -96,6 +96,58 @@
                 </div>
             </div>
             <div class="row content-body">
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Add new</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <form class="form-horizontal" method="post" action="vacancies">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="vacancies_name">Vacancies:</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" id="vacancies_name" placeholder="Java" name="vacancies_name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="pay">Pay:</label>
+                                            <div class="col-sm-4">
+                                                <input type="number" class="form-control" id="pay" placeholder="Enter number" name="pay">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="skill">Skill:</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" id="skill" placeholder="Skill" name="skill">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="candidate">Candidate:</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" id="candidate" placeholder="Candidate" name="candidate">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-4">
+                                                <button type="submit" class="btn btn-default">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 <div class="page-vacancies">
                     <h3>Vacancies</h3>
 
@@ -140,7 +192,7 @@
 
                         </tbody>
                     </table>
-                    <button class="button-add-candidat"></button>
+                    <button class="button-add-candidat" type="button" data-toggle="modal" data-target="#myModal"></button>
                 </div>
                 <div class="page-candidates">
                     <h3>Candidates</h3>
