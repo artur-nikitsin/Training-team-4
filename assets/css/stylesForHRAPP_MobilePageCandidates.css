@@ -1,81 +1,180 @@
 .content-body > .page-candidates > h3 {
-  padding-left: 0;
+    padding-left: 0;
 }
+
 .page-candidates-filter-candidates > span {
-  font-weight: bold;
-  font-size: 12px;
+    font-weight: bold;
+    font-size: 12px;
 }
+
 .page-candidates-filter-candidates-input {
-  outline: none;
-  border:1px solid var(--color_border_input);
-  border-radius: 10px;
-  text-indent: 10px;
-  margin-left: 15px;
+    outline: none;
+    border: 1px solid var(--color_border_input);
+    border-radius: 10px;
+    text-indent: 10px;
+    margin-left: 15px;
 }
+
 .page-candidates-body {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: flex-start;
-  padding-top: 30px;
-  padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .page-candidates-mini-profile {
-  position: relative;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  width: 22%;
-  min-width: 140px;
-  max-width: 300px;
-  box-shadow: 0 0 10px var(--color_plus_button_add_cand);
-  cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 22%;
+    min-width: 140px;
+    max-width: 300px;
+    box-shadow: 0 0 10px var(--color_plus_button_add_cand);
+    cursor: pointer;
 }
+
 .mini-profile-stage-interview {
-  position: absolute;
-  left: 10px;
-  top: 20px;
-  padding: 0 5px;
-  font-weight: bold;
-  margin-right: 15px;
-  background: var(--background-stage-interview);
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    padding: 0 5px;
+    font-weight: bold;
+    margin-right: 15px;
+    background: var(--background-stage-interview);
 }
+
 .page-candidates-mini-profile > img {
-  width: 100%;
+    width: 100%;
 }
+
 .mini-profile-info {
-  padding: 0 15px;
-  padding-bottom: 10px;
+    padding: 0 15px;
+    padding-bottom: 10px;
 }
+
 .mini-profile-info > p {
-  margin-bottom: 3px
+    margin-bottom: 3px
 }
-.mini-profile-info >.mini-profile-info-job-applicant {
-  margin-bottom: 1px;
-  color: var(--color_gray_word);
-  font-size: 13px;
+
+.mini-profile-info > .mini-profile-info-job-applicant {
+    margin-bottom: 1px;
+    color: var(--color_gray_word);
+    font-size: 13px;
 }
+
 .mini-profile-info-name-candidate {
-  font-weight: bold;
-  color: var(--black);
+    font-weight: bold;
+    color: var(--black);
 }
+
 .mini-profile-info-name-candidate,
 .mini-profile-info-salary {
-  font-size: 18px;
+    font-size: 18px;
 }
+
 .mini-profile-info-date-creation {
-  text-align: right;
-  font-size: 10px;
-  color: var(--color_gray_word);
+    text-align: right;
+    font-size: 10px;
+    color: var(--color_gray_word);
 }
+
+.button-add-candidat {
+    position: fixed;
+    right: 30px;
+    bottom: 70px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: var(--bacground_button_add_cand);
+    outline: none;
+    box-shadow: 1px 1px 7px var(--color_plus_button_add_cand);
+}
+.button-add-candidat:active {
+    background: var(--bacground_button_add_cand_active);
+}
+.button-add-candidat:before,
+.button-add-candidat:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 1px;
+    border: 2px solid var(--color_plus_button_add_cand);
+    left: 10px;
+    bottom: 23px;
+}
+.button-add-candidat:after {
+    transform: rotate(90deg);
+    bottom: 23px;
+    left: 10px;
+}
+
+
 @media screen and (max-width: 767px) {
-  .page-candidates-mini-profile {
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
+    .page-candidates-mini-profile {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
 }
+
 @media screen and (max-width: 486px) {
-  .page-candidates-body {
-    justify-content: space-around;
-  }
+    .page-candidates-body {
+        justify-content: space-around;
+    }
+}
+
+.jplist-panel {
+    float: top;
+    margin-left: 40px;
+    height: 100px;
+}
+
+.jplist-panel select,
+.jplist-panel select:active,
+.jplist-panel select:hover
+{
+    height: 30px;
+    width: 60px;
+    border: 1px solid #9d9d9d;
+    outline: none;
+    border-radius: 2px;
+
+}
+
+
+.jplist-panel div {
+    float: left;
+    margin: 0 5px;
+}
+
+
+.jplist-first,
+.jplist-last {
+    display: none;
+}
+
+
+.jplist-pagination button
+ {
+    float: left;
+    height: 30px;
+    margin: 0 2px;
+    width: 30px;
+    border: 1px solid #9d9d9d;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.jplist-pagination button:hover
+{
+    float: left;
+    height: 30px;
+    margin: 0 2px;
+    width: 30px;
+    border: 1px solid #9d9d9d;
+    border-radius: 2px;
+    background: #989897;
 }

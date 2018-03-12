@@ -134,7 +134,7 @@ select {
   border: 1px solid var(--color_border_input);
   border-radius: 10px;
 }
-.button-add-candidat {
+.button-add-vacancy {
   position: fixed;
   right: 30px;
   bottom: 70px;
@@ -146,11 +146,11 @@ select {
   outline: none;
   box-shadow: 1px 1px 7px var(--color_plus_button_add_cand);
 }
-.button-add-candidat:active {
+.button-add-vacancy:active {
   background: var(--bacground_button_add_cand_active);
 }
-.button-add-candidat:before,
-.button-add-candidat:after {
+.button-add-vacancy:before,
+.button-add-vacancy:after {
   content: '';
   position: absolute;
   display: block;
@@ -160,7 +160,7 @@ select {
   left: 10px;
   bottom: 23px;
 }
-.button-add-candidat:after {
+.button-add-vacancy:after {
   transform: rotate(90deg);
   bottom: 23px;
   left: 10px;

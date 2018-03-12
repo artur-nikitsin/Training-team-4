@@ -115,3 +115,35 @@
   border: 1px solid var(--black) !important;
   border-radius: 0;
 }
+
+.button-edit-user-data {
+  position: fixed;
+  right: 30px;
+  bottom: 70px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+
+  outline: none;
+  box-shadow: 1px 1px 7px
+}
+.button-edit-user-data:active {
+
+}
+.button-edit-user-data:before,
+.button-edit-user-data:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 1px;
+  border: 2px solid
+  left: 10px;
+  bottom: 23px;
+}
+.button-edit-user-data:after {
+  transform: rotate(90deg);
+  bottom: 23px;
+  left: 10px;
+}

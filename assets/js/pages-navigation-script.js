@@ -15,7 +15,8 @@ $(document).ready(function () {
             $('.page-vacancies').show();
             $('.page-candidates').hide();
             $('.one-candidate-information').hide();
-
+            $('.button-edit-user-data').hide();
+            $('.button-add-candidat').hide();
         }
 
         if (a === "page-candidates") {
@@ -23,7 +24,9 @@ $(document).ready(function () {
             $('.page-candidates').show();
             $('.page-vacancies').hide();
             $('.one-candidate-information').hide();
-
+            $('.button-edit-user-data').hide();
+            $('.button-add-vacancy').hide();
+            $('.button-add-candidat').show();
 
             $(".page-candidates-mini-profile").on("click", function () {
 
@@ -31,7 +34,9 @@ $(document).ready(function () {
                 $('.page-candidates').hide();
                 $('.page-vacancies').hide();
                 $('.one-candidate-information').show();
-
+                $('.button-edit-user-data').show();
+                $('.button-add-vacancy').hide();
+                $('.button-add-candidat').hide();
 
             });
 
