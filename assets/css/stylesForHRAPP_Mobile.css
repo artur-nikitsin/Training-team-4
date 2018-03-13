@@ -379,10 +379,65 @@ select {
     display: table-row;
 }
 
-#vacancies-table_paginate {
-    float: left;
+
+/*styles for jplist pagination*/
+
+.jplist-panel-vacancies,
+.jplist-panel-candidates{
+  float: top;
+  margin-left: 40px;
+  padding-top: 40px;
+  height: 100px;
 }
 
-#vacancies-table_length {
+.jplist-panel-vacancies select,
+.jplist-panel-vacancies select:active,
+.jplist-panel-vacancies select:hover,
+.jplist-panel-candidates select,
+.jplist-panel-candidates select:active,
+.jplist-panel-candidates select:hover
+{
+  height: 30px;
+  width: 60px;
+  border: 1px solid #9d9d9d;
+  outline: none;
+  border-radius: 2px;
 
 }
+
+
+.jplist-panel-vacancies div,
+.jplist-panel-candidates div{
+  float: left;
+  margin: 0 5px;
+}
+
+
+.jplist-first,
+.jplist-last {
+  display: none;
+}
+
+
+.jplist-pagination button
+{
+  float: left;
+  height: 30px;
+  margin: 0 2px;
+  width: 30px;
+  border: 1px solid #9d9d9d;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.jplist-pagination button:hover
+{
+  float: left;
+  height: 30px;
+  margin: 0 2px;
+  width: 30px;
+  border: 1px solid #9d9d9d;
+  border-radius: 2px;
+  background: #989897;
+}
+

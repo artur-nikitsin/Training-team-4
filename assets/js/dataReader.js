@@ -3,7 +3,7 @@ $(document).ready(function () {
             .done(function (data) {
                 var vacanciesData = "";
                 $.each(data, function (key, value) {
-                    vacanciesData += "<tr>";
+                    vacanciesData += "<tr class='data-tr-from-json'>";
                     vacanciesData += "<td>" + value.vacancy + "</td>";
                     vacanciesData += "<td>" + value.skill + "</td>";
                     vacanciesData += "<td>" + value.pay + "</td>";
@@ -12,16 +12,20 @@ $(document).ready(function () {
                 });
                 $("#vacancies-table tbody").append(vacanciesData)
 
+// tabledata:
+                // var table = $('#vacancies-table').DataTable(
+                //     {
+                //         "searching": false,
+                //         "lengthMenu": [10, 20, 50],
+                //         "info": false
+                //     }
+                // );
 
-                var table = $('#vacancies-table').DataTable(
-                    {
-                        "searching": false,
-                        "lengthMenu": [10, 20, 50],
-                        "info": false
-                    }
-                );
-
-
+                $('.page-vacancies').jplist({
+                    itemsBox: '.table-data',
+                    itemPath: '.data-tr-from-json',
+                    panelPath: '.jplist-panel-vacancies'
+                });
 
 
             })
@@ -29,6 +33,7 @@ $(document).ready(function () {
                 var err = textStatus + ", " + error;
                 console.log("Request Failed: " + err);
             });
+
         // $("#search-input").on("keyup", function () {
         //     var value = $(this).val().toLowerCase();
         //     $("#vacancies-table tr").filter(function (index) {

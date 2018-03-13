@@ -1,10 +1,12 @@
 $('document').ready(function(){
 
 
-    $('#pagination').jplist({
+    $('#jplist-paginator').jplist({
         itemsBox: '.page-candidates-body',
         itemPath: '.page-candidates-mini-profile',
-        panelPath: '.jplist-panel'
+        panelPath: '.jplist-panel-candidates'
     });
 
+
 });
+

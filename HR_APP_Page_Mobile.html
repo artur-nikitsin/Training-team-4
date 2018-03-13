@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageCandidates.css">
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageOneCandidate.css">
 
-    <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.css"/>
     <!--<link rel="stylesheet" href="assets/css/jplist.core.min.css">-->
 
 
@@ -30,8 +28,7 @@
     <script src="assets/js/searchVacanciesScript.js"></script>
     <script src="assets/js/searchCandidatesScript.js"></script>
     <!--<script type="text/javascript" charset="utf8"-->
-    <!--src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>-->
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.js"></script>
+
     <script src="assets/js/pages-navigation-script.js"></script>
     <script src="assets/js/jplist.core.min.js"></script>
     <script src="assets/js/jplist.pagination-bundle.min.js"></script>
@@ -149,6 +146,43 @@
 
                         </tbody>
                     </table>
+
+
+                    <div class="jplist-panel-vacancies">
+                        <div>
+                            <select
+                                    class="jplist-select"
+                                    data-control-type="items-per-page-select"
+                                    data-control-name="paging"
+                                    data-control-action="paging">
+
+                                <option data-number="10"> 10</option>
+                                <option data-number="20"> 20</option>
+                                <option data-number="50" data-default="10e"> 50</option>
+
+                            </select>
+                        </div>
+                        <div
+                                class="jplist-pagination"
+                                data-prev="<"
+                                data-next=">"
+
+                                data-control-type="pagination"
+                                data-control-name="paging"
+                                data-control-action="paging">
+                        </div>
+
+                        <div
+                                class="jplist-label "
+                                data-type="{start} - {end} of {all}"
+                                data-control-type="pagination-info"
+                                data-control-name="paging"
+                                data-control-action="paging">
+                        </div>
+
+                    </div>
+
+
                     <button class="button-add-vacancy"></button>
                 </div>
 
@@ -171,9 +205,7 @@
                     </div>
 
 
-                    <div id="pagination">
-
-
+                    <div id="jplist-paginator">
                         <div class="page-candidates-body">
 
                             <div class="page-candidates-mini-profile">
@@ -490,7 +522,7 @@
                         </div>
 
 
-                        <div class="jplist-panel">
+                        <div class="jplist-panel-candidates">
                             <div>
                                 <select
                                         class="jplist-select"
@@ -707,7 +739,7 @@
             </div>
         </div>
     </div>
-    
+
 </div>
 </div>
 </div>
