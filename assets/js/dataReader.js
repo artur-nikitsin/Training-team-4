@@ -10,10 +10,10 @@ $(document).ready(function () {
                     vacanciesData += "<td>" + value.fullname + "</td>";
                     vacanciesData += "</tr>";
                 });
-                $("#vacancies-table tbody").append(vacanciesData)
+                $("#vacancies-table tbody").append(vacanciesData)/*TODO: missing semicolons*/
 
 
-                var table = $('#vacancies-table').DataTable(
+                var table = $('#vacancies-table').DataTable( /*TODO: no need to create a variable if you never use it later*/
                     {
                         "searching": false,
                         "lengthMenu": [10, 20, 50],

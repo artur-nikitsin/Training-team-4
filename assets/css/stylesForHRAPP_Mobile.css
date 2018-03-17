@@ -1,4 +1,4 @@
-* {
+* { /*TODO: asterisk is a very slow and dangerous selector, better put these styles on the body*/
   font-family: sans-serif;
   box-sizing: border-box;
 }
@@ -146,7 +146,7 @@ select {
   outline: none;
   box-shadow: 1px 1px 7px var(--color_plus_button_add_cand);
 }
-.button-add-candidat:active {
+.button-add-candidat:active { /*TODO: candidate*/
   background: var(--bacground_button_add_cand_active);
 }
 .button-add-candidat:before,

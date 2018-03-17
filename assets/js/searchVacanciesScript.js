@@ -1,3 +1,4 @@
+/*TODO: this file is a copy of searchCandidatesScript.js */
 $(document).ready(function () {
     $("#search-input").keyup(function () {
         var index = 0;
