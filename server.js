@@ -16,20 +16,10 @@ server.use(restify.plugins.acceptParser(server.acceptable));
 server.use(restify.plugins.queryParser());
 server.use(restify.plugins.bodyParser());
 
-server.get('/\\/static\\/?.*/', restify.plugins.serveStatic({
-        directory: __dirname + "/public/",
-        default: './HR_APP_Page_Mobile.html'
 
-    })
-);
 server.get('/main', function (req, res, next) {
     res.send('hw');
     next();
-});
-
-
-server.listen(8070, function () {
-    console.log('%s listening at %s', server.name, server.url);
 });
 
 //rest api to get all results
@@ -73,3 +63,15 @@ server.del('/vacancies/:id', function (req, res) {
         res.end('Record has been deleted!');
     });
 });
+
+server.listen(8070, function () {
+    console.log('%s listening at %s', server.name, server.url);
+});
+
+server.get('/\/.*/', restify.plugins.serveStatic({
+        directory: __dirname + "/public/",
+        default: './HR_APP_Page_Mobile.html'
+
+    })
+);
+
