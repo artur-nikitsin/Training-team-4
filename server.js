@@ -16,12 +16,16 @@ server.use(restify.plugins.acceptParser(server.acceptable));
 server.use(restify.plugins.queryParser());
 server.use(restify.plugins.bodyParser());
 
-server.get('/\/.*/', restify.plugins.serveStatic({
+server.get('/\\/static\\/?.*/', restify.plugins.serveStatic({
         directory: __dirname + "/public/",
         default: './HR_APP_Page_Mobile.html'
 
     })
 );
+server.get('/main', function (req, res, next) {
+    res.send('hw');
+    next();
+});
 
 
 server.listen(8070, function () {
