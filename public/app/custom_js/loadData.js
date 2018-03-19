@@ -3,22 +3,27 @@ $(function () {
     var pay = $('#pay');
     var skill = $('#skill');
     var candidate = $('#candidate');
+    function showData(data) {
+        var vacanciesData = "";
+        vacanciesData += "<tr>";
+        vacanciesData += "<td>" + data.vacancies_name + "</td>";
+        vacanciesData += "<td>" + data.pay + "</td>";
+        vacanciesData += "<td>" + data.skill + "</td>";
+        vacanciesData += "<td>" + data.candidate + "</td>";
+        vacanciesData += "</tr>";
+        $("#vacancies-table tbody").append(vacanciesData)
+    }
 
     $.ajax({
         type: 'GET',
         url: '/vacancies',
         dataType: 'json',
         success: function (data) {
-            var vacanciesData = "";
+
             $.each(data, function (key, value) {
-                vacanciesData += "<tr>";
-                vacanciesData += "<td>" + value.vacancies_name + "</td>";
-                vacanciesData += "<td>" + value.pay + "</td>";
-                vacanciesData += "<td>" + value.skill + "</td>";
-                vacanciesData += "<td>" + value.candidate + "</td>";
-                vacanciesData += "</tr>";
+                showData(value);
             });
-            $("#vacancies-table tbody").append(vacanciesData)
+
             var table = $('#vacancies-table').DataTable(
                 {
                     "searching": false,
@@ -45,13 +50,7 @@ $(function () {
             url: 'vacancies',
             data: vacancy,
             success: function (newVacancy) {
-                vacanciesData += "<tr>";
-                vacanciesData += "<td>" + newVacancy.vacancies_name + "</td>";
-                vacanciesData += "<td>" + newVacancy.pay + "</td>";
-                vacanciesData += "<td>" + newVacancy.skill + "</td>";
-                vacanciesData += "<td>" + newVacancy.candidate + "</td>";
-                vacanciesData += "</tr>";
-                $("#vacancies-table tbody").append(vacanciesData);
+                showData(newVacancy);
             },
             error: function () {
                 alert('error');
