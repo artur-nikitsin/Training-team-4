@@ -27,6 +27,11 @@
     <!--src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>-->
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.js"></script>
     <script src="assets/js/searchCandidatesScript.js"></script>
+    <script src="assets/js/pages-navigation-script.js"></script>
+    <script src="assets/js/jplist.core.min.js"></script>
+    <script src="assets/js/jplist.pagination-bundle.min.js"></script>
+    <script src="assets/js/candidates-pagination.js"></script>
+
     <![endif]-->
   </head>
   <body>
@@ -80,6 +85,7 @@
             </div>
           </div>
           <div class="row content-body">
+
             <div class="page-candidates">
               <h3>Candidates</h3>
               <div class="page-candidates-filter-candidates">
@@ -92,7 +98,10 @@
                   <option value="3">CV-Accepted</option>
                 </select>
               </div>
+
+            <div id="jplist-paginator">
               <div class="page-candidates-body">
+
                 <div class="page-candidates-mini-profile">
                   <span class="mini-profile-stage-interview">Accepted for interview</span>
                   <img src="images/default_profile.jpg">
@@ -105,20 +114,22 @@
                     <p class="mini-profile-info-date-creation"> 1 day later</p>
                   </div>
                 </div>
+
                 <div class="page-candidates-mini-profile">
-                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <span class="mini-profile-stage-interview">New</span>
                   <img src="images/default_profile.jpg">
                   <div class="mini-profile-info">
                     <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
-                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-name-candidate">Volha Koldaeva</p>
                     <p class="mini-profile-info-salary">
                       116$
                     </p>
                     <p class="mini-profile-info-date-creation"> 1 day later</p>
                   </div>
                 </div>
+
                 <div class="page-candidates-mini-profile">
-                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <span class="mini-profile-stage-interview">New</span>
                   <img src="images/default_profile.jpg">
                   <div class="mini-profile-info">
                     <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
@@ -129,18 +140,20 @@
                     <p class="mini-profile-info-date-creation"> 1 day later</p>
                   </div>
                 </div>
+
                 <div class="page-candidates-mini-profile">
                   <span class="mini-profile-stage-interview">Accepted for interview</span>
                   <img src="images/default_profile.jpg">
                   <div class="mini-profile-info">
                     <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
-                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-name-candidate">Diana Koldaeva</p>
                     <p class="mini-profile-info-salary">
                       160$
                     </p>
                     <p class="mini-profile-info-date-creation"> 1 day later</p>
                   </div>
                 </div>
+
                 <div class="page-candidates-mini-profile">
                   <span class="mini-profile-stage-interview">Accepted for interview</span>
                   <img src="images/default_profile.jpg">
@@ -153,6 +166,7 @@
                     <p class="mini-profile-info-date-creation"> 1 day later</p>
                   </div>
                 </div>
+
                 <div class="page-candidates-mini-profile">
                   <span class="mini-profile-stage-interview">Accepted for interview</span>
                   <img src="images/default_profile.jpg">
@@ -165,7 +179,278 @@
                     <p class="mini-profile-info-date-creation"> 1 day later</p>
                   </div>
                 </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      1160$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">New</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Volha Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      116$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">New</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      110$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Diana Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      160$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      1360$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      116$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      1160$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">New</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Volha Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      116$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">New</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      110$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Diana Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      160$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      1360$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      116$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      1160$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">New</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Volha Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      116$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">New</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      110$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Diana Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      160$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      1360$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
+                <div class="page-candidates-mini-profile">
+                  <span class="mini-profile-stage-interview">Accepted for interview</span>
+                  <img src="images/default_profile.jpg">
+                  <div class="mini-profile-info">
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
+                    <p class="mini-profile-info-salary">
+                      116$
+                    </p>
+                    <p class="mini-profile-info-date-creation"> 1 day later</p>
+                  </div>
+                </div>
+
               </div>
+
+
+              <div class="jplist-panel-candidates">
+                <div>
+                  <select
+                          class="jplist-select"
+                          data-control-type="items-per-page-select"
+                          data-control-name="paging"
+                          data-control-action="paging">
+
+                    <option data-number="10"> 10</option>
+                    <option data-number="20"> 20</option>
+                    <option data-number="50" data-default="10e"> 50</option>
+
+                  </select>
+                </div>
+                <div
+                        class="jplist-pagination"
+                        data-prev="<"
+                        data-next=">"
+
+                        data-control-type="pagination"
+                        data-control-name="paging"
+                        data-control-action="paging">
+                </div>
+
+                <div
+                        class="jplist-label "
+                        data-type="{start} - {end} of {all}"
+                        data-control-type="pagination-info"
+                        data-control-name="paging"
+                        data-control-action="paging">
+                </div>
+
+              </div>
+
+
               <button class="button-add-candidat"></button>
             </div>
           </div>
