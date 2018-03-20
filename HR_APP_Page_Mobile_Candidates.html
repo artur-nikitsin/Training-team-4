@@ -26,6 +26,7 @@
     <!--<script type="text/javascript" charset="utf8"-->
     <!--src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>-->
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.js"></script>
+    <script src="assets/js/searchCandidatesScript.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -83,7 +84,13 @@
               <h3>Candidates</h3>
               <div class="page-candidates-filter-candidates">
                 <span>Filter by</span>
-                <input type="text" class="page-candidates-filter-candidates-input">
+                <select id="page-candidates-filter-candidates-input" class="page-candidates-filter-candidates-input">
+                  <option selected disabled hidden style='display: none' value=''></option> <!--TODO: remove inline style-->
+                  <option value="0">New</option>
+                  <option value="1">Accepted for interview</option>
+                  <option value="2">CV-Rejected</option>
+                  <option value="3">CV-Accepted</option>
+                </select>
               </div>
               <div class="page-candidates-body">
                 <div class="page-candidates-mini-profile">

@@ -2,7 +2,7 @@ window.onload = validateFunction;
 
 function validateFunction() {
 
-    var btn = document.getElementsByTagName('button')[0],
+    var btn = document.getElementsByTagName('button')[0], /*TODO: use jquery here and and in all the file */
         inputs = document.getElementsByTagName('input'),
         numOfInputs = inputs.length;
 
