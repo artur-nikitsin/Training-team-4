@@ -1,5 +1,6 @@
 /*TODO: this file is a copy of searchCandidatesScript.js */
 $(document).ready(function () {
+    var $noResult = $('.no-result');
     $("#search-input").keyup(function () {
         var index = 0;
         _this = this;
@@ -11,20 +12,17 @@ $(document).ready(function () {
                 index++;
             }
             if (index == '0') {
-                $('.no-result').show();
+                $noResult.show();
             } else {
-                $('.no-result').hide();
+                $noResult.hide();
             }
         });
     });
-
     $('.table-filters input').on('input', function () {
         filterTable($(this).parents('table'));
     });
 
     function filterTable($table) {
-
-
         var $filters = $table.find('.table-filters th');
         var $rows = $table.find('.table-data tr');
         var index = 0;
@@ -34,23 +32,21 @@ $(document).ready(function () {
                 if ($filters.eq(colIndex).find('input').val()) {
                     if ($(this).html().toLowerCase().indexOf(
                             $filters.eq(colIndex).find('input').val().toLowerCase()) == -1) {
-                        valid = valid && false;
+                        valid = false;
                     }
                 }
             });
             if (valid === true) {
-                $(this).css('display', '');
+                $(this).show();
                 index++;
             } else {
-                $(this).css('display', 'none');
+                $(this).hide();
             }
         });
         if (index == '0') {
-            $('.no-result').show();
+            $noResult.show();
         } else {
-            $('.no-result').hide();
+            $noResult.hide();
         }
     }
 });
-
-
