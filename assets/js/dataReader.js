@@ -3,25 +3,29 @@ $(document).ready(function () {
             .done(function (data) {
                 var vacanciesData = "";
                 $.each(data, function (key, value) {
-                    vacanciesData += "<tr>";
+                    vacanciesData += "<tr class='data-tr-from-json'>";
                     vacanciesData += "<td>" + value.vacancy + "</td>";
                     vacanciesData += "<td>" + value.skill + "</td>";
                     vacanciesData += "<td>" + value.pay + "</td>";
                     vacanciesData += "<td>" + value.fullname + "</td>";
                     vacanciesData += "</tr>";
                 });
-                $("#vacancies-table tbody").append(vacanciesData)/*TODO: missing semicolons*/
+                $("#vacancies-table tbody").append(vacanciesData)
 
+// tabledata:
+                // var table = $('#vacancies-table').DataTable(
+                //     {
+                //         "searching": false,
+                //         "lengthMenu": [10, 20, 50],
+                //         "info": false
+                //     }
+                // );
 
-                var table = $('#vacancies-table').DataTable( /*TODO: no need to create a variable if you never use it later*/
-                    {
-                        "searching": false,
-                        "lengthMenu": [10, 20, 50],
-                        "info": false
-                    }
-                );
-
-
+                $('.page-vacancies').jplist({
+                    itemsBox: '.table-data',
+                    itemPath: '.data-tr-from-json',
+                    panelPath: '.jplist-panel-vacancies'
+                });
 
 
             })
