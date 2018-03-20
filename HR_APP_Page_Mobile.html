@@ -1,15 +1,21 @@
+<!--TODO: rename all the files to use dashes instead of underscores and no capslock names-->
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HR APP</title>
     <link rel="stylesheet" href="assets/css/color.css">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet"><!--TODO: if you have started using rel attribute before href than do it foe all the css files-->
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageCandidates.css">
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageOneCandidate.css">
+
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_Mobile.css">
+    <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageCandidates.css">
+    <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageOneCandidate.css">
+
     <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">-->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.css"/>
     <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">-->
@@ -18,17 +24,18 @@
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.js"></script>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <script src="assets/js/dataReader.js"></script>
-    <script src="assets/js/searchScript.js"></script>
+    <script src="assets/js/searchVacanciesScript.js"></script>
+    <script src="assets/js/searchCandidatesScript.js"></script>
     <!--<script type="text/javascript" charset="utf8"-->
     <!--src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>-->
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.js"></script>
-
+    
 
     <![endif]-->
 </head>
@@ -66,8 +73,10 @@
                     </div>
                 </div>
             </div>
+          </div>
         </div>
         <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 hr-content">
+
             <div class="row">
                 <div class="search-panel">
                     <label class="search-input-label">
@@ -89,6 +98,7 @@
                 <div class="page-vacancies">
                     <h3>Vacancies</h3>
 
+
                     <table class="candidates" id="vacancies-table">
                         <thead>
                         <tr class='table-filters'>
@@ -96,26 +106,26 @@
                             <th>
                                 <span>Vacancies</span>
 
-                                <input type="text" class="select-vacancies" id="1">
+
+                                <input type="text" class="select-vacancies" id="1"><!--TODO: looks like spans above should be a labels for these inputs-->
                             </th>
                             <th>
                                 <span>Skills</span>
 
-                                <input type="text" class="select-skills" id="2">
+                                <input type="text" class="select-skills" id="2"><!--TODO: looks like spans above should be a labels for these inputs-->
                             </th>
                             <th>
                                 <span>Pay</span>
 
-                                <input type="text" class="select-pay" id="3">
+                                <input type="text" class="select-pay" id="3"><!--TODO: looks like spans above should be a labels for these inputs-->
                             </th>
                             <th>
                                 <span>Candidates</span>
 
-                                <input type="text" class="select-candidates" id="4">
+                                <input type="text" class="select-candidates" id="4"><!--TODO: looks like spans above should be a labels for these inputs-->
                             </th>
 
                         </tr>
-
 
                         <tr class="no-result">
                             <td>No results found</td>
@@ -125,7 +135,7 @@
                         </tr>
 
                         </thead>
-
+                      
                         <tbody class="table-data">
 
                         </tbody>
@@ -135,6 +145,7 @@
             </div>
 
         </div>
+
     </div>
 </div>
 

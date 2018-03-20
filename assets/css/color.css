@@ -1,17 +1,17 @@
 :root {
-  --background_sidebar: #E9E9E9;
-  --white: #FFFFFF;
+  --background_sidebar: #E9E9E9;/*TODO: use lowercase colors HEX codes*/
+  --white: #FFFFFF;/*TODO: use lowercase colors HEX codes*/
   --background_sidebar_hover: #e3e3e3;
-  --background_sidebar_active: #DDDDDD;
+  --background_sidebar_active: #DDDDDD;  /*TODO: #ddd*/
   --color_gray_word: #696866;
   --color_glyphicon: #747474;
-  --color_border_input: #EDEDED;
+  --color_border_input: #EDEDED;/*TODO: use lowercase colors HEX codes*/
   --bacground_button_add_cand: var(--background_sidebar_active);
   --color_plus_button_add_cand: #989897;
-  --bacground_button_add_cand_active: #d3d3d3;
+  --bacground_button_add_cand_active: #d3d3d3;/*TODO: like here*/
   --black: #000000;
-  --background-stage-interview: #F4F4F4;
-  --border-information-full: #F1F1F1;
-  --color-h4-grey: #777;
+  --background-stage-interview: #F4F4F4;/*TODO: use lowercase colors HEX codes*/
+  --border-information-full: #F1F1F1;/*TODO: use lowercase colors HEX codes*/
+  --color-h4-grey: #777;/*TODO: use lowercase colors HEX codes*/
   --color-green: #28A745;
 }
