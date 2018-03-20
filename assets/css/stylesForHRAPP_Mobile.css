@@ -14,11 +14,20 @@
 .page-wrapper {
   padding-left: 0;
 }
+
+.stage-interview {
+  width: 100%;
+}
+.page-wrapper {
+  padding-left: 0;
+}
+
 .navbar-brand {
   padding-left: 40px;
   width: 100%;
 }
-.menu-nav-label,
+
+.menu-nav-checkbox,
 .glyphicon-search {
   cursor: pointer;
 }
@@ -36,33 +45,44 @@
 }
 .navigation-menu {
   background: var(--background_sidebar);
-  padding: 0;;
-  box-shadow: 4px 0 10px var(--background_sidebar_hover);
+
+  padding: 0;
+  box-shadow: 4px 0 10px var(--background_sidebar_active);
 }
-[name$="menu-nav"] {
-  display: none;
+.nav .menu-nav-checkbox {
+    height: 45px;
+    padding-left: 40px;
+    padding-top: 15px;
+  font-weight: bold;
+  color: var(--black);
 }
-.menu-nav-checkbox {
-  height: 45px;
-  padding-left: 40px;
-  padding-top: 15px;
+.nav .menu-nav-checkbox:hover {
+  background: var(--background_sidebar_hover);
+
 }
 .responsive-menu {
   background: var(--background_sidebar);
   padding: 0;
 }
-.responsive-menu label {
-  display: block;
-}
-input[type="radio"]:checked + .menu-nav-checkbox{
-  background: var(--background_sidebar_hover);
-}
+
 .navbar-default {
   background: none;
   border: none;
 }
 .header-name {
   float: none;
+}
+.navbar-menu > li:nth-of-type(2) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(3) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(4) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(2) .menu-nav-checkbox {
+  background: var(--background_sidebar_active);
 }
 
 .hr-content {
@@ -104,8 +124,9 @@ input[type="radio"]:checked + .menu-nav-checkbox{
   text-decoration: none;
 }
 .content-body > div > h3 {
-  padding: 40px;
-  padding-left: 20px;
+
+    padding: 40px;
+    padding-left: 20px;
 }
 .content-body {
   padding-left: 20px;
@@ -135,19 +156,17 @@ select {
   border-radius: 10px;
 }
 .button-add-candidat {
-  position: fixed;
-  right: 30px;
-  bottom: 70px;
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 50%;
-  background: var(--bacground_button_add_cand);
-  outline: none;
+
+    position: fixed;
+    right: 30px;
+    bottom: 70px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: var(--bacground_button_add_cand);
+    outline: none;
   box-shadow: 1px 1px 7px var(--color_plus_button_add_cand);
-}
-.button-add-candidat:active { /*TODO: candidate*/
-  background: var(--bacground_button_add_cand_active);
 }
 .button-add-candidat:before,
 .button-add-candidat:after {
@@ -237,27 +256,16 @@ select {
   font-size: 80%;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .navigation-menu {
-        width: 150px;
-    }
-
-}
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-brand,
-  .menu-nav-checkbox {
+  .nav .menu-nav-checkbox {
     padding-left: 10px;
   }
-    .navigation-menu {
-        width: 115px;
-    }
-
-    .navbar-brand,
-    .menu-nav-checkbox {
-        padding-left: 10px;
-    }
-
+  .navbar-brand,
+  .nav .menu-nav-checkbox {
+      padding-left: 10px;
+  }
 }
 @media screen and (min-width: 432px) and (max-width: 500px) {
   .search-input-label {

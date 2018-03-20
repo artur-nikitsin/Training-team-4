@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HR APP</title>
     <link rel="stylesheet" href="assets/css/color.css">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">  <!--TODO: if you have started using rel attribute before href than do it foe all the css files-->
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet"><!--TODO: if you have started using rel attribute before href than do it foe all the css files-->
+    <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageCandidates.css">
+    <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageOneCandidate.css">
+
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_Mobile.css">
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageCandidates.css">
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageOneCandidate.css">
 
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.css"/>
     <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">-->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.css"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,379 +35,118 @@
     <!--<script type="text/javascript" charset="utf8"-->
     <!--src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>-->
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.js"></script>
-    <script src="assets/js/pages-navigation-script.js"></script>
+    
+
     <![endif]-->
-  </head>
-  <body>
-    <div class="container-fluid page-wrapper">
-      <div class="row page-wrapper">
-        <div class="col-lg-2 col-md-2 col-sm-2 navigation" >
-          <div class="container-fluid navigation-menu">
-            <div class="navbar navbar-default ">
-              <div class="navbar-header header-name">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">HR APP</a>
-              </div>
-              <div class="collapse navbar-collapse responsive-menu" id="responsive-menu">
-                <ul class="nav navbar-menu" id="navbar-menu">
-                  <li>
-                    <label class="menu-nav-label">
-                      <input type="radio" name="menu-nav" checked>
-                      <div id="Interview" class="menu-nav-checkbox">Interview</div> <!--TODO: block elements are not allowed to be inside inline elements. Use span here instead-->
-                    </label>
-                  </li>
-                  <li>
-                    <label class="menu-nav-label">
-                      <input type="radio" name="menu-nav">
-                      <div  id="page-vacancies" class="menu-nav-checkbox">Vacancies</div> <!--TODO: block elements are not allowed to be inside inline elements. Use span here instead-->
-                    </label>
-                  </li>
-                  <li>
-                    <label class="menu-nav-label">
-                      <input type="radio" name="menu-nav">
-                      <div  id="page-candidates" class="menu-nav-checkbox">Candidates</div> <!--TODO: block elements are not allowed to be inside inline elements. Use span here instead-->
-                    </label>
-                  </li>
-                  <li>
-                    <label class="menu-nav-label">
-                      <input type="radio" name="menu-nav">
-                      <div id="Managment" class="menu-nav-checkbox">Managment</div> <!--TODO: block elements are not allowed to be inside inline elements. Use span here instead-->
-                    </label>
-                  </li>
-                </ul>
-              </div>
+</head>
+<body>
+<div class="container-fluid page-wrapper">
+    <div class="row page-wrapper">
+        <div class="col-lg-2 col-md-2 col-sm-2 navigation">
+            <div class="container-fluid navigation-menu">
+                <div class="navbar navbar-default ">
+                    <div class="navbar-header header-name">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#responsive-menu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">HR APP</a>
+                    </div>
+                    <div class="collapse navbar-collapse responsive-menu" id="responsive-menu">
+                        <ul class="nav navbar-menu" id="navbar-menu">
+                            <li>
+                                <a href="#" id="Interview" class="menu-nav-checkbox">Interview</a>
+                            </li>
+                            <li>
+                                <a href="#" id="page-vacancies" class="menu-nav-checkbox">Vacancies</a>
+                            </li>
+                            <li>
+                                <a href="HR_APP_Page_Mobile_Candidates.html" id="page-candidates"
+                                   class="menu-nav-checkbox">Candidates</a>
+                            </li>
+                            <li>
+                                <a href="#" id="Managment" class="menu-nav-checkbox">Managment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
         <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 hr-content">
-          <div class="row">
-            <div class="search-panel">
-              <label class="search-input-label">
-                <span class="glyphicon glyphicon-search"></span>
-                <input id="search-input" class="search-input" type="text" placeholder=" Search for vacancies,candidates...">
-              </label>
-              <div>
-                  <a href="#" class="search-panel-notification">
-                    <span class="glyphicon glyphicon-bell"></span>
-                  </a>
-                  <a href="#" class="search-panel-log-in">
-                    <span class="glyphicon glyphicon-log-in"></span>
-                  </a>
-              </div>
+
+            <div class="row">
+                <div class="search-panel">
+                    <label class="search-input-label">
+                        <span class="glyphicon glyphicon-search"></span>
+                        <input id="search-input" class="search-input" type="text"
+                               placeholder=" Search for vacancies,candidates...">
+                    </label>
+                    <div>
+                        <a href="#" class="search-panel-notification">
+                            <span class="glyphicon glyphicon-bell"></span>
+                        </a>
+                        <a href="#" class="search-panel-log-in">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row content-body">
-            <div class="page-vacancies">
-                <h3>Vacancies</h3>
-
-                <table class="candidates" id="vacancies-table">
-                    <thead>
-                    <tr class='table-filters'>
-
-                        <th>
-                            <span>Vacancies</span>
-
-                            <input type="text" class="select-vacancies" id="1"><!--TODO: looks like spans above should be a labels for these inputs-->
-                        </th>
-                        <th>
-                            <span>Skills</span>
-
-                            <input type="text" class="select-skills" id="2"><!--TODO: looks like spans above should be a labels for these inputs-->
-                        </th>
-                        <th>
-                            <span>Pay</span>
-
-                            <input type="text" class="select-pay" id="3"><!--TODO: looks like spans above should be a labels for these inputs-->
-                        </th>
-                        <th>
-                            <span>Candidates</span>
-
-                            <input type="text" class="select-candidates" id="4"><!--TODO: looks like spans above should be a labels for these inputs-->
-                        </th>
-
-                    </tr>
+            <div class="row content-body">
+                <div class="page-vacancies">
+                    <h3>Vacancies</h3>
 
 
-                    <tr class="no-result">
-                        <td>No results found</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    <table class="candidates" id="vacancies-table">
+                        <thead>
+                        <tr class='table-filters'>
 
-                    </thead>
+                            <th>
+                                <span>Vacancies</span>
 
-                    <tbody class="table-data">
 
-                    </tbody>
-                </table>
-              <button class="button-add-candidat"></button>
+                                <input type="text" class="select-vacancies" id="1"><!--TODO: looks like spans above should be a labels for these inputs-->
+                            </th>
+                            <th>
+                                <span>Skills</span>
+
+                                <input type="text" class="select-skills" id="2"><!--TODO: looks like spans above should be a labels for these inputs-->
+                            </th>
+                            <th>
+                                <span>Pay</span>
+
+                                <input type="text" class="select-pay" id="3"><!--TODO: looks like spans above should be a labels for these inputs-->
+                            </th>
+                            <th>
+                                <span>Candidates</span>
+
+                                <input type="text" class="select-candidates" id="4"><!--TODO: looks like spans above should be a labels for these inputs-->
+                            </th>
+
+                        </tr>
+
+                        <tr class="no-result">
+                            <td>No results found</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        </thead>
+                      
+                        <tbody class="table-data">
+
+                        </tbody>
+                    </table>
+                    <button class="button-add-candidat"></button>
+                </div>
             </div>
-            <div class="page-candidates">
-              <h3>Candidates</h3>
-              <div class="page-candidates-filter-candidates">
-                <span>Filter by</span>
-                <select id="page-candidates-filter-candidates-input" class="page-candidates-filter-candidates-input">
-                  <option selected disabled hidden style='display: none' value=''></option> <!--TODO: remove inline style-->
-                  <option value="0">New</option>
-                  <option value="1">Accepted for interview</option>
-                  <option value="2">CV-Rejected</option>
-                  <option value="3">CV-Accepted</option>
-                </select>
-              </div>
-              <div class="page-candidates-body">
-                <div class="page-candidates-mini-profile">
-                  <span class="mini-profile-stage-interview">Accepted for interview</span>
-                  <img src="images/default_profile.jpg">
-                  <div class="mini-profile-info">
-                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
-                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
-                    <p class="mini-profile-info-salary">
-                      1160$
-                    </p>
-                    <p class="mini-profile-info-date-creation"> 1 day later</p>
-                  </div>
-                </div>
-                <div class="page-candidates-mini-profile">
-                  <span class="mini-profile-stage-interview">New</span>
-                  <img src="images/default_profile.jpg">
-                  <div class="mini-profile-info">
-                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p> <!--TODO: read about BEM for better nested names-->
-                    <p class="mini-profile-info-name-candidate">Volha Koldaeva</p>
-                    <p class="mini-profile-info-salary">
-                      116$
-                    </p>
-                    <p class="mini-profile-info-date-creation"> 1 day later</p>
-                  </div>
-                </div>
-                <div class="page-candidates-mini-profile">
-                  <span class="mini-profile-stage-interview">New</span>
-                  <img src="images/default_profile.jpg">
-                  <div class="mini-profile-info">
-                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
-                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
-                    <p class="mini-profile-info-salary">
-                      110$
-                    </p>
-                    <p class="mini-profile-info-date-creation"> 1 day later</p>
-                  </div>
-                </div>
-                <div class="page-candidates-mini-profile">
-                  <span class="mini-profile-stage-interview">Accepted for interview</span>
-                  <img src="images/default_profile.jpg">
-                  <div class="mini-profile-info">
-                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
-                    <p class="mini-profile-info-name-candidate">Diana Koldaeva</p>
-                    <p class="mini-profile-info-salary">
-                      160$
-                    </p>
-                    <p class="mini-profile-info-date-creation"> 1 day later</p>
-                  </div>
-                </div>
-                <div class="page-candidates-mini-profile">
-                  <span class="mini-profile-stage-interview">Accepted for interview</span>
-                  <img src="images/default_profile.jpg">
-                  <div class="mini-profile-info">
-                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
-                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
-                    <p class="mini-profile-info-salary">
-                      1360$
-                    </p>
-                    <p class="mini-profile-info-date-creation"> 1 day later</p>
-                  </div>
-                </div>
-                <div class="page-candidates-mini-profile">
-                  <span class="mini-profile-stage-interview">Accepted for interview</span>
-                  <img src="images/default_profile.jpg">
-                  <div class="mini-profile-info">
-                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
-                    <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
-                    <p class="mini-profile-info-salary">
-                      116$
-                    </p>
-                    <p class="mini-profile-info-date-creation"> 1 day later</p>
-                  </div>
-                </div>
-              </div>
-              <button class="button-add-candidat"></button>
-            </div>
-            <div class="container-fluid page-one-candidate">
-              <div class="row navigation-page-one-candidate">
-                <span class="navigation-back-to-vacancies">
-                  vacancies
-                </span>
-                <span>
-                  Some name
-                </span>
-              </div>
-              <div class="row one-candidate-information">
-                <div class="col-lg-3 col-md-4 col-sm-4 mini-and-contact-information">
-                  <select class="stage-interview">
-                    <option>New</option>
-                    <option>CV-Rejected</option>
-                    <option>Accept for interview</option>
-                  </select>
-                  <div class="page-candidates-mini-profile">
-                    <img src="images/default_profile.jpg">
-                    <div class="mini-profile-info">
-                      <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
-                      <p class="mini-profile-info-name-candidate">Alexandra Koldaeva</p>
-                      <p class="mini-profile-info-salary">
-                        1160$
-                      </p>
-                      <p class="mini-profile-info-date-creation"> 1 day later</p>
-                    </div>
-                  </div>
-                  <div class="candidate-contact-information">
-                    <h4>Contact information</h4>
-                    <div class="candidate-phone">
-                      <p>Telephone:</p>
-                      <p class="overwriting-p">
-                        +44-1234-123-123
-                        <textarea class="textarea-for-change-phone overwriting">+44-1234-123-123</textarea><!--TODO: should be an input-->
-                      </p>
-                    </div>
-                    <div class="candidate-email">
-                      <p>E-mail:</p>
-                      <p class="overwriting-p">
-                        some_email@gmail.com
-                        <textarea class="textarea-for-change-email overwriting">some_email@gmail.com</textarea><!--TODO: should be an input-->
-                      </p>
-                    </div>
-                    <div class="candidate-address">
-                      <p>Address:</p>
-                      <p class="overwriting-p">
-                        735 High Road, N12 OUS, Lonn, UK
-                        <textarea class="textarea-for-change-address overwriting">735 High Road, N12 OUS, Lonn, UK</textarea><!--TODO: should be an input-->
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-9 col-lg-offset-3 col-md-8 col-md-offset-4 experience-and-skills">
-                  <h4 class="Experience-h4">Experience</h4>
-                  <div class="column-experience-candidate">
-                    <div class="row-experience-candidate">
-                      <div class="date-position-candidate">
-                        <p class="work-time-candidate overwriting-p">Apr 2015 - Apr 2015
-                          <textarea class="work-time-candidate-textarea overwriting">Apr 2015 - Apr 2015</textarea><!--TODO: should be an input-->
-                        </p>
-                        <p class="position-candidate overwriting-p">
-                          Senior Java Developer
-                          <textarea class="position-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
-                        </p>
-                      </div>
-                      <div class="description-work-candidate">
-                        <p class="name-organization-candidate overwriting-p">
-                          Belhard
-                          <textarea class="name-organization-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
-                        </p>
-                        <p class="description-duties overwriting-p">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                          <textarea class="description-duties-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
-                        </p>
-                      </div>
-                    </div>
-                    <div class="row-experience-candidate">
-                      <div class="date-position-candidate">
-                        <p class="work-time-candidate overwriting-p">Apr 2015 - Now
-                          <textarea class="work-time-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
-                        </p>
-                        <p class="position-candidate overwriting-p">
-                          Senior Java Developer
-                          <textarea class="position-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
-                        </p>
-                      </div>
-                      <div class="description-work-candidate">
-                        <p class="name-organization-candidate overwriting-p">
-                          Belhard
-                          <textarea class="name-organization-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
-                        </p>
-                        <p class="description-duties overwriting-p">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                          <textarea class="description-duties-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
-                        </p>
-                      </div>
-                    </div>
-                    <div class="row-experience-candidate">
-                      <div class="date-position-candidate">
-                        <p class="work-time-candidate overwriting-p">Apr 2015 - Now
-                          <textarea class="work-time-candidate-textarea overwriting">Apr 2015 - Now</textarea>
-                        </p>
-                        <p class="position-candidate overwriting-p">
-                          Senior Java Developer
-                          <textarea class="position-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
-                        </p>
-                      </div>
-                      <div class="description-work-candidate">
-                        <p class="name-organization-candidate overwriting-p">
-                          Belhard
-                          <textarea class="name-organization-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
-                        </p>
-                        <p class="description-duties overwriting-p">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                          <textarea class="description-duties-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skills-candidate">
-                    <p class="skill-candidate-p overwriting-p">
-                      Java
-                      <textarea class="skill-candidate-p overwriting">Java</textarea><!--TODO: should be an input-->
-                    </p>
-                    <p class="skill-candidate-p overwriting-p">
-                      Java
-                      <textarea class="skill-candidate-p overwriting">Java</textarea><!--TODO: should be an input-->
-                    </p>
-                    <p class="skill-candidate-p overwriting-p">
-                      Java
-                      <textarea class="skill-candidate-p overwriting">Java</textarea><!--TODO: should be an input-->
-                    </p>
-                    <p class="skill-candidate-p overwriting-p">
-                      Java
-                      <textarea class="skill-candidate-p overwriting">Java</textarea><!--TODO: should be an input-->
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--<div class="row pages-navigation-panel">-->
-            <!--<div>-->
-              <!--<p>Rows per page:</p>-->
-              <!--<div class="select-quantity">-->
-                <!--<select>-->
-                  <!--<option>10</option>-->
-                  <!--<option>20</option>-->
-                  <!--<option>30</option>-->
-                <!--</select>-->
-              <!--</div>-->
-              <!--<p>1-10 of 100</p>-->
-              <!--<button class="glyphicon glyphicon-chevron-left pages-navigation-left-button"></button>-->
-              <!--<button class="glyphicon glyphicon-chevron-right pages-navigation-right-button"></button>-->
-            <!--</div>-->
-        <!--</div>-->
+
+        </div>
+
     </div>
-</div>
 </div>
 
 </body>
