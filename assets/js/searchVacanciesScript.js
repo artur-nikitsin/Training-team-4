@@ -1,3 +1,4 @@
+/*TODO: this file is a copy of searchCandidatesScript.js */
 $(document).ready(function () {
     var $noResult = $('.no-result');
     $("#search-input").keyup(function () {

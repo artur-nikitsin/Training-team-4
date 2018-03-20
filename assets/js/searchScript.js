@@ -1,18 +1,19 @@
+/*TODO: this file is a copy of searchCandidatesScript.js */
 $(document).ready(function () {
     $("#search-input").keyup(function () {
         var index = 0;
         _this = this;
-        $.each($("#vacancies-table tbody tr"), function () {
+        $.each($("#vacancies-table tbody tr"), function () { //TODO: use $("#vacancies-table").find("tbody tr") instead and put search for that element outside the trigger
             if ($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1) {
                 $(this).hide();
             } else {
                 $(this).show();
                 index++;
             }
-            if (index == '0') {
-                $('.no-result').show();
+            if (index == '0') { /*TODO: use === */
+                $('.no-result').show(); /*TODO: put the jquery element searches outside the event trigger. No need to search for them on each keyup. Search for in once outside that trigger, put in the variable and use that variable here */
             } else {
-                $('.no-result').hide();
+                $('.no-result').hide(); /*TODO: put the jquery element searches outside the event trigger. No need to search for them on each keyup. Search for in once outside that trigger, put in the variable and use that variable here */
             }
         });
     });
@@ -44,7 +45,7 @@ $(document).ready(function () {
                 $(this).css('display', 'none');
             }
         });
-        if (index == '0') {
+        if (index == '0') { /*TODO: use === */
             $('.no-result').show();
         } else {
             $('.no-result').hide();

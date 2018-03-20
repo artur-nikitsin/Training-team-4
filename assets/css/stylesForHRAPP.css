@@ -1,4 +1,4 @@
-
+/*TODO: remove empty lines*/
 
 .side-bar {
     position: fixed;
@@ -7,7 +7,7 @@
     width: 10%;
     height: 100%;
     background: #e8e8e8;
-    box-shadow: 0 0 15px #999999;
+    box-shadow: 0 0 15px #999999;/*TODO: #999 and use the colors variables as you already started to using them*/
     z-index: 100;
 }
 
@@ -40,7 +40,7 @@
 .side-bar table th a:focus {
     text-decoration: none;
     font-size: 20px;
-    color: #000000;
+    color: #000000;/*TODO: #000*/
 }
 
 .search-panel {
@@ -51,12 +51,12 @@
     height: 5%;
     padding-left: 30px;
     background: #e8e8e8;
-    box-shadow: 0 0 15px #999999;
+    box-shadow: 0 0 15px #999999;/*TODO: #999*/
     z-index: 100;
 }
 
 .search-panel input {
-    position: absolute;
+    position: absolute;/*TODO: I suggest to remove hardcoded elements that goes out of the natural flow because of position absolute or fixed and rebuild the page with natural flows*/
     top: 20%;
     left: 4%;
     height: 50%;
@@ -73,7 +73,7 @@
 .search-panel input:hover,
 .search-panel input:active,
 .search-panel input:focus {
-    position: absolute;
+    position: absolute;/*TODO: I suggest to remove hardcoded elements that goes out of the natural flow because of position absolute or fixed and rebuild the page with natural flows*/
     top: 20%;
     left: 4%;
     height: 50%;
@@ -84,11 +84,11 @@
     font-size: 15px;
     outline: none;
     border: none;
-    box-shadow: 0 0 15px #999999;
+    box-shadow: 0 0 15px #999999;/*TODO: #999*/
 }
 
 .search-panel label {
-    position: absolute;
+    position: absolute;/*TODO: I suggest to remove hardcoded elements that goes out of the natural flow because of position absolute or fixed and rebuild the page with natural flows*/
     top: 25%;
     text-decoration: none;
 }
@@ -107,7 +107,7 @@
 }
 
 .filter-panel {
-    position: fixed;
+    position: fixed;/*TODO: I suggest to remove hardcoded elements that goes out of the natural flow because of position absolute or fixed and rebuild the page with natural flows*/
     top: 5%;
     left: 10%;
     width: 90%;
@@ -117,14 +117,14 @@
 }
 
 .filter-panel p {
-    position: absolute;
+    position: absolute;/*TODO: I suggest to remove hardcoded elements that goes out of the natural flow because of position absolute or fixed and rebuild the page with natural flows*/
     top: 10%;
     left: 5%;
     font-size: 20px;
 }
 
 .lists-body {
-    position: fixed;
+    position: fixed;/*TODO: I suggest to remove hardcoded elements that goes out of the natural flow because of position absolute or fixed and rebuild the page with natural flows*/
     top: 20%;
     left: 10%;
     width: 90%;
@@ -162,7 +162,7 @@
 }
 
 .pages-navigation-panel {
-    position: fixed;
+    position: fixed;/*TODO: I suggest to remove hardcoded elements that goes out of the natural flow because of position absolute or fixed and rebuild the page with natural flows*/
     top: 92%;
     height: 5%;
     width: 100%;
@@ -192,7 +192,7 @@
 }
 
 .pages-navigation-panel #add-position-button {
-    position: fixed;
+    position: fixed;/*TODO: I suggest to remove hardcoded elements that goes out of the natural flow because of position absolute or fixed and rebuild the page with natural flows*/
     text-align: center;
     top: 90%;
     left: 90%;

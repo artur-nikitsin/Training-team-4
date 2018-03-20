@@ -1,3 +1,4 @@
+<!--TODO: rename all the files to use dashes instead of underscores and no capslock names-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HR APP</title>
     <link rel="stylesheet" href="assets/css/color.css">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">  <!--TODO: if you have started using rel attribute before href than do it foe all the css files-->
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_Mobile.css">
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageCandidates.css">
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageOneCandidate.css">
@@ -50,25 +51,25 @@
                   <li>
                     <label class="menu-nav-label">
                       <input type="radio" name="menu-nav" checked>
-                      <div id="Interview" class="menu-nav-checkbox">Interview</div>
+                      <div id="Interview" class="menu-nav-checkbox">Interview</div> <!--TODO: block elements are not allowed to be inside inline elements. Use span here instead-->
                     </label>
                   </li>
                   <li>
                     <label class="menu-nav-label">
                       <input type="radio" name="menu-nav">
-                      <div  id="page-vacancies" class="menu-nav-checkbox">Vacancies</div>
+                      <div  id="page-vacancies" class="menu-nav-checkbox">Vacancies</div> <!--TODO: block elements are not allowed to be inside inline elements. Use span here instead-->
                     </label>
                   </li>
                   <li>
                     <label class="menu-nav-label">
                       <input type="radio" name="menu-nav">
-                      <div  id="page-candidates" class="menu-nav-checkbox">Candidates</div>
+                      <div  id="page-candidates" class="menu-nav-checkbox">Candidates</div> <!--TODO: block elements are not allowed to be inside inline elements. Use span here instead-->
                     </label>
                   </li>
                   <li>
                     <label class="menu-nav-label">
                       <input type="radio" name="menu-nav">
-                      <div id="Managment" class="menu-nav-checkbox">Managment</div>
+                      <div id="Managment" class="menu-nav-checkbox">Managment</div> <!--TODO: block elements are not allowed to be inside inline elements. Use span here instead-->
                     </label>
                   </li>
                 </ul>
@@ -104,22 +105,22 @@
                         <th>
                             <span>Vacancies</span>
 
-                            <input type="text" class="select-vacancies" id="1">
+                            <input type="text" class="select-vacancies" id="1"><!--TODO: looks like spans above should be a labels for these inputs-->
                         </th>
                         <th>
                             <span>Skills</span>
 
-                            <input type="text" class="select-skills" id="2">
+                            <input type="text" class="select-skills" id="2"><!--TODO: looks like spans above should be a labels for these inputs-->
                         </th>
                         <th>
                             <span>Pay</span>
 
-                            <input type="text" class="select-pay" id="3">
+                            <input type="text" class="select-pay" id="3"><!--TODO: looks like spans above should be a labels for these inputs-->
                         </th>
                         <th>
                             <span>Candidates</span>
 
-                            <input type="text" class="select-candidates" id="4">
+                            <input type="text" class="select-candidates" id="4"><!--TODO: looks like spans above should be a labels for these inputs-->
                         </th>
 
                     </tr>
@@ -145,7 +146,7 @@
               <div class="page-candidates-filter-candidates">
                 <span>Filter by</span>
                 <select id="page-candidates-filter-candidates-input" class="page-candidates-filter-candidates-input">
-                  <option selected disabled hidden style='display: none' value=''></option>
+                  <option selected disabled hidden style='display: none' value=''></option> <!--TODO: remove inline style-->
                   <option value="0">New</option>
                   <option value="1">Accepted for interview</option>
                   <option value="2">CV-Rejected</option>
@@ -169,7 +170,7 @@
                   <span class="mini-profile-stage-interview">New</span>
                   <img src="images/default_profile.jpg">
                   <div class="mini-profile-info">
-                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p>
+                    <p class="mini-profile-info-job-applicant">Junior Front-end Developer</p> <!--TODO: read about BEM for better nested names-->
                     <p class="mini-profile-info-name-candidate">Volha Koldaeva</p>
                     <p class="mini-profile-info-salary">
                       116$
@@ -261,21 +262,21 @@
                       <p>Telephone:</p>
                       <p class="overwriting-p">
                         +44-1234-123-123
-                        <textarea class="textarea-for-change-phone overwriting">+44-1234-123-123</textarea>
+                        <textarea class="textarea-for-change-phone overwriting">+44-1234-123-123</textarea><!--TODO: should be an input-->
                       </p>
                     </div>
                     <div class="candidate-email">
                       <p>E-mail:</p>
                       <p class="overwriting-p">
                         some_email@gmail.com
-                        <textarea class="textarea-for-change-email overwriting">some_email@gmail.com</textarea>
+                        <textarea class="textarea-for-change-email overwriting">some_email@gmail.com</textarea><!--TODO: should be an input-->
                       </p>
                     </div>
                     <div class="candidate-address">
                       <p>Address:</p>
                       <p class="overwriting-p">
                         735 High Road, N12 OUS, Lonn, UK
-                        <textarea class="textarea-for-change-address overwriting">735 High Road, N12 OUS, Lonn, UK</textarea>
+                        <textarea class="textarea-for-change-address overwriting">735 High Road, N12 OUS, Lonn, UK</textarea><!--TODO: should be an input-->
                       </p>
                     </div>
                   </div>
@@ -286,17 +287,17 @@
                     <div class="row-experience-candidate">
                       <div class="date-position-candidate">
                         <p class="work-time-candidate overwriting-p">Apr 2015 - Apr 2015
-                          <textarea class="work-time-candidate-textarea overwriting">Apr 2015 - Apr 2015</textarea>
+                          <textarea class="work-time-candidate-textarea overwriting">Apr 2015 - Apr 2015</textarea><!--TODO: should be an input-->
                         </p>
                         <p class="position-candidate overwriting-p">
                           Senior Java Developer
-                          <textarea class="position-candidate-textarea overwriting">Apr 2015 - Now</textarea>
+                          <textarea class="position-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
                         </p>
                       </div>
                       <div class="description-work-candidate">
                         <p class="name-organization-candidate overwriting-p">
                           Belhard
-                          <textarea class="name-organization-candidate-textarea overwriting">Apr 2015 - Now</textarea>
+                          <textarea class="name-organization-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
                         </p>
                         <p class="description-duties overwriting-p">
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -305,7 +306,33 @@
                           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                          <textarea class="description-duties-textarea overwriting">Apr 2015 - Now</textarea>
+                          <textarea class="description-duties-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row-experience-candidate">
+                      <div class="date-position-candidate">
+                        <p class="work-time-candidate overwriting-p">Apr 2015 - Now
+                          <textarea class="work-time-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
+                        </p>
+                        <p class="position-candidate overwriting-p">
+                          Senior Java Developer
+                          <textarea class="position-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
+                        </p>
+                      </div>
+                      <div class="description-work-candidate">
+                        <p class="name-organization-candidate overwriting-p">
+                          Belhard
+                          <textarea class="name-organization-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
+                        </p>
+                        <p class="description-duties overwriting-p">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          <textarea class="description-duties-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
                         </p>
                       </div>
                     </div>
@@ -316,13 +343,13 @@
                         </p>
                         <p class="position-candidate overwriting-p">
                           Senior Java Developer
-                          <textarea class="position-candidate-textarea overwriting">Apr 2015 - Now</textarea>
+                          <textarea class="position-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
                         </p>
                       </div>
                       <div class="description-work-candidate">
                         <p class="name-organization-candidate overwriting-p">
                           Belhard
-                          <textarea class="name-organization-candidate-textarea overwriting">Apr 2015 - Now</textarea>
+                          <textarea class="name-organization-candidate-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
                         </p>
                         <p class="description-duties overwriting-p">
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -331,33 +358,7 @@
                           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                          <textarea class="description-duties-textarea overwriting">Apr 2015 - Now</textarea>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="row-experience-candidate">
-                      <div class="date-position-candidate">
-                        <p class="work-time-candidate overwriting-p">Apr 2015 - Now
-                          <textarea class="work-time-candidate-textarea overwriting">Apr 2015 - Now</textarea>
-                        </p>
-                        <p class="position-candidate overwriting-p">
-                          Senior Java Developer
-                          <textarea class="position-candidate-textarea overwriting">Apr 2015 - Now</textarea>
-                        </p>
-                      </div>
-                      <div class="description-work-candidate">
-                        <p class="name-organization-candidate overwriting-p">
-                          Belhard
-                          <textarea class="name-organization-candidate-textarea overwriting">Apr 2015 - Now</textarea>
-                        </p>
-                        <p class="description-duties overwriting-p">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                          <textarea class="description-duties-textarea overwriting">Apr 2015 - Now</textarea>
+                          <textarea class="description-duties-textarea overwriting">Apr 2015 - Now</textarea><!--TODO: should be an input-->
                         </p>
                       </div>
                     </div>
@@ -365,19 +366,19 @@
                   <div class="skills-candidate">
                     <p class="skill-candidate-p overwriting-p">
                       Java
-                      <textarea class="skill-candidate-p overwriting">Java</textarea>
+                      <textarea class="skill-candidate-p overwriting">Java</textarea><!--TODO: should be an input-->
                     </p>
                     <p class="skill-candidate-p overwriting-p">
                       Java
-                      <textarea class="skill-candidate-p overwriting">Java</textarea>
+                      <textarea class="skill-candidate-p overwriting">Java</textarea><!--TODO: should be an input-->
                     </p>
                     <p class="skill-candidate-p overwriting-p">
                       Java
-                      <textarea class="skill-candidate-p overwriting">Java</textarea>
+                      <textarea class="skill-candidate-p overwriting">Java</textarea><!--TODO: should be an input-->
                     </p>
                     <p class="skill-candidate-p overwriting-p">
                       Java
-                      <textarea class="skill-candidate-p overwriting">Java</textarea>
+                      <textarea class="skill-candidate-p overwriting">Java</textarea><!--TODO: should be an input-->
                     </p>
                   </div>
                 </div>

@@ -15,7 +15,7 @@ $(document).ready(function () {
             } else {
                 $persons.eq(i).hide();
             }
-            if ($search == "") {
+            if ($search === "") {
                 $persons.eq(i).show();
             }
         }
