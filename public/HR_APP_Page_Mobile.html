@@ -72,109 +72,102 @@
             </div>
         </div>
         <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 hr-content">
-          <div class="row">
-            <div class="search-panel">
-              <label class="search-input-label">
-                <span class="glyphicon glyphicon-search"></span>
-                <input id="search-input" class="search-input" type="text" placeholder=" Search for vacancies,candidates...">
-              </label>
-              <div>
-                  <a href="#" class="search-panel-notification">
-                    <span class="glyphicon glyphicon-bell"></span>
-                  </a>
-                  <a href="#" class="search-panel-log-in">
-                    <span class="glyphicon glyphicon-log-in"></span>
-                  </a>
-              </div>
+            <div class="row">
+                <div class="search-panel">
+                    <label class="search-input-label">
+                        <span class="glyphicon glyphicon-search"></span>
+                        <input id="search-input" class="search-input" type="text"
+                               placeholder=" Search for vacancies,candidates...">
+                    </label>
+                    <div>
+                        <a href="#" class="search-panel-notification">
+                            <span class="glyphicon glyphicon-bell"></span>
+                        </a>
+                        <a href="#" class="search-panel-log-in">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row content-body">
-            <div class="page-vacancies">
-                <h3>Vacancies</h3>
+            <div class="row content-body">
+                <div class="page-vacancies">
+                    <h3>Vacancies</h3>
 
-                <table class="candidates" id="vacancies-table">
-                    <thead>
-                    <tr class='table-filters'>
+                    <table class="candidates" id="vacancies-table">
+                        <thead>
+                        <tr class='table-filters'>
 
-                        <th>
-                            <span>Vacancies</span>
+                            <th>
+                                <span>Vacancies</span>
 
-                            <input type="text" class="select-vacancies" id="1">
-                        </th>
-                        <th>
-                            <span>Skills</span>
+                                <input type="text" class="select-vacancies" id="1">
+                            </th>
+                            <th>
+                                <span>Skills</span>
 
-                            <input type="text" class="select-skills" id="2">
-                        </th>
-                        <th>
-                            <span>Pay</span>
+                                <input type="text" class="select-skills" id="2">
+                            </th>
+                            <th>
+                                <span>Pay</span>
 
-                            <input type="text" class="select-pay" id="3">
-                        </th>
-                        <th>
-                            <span>Candidates</span>
+                                <input type="text" class="select-pay" id="3">
+                            </th>
+                            <th>
+                                <span>Candidates</span>
 
-                            <input type="text" class="select-candidates" id="4">
-                        </th>
+                                <input type="text" class="select-candidates" id="4">
+                            </th>
 
-                    </tr>
+                        </tr>
 
 
-                    <tr class="no-result">
-                        <td>No results found</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                        <tr class="no-result">
+                            <td>No results found</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
 
-                    </thead>
+                        </thead>
 
-                    <tbody class="table-data">
+                        <tbody class="table-data">
 
                         </tbody>
                     </table>
 
-                <div class="jplist-panel-vacancies">
-                    <div>
-                        <select
-                                class="jplist-select"
-                                data-control-type="items-per-page-select"
+                    <div class="jplist-panel-vacancies">
+                        <div>
+                            <select
+                                    class="jplist-select"
+                                    data-control-type="items-per-page-select"
+                                    data-control-name="paging"
+                                    data-control-action="paging">
+
+                                <option data-number="10"> 10</option>
+                                <option data-number="20"> 20</option>
+                                <option data-number="50" data-default="10e"> 50</option>
+
+                            </select>
+                        </div>
+                        <div
+                                class="jplist-pagination"
+                                data-prev="<"
+                                data-next=">"
+
+                                data-control-type="pagination"
                                 data-control-name="paging"
                                 data-control-action="paging">
+                        </div>
 
-                            <option data-number="10"> 10</option>
-                            <option data-number="20"> 20</option>
-                            <option data-number="50" data-default="10e"> 50</option>
+                        <div
+                                class="jplist-label "
+                                data-type="{start} - {end} of {all}"
+                                data-control-type="pagination-info"
+                                data-control-name="paging"
+                                data-control-action="paging">
+                        </div>
 
-                        </select>
                     </div>
-                    <div
-                            class="jplist-pagination"
-                            data-prev="<"
-                            data-next=">"
-
-                            data-control-type="pagination"
-                            data-control-name="paging"
-                            data-control-action="paging">
-                    </div>
-
-                    <div
-                            class="jplist-label "
-                            data-type="{start} - {end} of {all}"
-                            data-control-type="pagination-info"
-                            data-control-name="paging"
-                            data-control-action="paging">
-                    </div>
-
-                </div>
-
-
-
-
-
-
-
-
 
 
                     <button class="button-add-candidat"></button>
@@ -182,6 +175,6 @@
             </div>
         </div>
     </div>
-
+</div>
 </body>
 </html>
