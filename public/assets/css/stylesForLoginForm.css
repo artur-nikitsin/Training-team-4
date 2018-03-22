@@ -1,0 +1,124 @@
+body {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.login-form {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -200px;
+    height: 450px;
+    width: 400px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.inputs-for-user-data {
+    position: absolute;
+    top: 50px;
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+
+}
+
+.inputs-for-user-data button,
+.inputs-for-user-data button:focus,
+.inputs-for-user-data button:active {
+    position: absolute;
+    background: #4cae4c;
+    top: 250px;
+    left: 100px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    border-color: #4cae4c;
+    cursor: pointer;
+
+}
+
+.login-form p {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.login-form a {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+}
+
+.login-form a:focus,
+.login-form a:active,
+.login-form a:hover {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+}
+
+.inputs-for-user-data input {
+    height: 40px;
+    width: 300px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+.inputs-for-user-data input:hover,
+.inputs-for-user-data input:focus {
+    height: 40px;
+    width: 300px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #2e6da4;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+.inputs-for-user-data input.correctUserData {
+    height: 40px;
+    width: 300px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #4cae4c;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+.inputs-for-user-data input.incorrectUserData {
+    height: 40px;
+    width: 300px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #c9302c;
+    outline: none;
+    background: #fff;
+    font-size: 20px;
+}
+
