@@ -9,9 +9,12 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageCandidates.css">
-    <link rel="stylesheet" href="assets/css/stylesForHRAPP_MobilePageOneCandidate.css">
+
     <link rel="stylesheet" href="assets/css/stylesForHRAPP_Mobile.css">
+    <!--fullcalendar-->
+    <link rel="stylesheet" href="assets/css/fullcalendar.min.css">
+    <link rel="stylesheet" href="assets/css/fullcalendar.print.min.css">
+    <link rel="stylesheet" href="assets/css/stylesForHRAPP_InterviewPage.css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -34,6 +37,11 @@
     <script src="assets/js/jplist.pagination-bundle.min.js"></script>
     <script src="assets/js/candidates-pagination.js"></script>
 
+    <!--fullcalendar-->
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/fullcalendar.min.js"></script>
+    <script src="assets/js/calendar_for_Interview_page.js"></script>
+
 
     <![endif]-->
 </head>
@@ -55,7 +63,7 @@
                     <div class="collapse navbar-collapse responsive-menu" id="responsive-menu">
                         <ul class="nav navbar-menu" id="navbar-menu">
                             <li>
-                                <a href="HR_APP_Tab_Schedule.html" id="interview" class="menu-nav-checkbox">Interview</a>
+                                <a href="#" id="Interview" class="menu-nav-checkbox">Interview</a>
                             </li>
                             <li>
                                 <a href="#" id="page-vacancies" class="menu-nav-checkbox">Vacancies</a>
@@ -150,91 +158,14 @@
                     </div>
                 </div>
                 <div class="page-vacancies">
-                    <h3>Vacancies</h3>
-
-                    <table class="candidates" id="vacancies-table">
-                        <thead>
-                        <tr class='table-filters'>
-
-                            <th>
-                                <span>Vacancies</span>
-
-                                <input type="text" class="select-vacancies" id="1">
-                            </th>
-                            <th>
-                                <span>Skills</span>
-
-                                <input type="text" class="select-skills" id="2">
-                            </th>
-                            <th>
-                                <span>Pay</span>
-
-                                <input type="text" class="select-pay" id="3">
-                            </th>
-                            <th>
-                                <span>Candidates</span>
-
-                                <input type="text" class="select-candidates" id="4">
-                            </th>
-
-                        </tr>
-
-
-                        <tr class="no-result">
-                            <td>No results found</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-
-                        </thead>
-
-                        <tbody class="table-data">
-
-                        </tbody>
-                    </table>
-
-                    <div class="jplist-panel-vacancies">
-                        <div>
-                            <select
-                                    class="jplist-select"
-                                    data-control-type="items-per-page-select"
-                                    data-control-name="paging"
-                                    data-control-action="paging">
-
-                                <option data-number="10"> 10</option>
-                                <option data-number="20"> 20</option>
-                                <option data-number="50" data-default="10e"> 50</option>
-
-                            </select>
-                        </div>
-                        <div
-                                class="jplist-pagination"
-                                data-prev="<"
-                                data-next=">"
-
-                                data-control-type="pagination"
-                                data-control-name="paging"
-                                data-control-action="paging">
-                        </div>
-
-                        <div
-                                class="jplist-label "
-                                data-type="{start} - {end} of {all}"
-                                data-control-type="pagination-info"
-                                data-control-name="paging"
-                                data-control-action="paging">
-                        </div>
-
+                    <h3>Interview</h3>
+                    <div class="page-candidates">
+                        <div id='calendar-for-interviews'></div>
                     </div>
 
-
-                    <button class="button-add-candidat" type="button" data-toggle="modal"
-                            data-target="#myModal"></button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </body>
-</html>
