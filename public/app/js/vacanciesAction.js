@@ -1,15 +1,18 @@
 $(function () {
-    var vacancies_name = $('#vacancies_name');
-    var pay = $('#pay');
-    var skill = $('#skill');
-    var candidate = $('#candidate');
+    var Vacancy = $('#Vacancy');
+    var ExperienceLevel = $('#ExperienceLevel');
+    var SalaryEstimate = $('#SalaryEstimate');
+    var JobType = $('#JobType');
+    var ReviewCandidates = $('#ReviewCandidates');
+
     function showData(data) {
         var vacanciesData = "";
         vacanciesData += "<tr class='data-tr-from-json'>";
-        vacanciesData += "<td>" + data.vacancies_name + "</td>";
-        vacanciesData += "<td>" + data.pay + "</td>";
-        vacanciesData += "<td>" + data.skill + "</td>";
-        vacanciesData += "<td>" + data.candidate + "</td>";
+        vacanciesData += "<td>" + data.Vacancy + "</td>";
+        vacanciesData += "<td>" + data.ExperienceLevel + "</td>";
+        vacanciesData += "<td>" + data.SalaryEstimate + "</td>";
+        vacanciesData += "<td>" + data.JobType + "</td>";
+        vacanciesData += "<td>" + data.ReviewCandidates + "</td>";
         vacanciesData += "</tr>";
         $("#vacancies-table tbody").append(vacanciesData);
         $('.page-vacancies').jplist({
@@ -18,20 +21,14 @@ $(function () {
             panelPath: '.jplist-panel-vacancies'
         });
     }
-
-
-
     $.ajax({
         type: 'GET',
         url: '/vacancies',
         dataType: 'json',
         success: function (data) {
-
             $.each(data, function (key, value) {
                 showData(value);
             });
-
-
         },
         error: function () {
             $('.no-result').show();
@@ -39,17 +36,18 @@ $(function () {
     });
 
     $('#add-vacancy').on('click', function () {
-        var vacancy = {
-            vacancies_name: vacancies_name.val(),
-            pay: pay.val(),
-            skill: skill.val(),
-            candidate: candidate.val()
+        var newVacancy = {
+            Vacancy: Vacancy.val(),
+            ExperienceLevel: ExperienceLevel.val(),
+            SalaryEstimate: SalaryEstimate.val(),
+            JobType: JobType.val(),
+            ReviewCandidates :ReviewCandidates.val()
         };
         var vacanciesData = "";
         $.ajax({
             type: 'POST',
             url: 'vacancies',
-            data: vacancy,
+            data: newVacancy,
             success: function (data) {
                 showData(data);
             },

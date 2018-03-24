@@ -106,31 +106,38 @@
                                     <form class="form-horizontal">
                                         <div class="form-group">
                                             <label class="control-label col-sm-2"
-                                                   for="vacancies_name">Vacancies:</label>
+                                                   for="Vacancy">Vacancies:</label>
                                             <div class="col-sm-4">
-                                                <input type="text" class="form-control" id="vacancies_name"
-                                                       placeholder="Java" name="vacancies_name">
+                                                <input type="text" class="form-control" id="Vacancy"
+                                                       placeholder="Java" name="Vacancy">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label col-sm-2" for="pay">Pay:</label>
+                                            <label class="control-label col-sm-2" for="ExperienceLevel">Experience:</label>
                                             <div class="col-sm-4">
-                                                <input type="number" class="form-control" id="pay"
-                                                       placeholder="Enter number" name="pay">
+                                                <input type="text" class="form-control" id="ExperienceLevel"
+                                                       placeholder="Junior/Middle/Senior" name="ExperienceLevel">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label col-sm-2" for="skill">Skill:</label>
+                                            <label class="control-label col-sm-2" for="SalaryEstimate">Salary estimate:</label>
                                             <div class="col-sm-4">
-                                                <input type="text" class="form-control" id="skill" placeholder="Skill"
-                                                       name="skill">
+                                                <input type="number" class="form-control" id="SalaryEstimate" placeholder="Enter amount"
+                                                       name="SalaryEstimate">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label col-sm-2" for="candidate">Candidate:</label>
+                                            <label class="control-label col-sm-2" for="JobType">Candidate:</label>
                                             <div class="col-sm-4">
-                                                <input type="text" class="form-control" id="candidate"
-                                                       placeholder="Candidate" name="candidate">
+                                                <input type="text" class="form-control" id="JobType"
+                                                       placeholder="Full-time/Part-time" name="JobType">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="ReviewCandidates">Candidate:</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" id="ReviewCandidates"
+                                                       placeholder="Not shore about this" name="ReviewCandidates">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -170,6 +177,10 @@
                                 <span>Pay</span>
 
                                 <input type="text" class="select-pay" id="3">
+                            </th>
+                            <th>
+                                <span>Job type</span>
+                                <!--TODO: add filter-->
                             </th>
                             <th>
                                 <span>Candidates</span>
