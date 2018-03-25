@@ -68,6 +68,24 @@ server.del('/vacancies/:id', function (req, res, next) {
     next();
 });
 
+//rest api to get all results
+server.get('/candidates', function (req, res, next) {
+    connection.query('select * from candidates', function (error, results, fields) {
+        if (error) throw error;
+        res.end(JSON.stringify(results));
+    });
+    next();
+});
+
+//rest api to get a single candidate data
+server.get('/candidates/:id', function (req, res, next) {
+    connection.query('select * from candidates where idcandidates=?', [req.params.id], function (error, results, fields) {
+        if (error) throw error;
+        res.end(JSON.stringify(results));
+    });
+    next();
+});
+
 server.listen(8070, function () {
     console.log('%s listening at %s', server.name, server.url);
 });
