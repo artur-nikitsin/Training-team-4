@@ -9,6 +9,10 @@
 $(function () {
     var skill = $('#new-skill');
     var id = 1;
+    function showSkill(data) {
+        $('#skills').append('<span class="skill-candidate">' + data.Skill + '</span>');
+    }
+
     $.ajax({
         url: '/candidates/1',
         type: 'GET',
@@ -37,7 +41,7 @@ $(function () {
         success: function (Results) {
             if (Results.length > 0) {
                 $.each(Results, function (key, value) {
-                    $('#skills').append('<span class="skill-candidate">' + value.Skill + '</span>');
+                    showSkill(value);
                 });
             }
             else {
@@ -56,18 +60,18 @@ $(function () {
         };
         $.ajax({
             type: 'POST',
-            url: 'vacancies',
+            url: 'skill',
             data: newSkill,
             success: function (data) {
                 if (data.length > 0) {
-                    $('#skills').append('<span class="skill-candidate">' + data.Skill + '</span>');
+                    showSkill(data);
                 }
                 else {
                     alert('No data');
                 }
             },
             error: function (xhr, textStatus, error) {
-                alert(xhr.statusText + ' ' + textStatus + ' ' + error);
+                console.log(xhr.statusText + ' ' + textStatus + ' ' + error);
             }
         });
     });
