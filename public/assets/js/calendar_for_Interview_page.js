@@ -1,8 +1,8 @@
-$(document).ready(function () {
+$('document').ready(function () {
 
 
     $('#calendar-for-interviews').fullCalendar({
-
+        themeSystem: 'bootstrap3',
         customButtons: {
             schedule: {
                 text: 'schedule',
