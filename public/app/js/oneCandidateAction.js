@@ -30,4 +30,26 @@ $(function () {
             alert(err);
         }
     });
+    $.ajax({
+        url: '/skill/1',
+        type: 'GET',
+        dataType: 'json',
+        success: function (Results) {
+            if (Results.length > 0) {
+                $.each(Results, function (key, value) {
+                    $('#skills').append('<span class="skill-candidate">' + value.Skill + '</span>');
+                });
+            }
+            else {
+                alert('No data.');
+            }
+        },
+        error: function (xhr, textStatus, err) {
+            alert(err);
+        }
+    });
+
+
+
+
 });

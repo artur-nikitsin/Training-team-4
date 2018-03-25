@@ -24,16 +24,22 @@ server.get('/main', function (req, res, next) {
 
 //rest api to get all results
 server.get('/vacancies', function (req, res, next) {
-    connection.query('select * from vacancies', function (error, results, fields) {
+    connection.query('SELECT * FROM vacancies', function (error, results, fields) {
         if (error) throw error;
-        res.end(JSON.stringify(results));
+        if (results.length > 0) {
+            res.end(JSON.stringify(results));
+        }
+        else {
+            res.json({success: false, message: 'No data!'});
+        }
+
     });
     next();
 });
 
 //rest api to get a single vacancies data
 server.get('/vacancies/:id', function (req, res) {
-    connection.query('select * from vacancies where idVacancies=?', [req.params.id], function (error, results, fields) {
+    connection.query('SELECT * FROM vacancies WHERE idVacancies=?', [req.params.id], function (error, results, fields) {
         if (error) throw error;
         res.end(JSON.stringify(results));
     });
@@ -70,7 +76,7 @@ server.del('/vacancies/:id', function (req, res, next) {
 
 //rest api to get all results
 server.get('/candidates', function (req, res, next) {
-    connection.query('select * from candidates', function (error, results, fields) {
+    connection.query('SELECT * FROM candidates', function (error, results, fields) {
         if (error) throw error;
         res.end(JSON.stringify(results));
     });
@@ -79,9 +85,22 @@ server.get('/candidates', function (req, res, next) {
 
 //rest api to get a single candidate data
 server.get('/candidates/:id', function (req, res, next) {
-    connection.query('select * from candidates where idcandidates=?', [req.params.id], function (error, results, fields) {
+    connection.query('SELECT * FROM candidates WHERE idcandidates=?', [req.params.id], function (error, results, fields) {
         if (error) throw error;
         res.end(JSON.stringify(results));
+    });
+    next();
+});
+
+server.get('/skill/:id', function (req, res, next) {
+    connection.query('SELECT skills.Skill FROM skills JOIN candidates ON candidates.idcandidates = skills.idCandidate WHERE idcandidates=?', [req.params.id], function (error, results) {
+        if (error) throw error;
+        if (results.length > 0) {
+            res.end(JSON.stringify(results));
+        }
+        else {
+            res.json({success: false, message: 'No data!'});
+        }
     });
     next();
 });
