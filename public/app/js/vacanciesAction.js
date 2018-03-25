@@ -1,9 +1,9 @@
 $(function () {
-    var Vacancy = $('#Vacancy');
-    var ExperienceLevel = $('#ExperienceLevel');
-    var SalaryEstimate = $('#SalaryEstimate');
-    var JobType = $('#JobType');
-    var ReviewCandidates = $('#ReviewCandidates');
+    var vacancy = $('#Vacancy');
+    var experienceLevel = $('#ExperienceLevel');
+    var salaryEstimate = $('#SalaryEstimate');
+    var jobType = $('#JobType');
+    var reviewCandidates = $('#ReviewCandidates');
 
     function showData(data) {
         var vacanciesData = '';
@@ -43,11 +43,11 @@ $(function () {
 
     $('#add-vacancy').on('click', function () {
         var newVacancy = {
-            Vacancy: Vacancy.val(),
-            ExperienceLevel: ExperienceLevel.val(),
-            SalaryEstimate: SalaryEstimate.val(),
-            JobType: JobType.val(),
-            ReviewCandidates: ReviewCandidates.val()
+            Vacancy: vacancy.val(),
+            ExperienceLevel: experienceLevel.val(),
+            SalaryEstimate: salaryEstimate.val(),
+            JobType: jobType.val(),
+            ReviewCandidates: reviewCandidates.val()
         };
         $.ajax({
             type: 'POST',

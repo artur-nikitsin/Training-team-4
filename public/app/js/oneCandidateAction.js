@@ -7,7 +7,7 @@
 // Name
 
 $(function () {
-
+    var skill = $('#new-skill');
     var id = 1;
     $.ajax({
         url: '/candidates/1',
@@ -48,7 +48,29 @@ $(function () {
             alert(err);
         }
     });
-
+    $('#add-skill').on('click', function () {
+        var newSkill = {
+            Name: 'Edmon Dantes',
+            Skill: skill.val(),
+            idCandidate: id
+        };
+        $.ajax({
+            type: 'POST',
+            url: 'vacancies',
+            data: newSkill,
+            success: function (data) {
+                if (data.length > 0) {
+                    $('#skills').append('<span class="skill-candidate">' + data.Skill + '</span>');
+                }
+                else {
+                    alert('No data');
+                }
+            },
+            error: function (xhr, textStatus, error) {
+                alert(xhr.statusText + ' ' + textStatus + ' ' + error);
+            }
+        });
+    });
 
 
 

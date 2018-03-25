@@ -105,6 +105,15 @@ server.get('/skill/:id', function (req, res, next) {
     next();
 });
 
+server.post('/skill', function (req, res, next) {
+    var postData = req.body;
+    connection.query('INSERT INTO skills SET ?', postData, function (error, results, fields) {
+        if (error) throw error;
+        res.end(JSON.stringify(results));
+    });
+    next();
+});
+
 server.listen(8070, function () {
     console.log('%s listening at %s', server.name, server.url);
 });
