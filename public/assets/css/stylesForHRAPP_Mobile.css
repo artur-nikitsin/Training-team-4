@@ -393,7 +393,7 @@ select {
 .jplist-panel-vacancies,
 .jplist-panel-candidates{
   float: top;
-  margin-left: 40px;
+  margin-left: auto;
   padding-top: 40px;
   height: 100px;
 }
