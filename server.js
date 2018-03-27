@@ -1,6 +1,7 @@
 const config = require('./app/config/config'),
     restify = require('restify'),
-    mysql = require('mysql');
+    mysql = require('mysql'),
+fs = require('fs');
 
 var connection = config.db.get;
 /**
@@ -118,9 +119,24 @@ server.listen(8070, function () {
     console.log('%s listening at %s', server.name, server.url);
 });
 
-server.get('/\/.*/', restify.plugins.serveStatic({
-        directory: __dirname + "/public/",
-        default: './HR_APP_Page_Mobile.html'
-    })
-);
+// server.get('/\/.*/', restify.plugins.serveStatic({
+//         directory: __dirname + "/public/",
+//         default: './HR_APP_Page_Mobile.html'
+//     })
+// );
 
+server.get('/', function handler(req, res, next) {
+    fs.readFile(__dirname + '/public/HR_APP_Page_Mobile.html',
+        function (err, data) {
+            if (err) {
+                next(err);
+                return;
+            }
+            res.write(data);
+            res.end();
+            next();
+        });
+});
+server.get('/\\/.*/', restify.plugins.serveStatic({
+    directory: __dirname + '/public/'
+}));
