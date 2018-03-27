@@ -115,7 +115,7 @@ server.post('/skill', function (req, res, next) {
     next();
 });
 
-server.listen(8070, function () {
+server.listen(process.env.PORT ||8070, function () {
     console.log('%s listening at %s', server.name, server.url);
 });
 
