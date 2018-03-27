@@ -9,7 +9,7 @@ module.exports = {
         get : mysql.createConnection({
             host     : 'localhost',
             user     : 'root',
-            password : 'root',
+            password : '!lobster23',
             database : 'hr_app'
         })
     }
