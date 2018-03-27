@@ -126,7 +126,7 @@
 .content-body > div > h3 {
 
     padding: 40px;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 .content-body {
   padding-left: 20px;
@@ -393,7 +393,7 @@ select {
 .jplist-panel-vacancies,
 .jplist-panel-candidates{
   float: top;
-  margin-left: 40px;
+  margin-left: auto;
   padding-top: 40px;
   height: 100px;
 }
