@@ -1,0 +1,226 @@
+.navbar-menu > li:nth-of-type(3) .menu-nav-checkbox {
+  background: var(--background_sidebar_active);
+}
+.navbar-menu > li:nth-of-type(1) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(2) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(4) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.content-body > .page-candidates > h3 {
+  padding-left: 0;
+}
+.page-candidates-filter-candidates > span {
+  font-weight: bold;
+  font-size: 12px;
+}
+.page-candidates-filter-candidates-input {
+  outline: none;
+  border:1px solid var(--color_border_input);
+  border-radius: 10px;
+  text-indent: 10px;
+  margin-left: 15px;
+}
+.page-candidates-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-candidates-mini-profile {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 22%;
+  min-width: 140px;
+  max-width: 300px;
+  box-shadow: 0 0 10px var(--color_plus_button_add_cand);
+  cursor: pointer;
+}
+.mini-profile-stage-interview {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  padding: 0 5px;
+  font-weight: bold;
+  margin-right: 15px;
+  background: var(--background-stage-interview);
+}
+.page-candidates-mini-profile > img {
+  width: 100%;
+}
+.mini-profile-info {
+  padding: 0 15px;
+  padding-bottom: 10px;
+}
+.mini-profile-info > p {
+  margin-bottom: 3px
+}
+.mini-profile-info >.mini-profile-info-job-applicant {
+  margin-bottom: 1px;
+  color: var(--color_gray_word);
+  font-size: 13px;
+}
+.mini-profile-info-name-candidate {
+  font-weight: bold;
+  color: var(--black);
+}
+.mini-profile-info-name-candidate,
+.mini-profile-info-salary {
+  font-size: 18px;
+}
+.mini-profile-info-date-creation {
+  text-align: right;
+  font-size: 10px;
+  color: var(--color_gray_word);
+}
+
+/*NEW */
+.table{
+  /*height: 600px;*/
+}
+.table img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.table th,td{
+  font-size: 18px;
+  vertical-align: middle !important;
+  text-align: center;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.table td:first-child{
+  text-align: left;
+}
+.table th:first-child{
+  text-align: left;
+}
+.pages-navigation-panel {
+    position: fixed;
+    top: 88%;
+    height: 5%;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.pages-navigation-panel > div p {
+    display: inline-block;
+    margin: 20px 20px 0 0;
+}
+
+.pages-navigation-panel > div > p > button {
+    border-radius: 100%;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: #fff;
+}
+
+.pages-navigation-panel input {
+    width: 40px;
+    height: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #e8e8e8;
+
+}
+
+
+.new-candidates{
+  margin-top: 5px;
+  -webkit-box-shadow: -5px 0px 22px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    -5px 0px 22px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         -5px 0px 22px 0px rgba(50, 50, 50, 0.3);
+  outline: none;
+  border:1px solid var(--color_border_input);
+}
+.new-candidates button{
+  width: 100%;
+  height: 60px;
+  background-color: inherit;
+}
+.candidates-title{
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+}
+.candidate-notification img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: -60%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.candidate-notification div{
+  display: inline-block;
+}
+.candidate-notification {
+  margin-top: 20px;
+  display: block;
+}
+.candidate-notification p{
+  font-size: 16px; 
+  line-height: 100%;
+}
+.candidate-notification:nth-child(1){
+  display: none;
+}
+
+
+.new-interviews{
+  margin-top: 5px;
+  -webkit-box-shadow: -5px 0px 22px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    -5px 0px 22px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         -5px 0px 22px 0px rgba(50, 50, 50, 0.3);
+  outline: none;
+  border:1px solid var(--color_border_input);
+}
+.new-interviews button{
+  width: 100%;
+  height: 60px;
+  background-color: inherit;
+}
+.interviews-title{
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+}
+.interview-notification p{
+  font-size: 16px; 
+  line-height: 100%;
+  padding-left: 25px;
+}
+.interview-notification {
+  margin-top: 20px;
+  display: block;
+}
+/*END*/
+
+@media screen and (max-width: 767px) {
+  .page-candidates-mini-profile {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 486px) {
+  .page-candidates-body {
+    justify-content: space-around;
+  }
+}

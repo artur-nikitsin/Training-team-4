@@ -9,13 +9,17 @@
 .hr-content {
     min-height: 100vh;
 }
-
+.stage-interview {
+  width: 100%;
+}
+.page-wrapper {
+  padding-left: 0;
+}
 .navbar-brand {
     padding-left: 40px;
     width: 100%;
 }
-
-.menu-nav-label,
+.menu-nav-checkbox,
 .glyphicon-search {
     cursor: pointer;
 }
@@ -28,41 +32,30 @@
 }
 
 .navigation {
-    padding: 0;
-
-    padding-left: 10px;
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  padding-left: 15px;
 }
 
 .navigation-menu {
-    position: fixed;
-    z-index: 1;
-    background: var(--background_sidebar);
-    padding: 0;
-    width: 185px;
-    box-shadow: 4px 0 10px var(--background_sidebar_hover);
+  background: var(--background_sidebar);
+  padding: 0;
+  box-shadow: 4px 0 10px var(--background_sidebar_active);
 }
-
-[name$="menu-nav"] {
-    display: none;
-}
-
-.menu-nav-checkbox {
+.nav .menu-nav-checkbox {
     height: 45px;
     padding-left: 40px;
     padding-top: 15px;
+  font-weight: bold;
+  color: var(--black);
 }
-
+.nav .menu-nav-checkbox:hover {
+  background: var(--background_sidebar_hover);
+}
 .responsive-menu {
     background: var(--background_sidebar);
     padding: 0;
-}
-
-.responsive-menu label {
-    display: block;
-}
-
-input[type="radio"]:checked + .menu-nav-checkbox {
-    background: var(--background_sidebar_hover);
 }
 
 .navbar-default {
@@ -73,11 +66,22 @@ input[type="radio"]:checked + .menu-nav-checkbox {
 .header-name {
     float: none;
 }
+.navbar-menu > li:nth-of-type(2) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(3) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(4) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(2) .menu-nav-checkbox {
+  background: var(--background_sidebar_active);
+}
 
 .hr-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .search-input {
@@ -119,8 +123,7 @@ input[type="radio"]:checked + .menu-nav-checkbox {
 .search-panel-log-in:focus {
     text-decoration: none;
 }
-
-.content-body > h3 {
+.content-body > div > h3 {
     padding: 40px;
     padding-left: 20px;
 }
@@ -169,6 +172,7 @@ select {
     border-radius: 50%;
     background: var(--bacground_button_add_cand);
     outline: none;
+  box-shadow: 1px 1px 7px var(--color_plus_button_add_cand);
 }
 
 .button-add-candidat:active {
@@ -197,18 +201,17 @@ select {
 .select-skills,
 .select-pay,
 .select-candidates {
-    width: 100px;
-    font-weight: normal;
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%);*/
-    top: -40px;
-    color: var(--color_gray_word);
-    outline: none;
-    border: 1px solid var(--color_border_input);
-    border-radius: 10px;
-    text-indent: 10px;
-
+  width: 100px;
+  font-weight: normal;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 40px;
+  color: var(--color_gray_word);
+  outline: none;
+  border: 1px solid var(--color_border_input);
+  border-radius: 10px;
+  text-indent: 10px;
 }
 
 .pages-navigation-panel > div {
@@ -274,22 +277,16 @@ select {
     font-size: 80%;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .navigation-menu {
-        width: 150px;
-    }
-
-}
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .navigation-menu {
-        width: 115px;
-    }
-
-    .navbar-brand,
-    .menu-nav-checkbox {
-        padding-left: 10px;
-    }
+  .navbar-brand,
+  .nav .menu-nav-checkbox {
+    padding-left: 10px;
+  }
+  .navbar-brand,
+  .nav .menu-nav-checkbox {
+      padding-left: 10px;
+  }
 
 }
 
@@ -307,123 +304,105 @@ select {
 }
 
 @media screen and (max-width: 767px) {
-    .navbar-brand {
-        display: none;
-    }
-
-    .hr-content {
-        padding: 0;
-    }
-
-    .navigation-menu,
-    .navigation {
-        min-height: 50px;
-        background: transparent;
-        height: auto;
-        box-shadow: none;
-    }
-
-    .search-input-label {
-        margin-left: 70px;
-    }
-
-    .search-panel {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .search-panel > div {
-        display: flex;
-        padding-bottom: 5px;
-    }
-
-    .search-input {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis
-    }
-
-    .navigation {
-        position: absolute;
-        margin-right: 15px;
-    }
-
-    .navigation,
-    .navigation-menu,
-    .navbar-header {
-        width: 60px;
-    }
-
-    .responsive-menu {
-        width: 200px;
-        border-radius: 10px;
-    }
-
-    .row {
-        margin: 0;
-    }
-
-    .container {
-        padding: 0;
-    }
-
-    .candidates {
-        margin-left: 0;
-    }
-
-    .candidates th,
-    .candidates td {
-        width: auto;
-        padding-left: 3px;
-        padding-right: 3px;
-    }
-
-    .button-add-candidat {
-        bottom: 35px;
-        right: 15px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .button-add-candidat:before,
-    .button-add-candidat:after {
-        width: 24px;
-    }
-
-    .button-add-candidat:before {
-        left: 8px;
-        bottom: 19px;
-    }
-
-    .button-add-candidat:after {
-        left: 8px;
-        bottom: 19px;
-    }
-
-    .select-vacancies,
-    .select-skills,
-    .select-pay,
-    .select-candidates {
-        width: 30px;
-        transition: all .5s;
-        height: 20px;
-    }
-
-    .select-skills {
-        left: 28%;
-    }
-
-    .select-vacancies:focus,
-    .select-skills:focus,
-    .select-pay:focus,
-    .select-candidates:focus {
-        width: 80px;
-    }
-
-    .pages-navigation-panel > div {
-        padding-left: 5px;
-    }
+  .page-wrapper {
+    padding-right: 0;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .hr-content {
+    padding: 0;
+  }
+  .navigation-menu,
+  .navigation {
+    min-height: 50px;
+    background: transparent;
+    height: auto;
+    box-shadow: none;
+  }
+  .search-input-label{
+    margin-left: 70px;
+  }
+  .search-panel {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .search-panel > div {
+    display: flex;
+    padding-bottom: 5px;
+  }
+  .search-input {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .navigation {
+    margin-right: 15px;
+  }
+  .navigation,
+  .navigation-menu,
+  .navbar-header {
+    width: 60px;
+  }
+  .responsive-menu {
+    width: 200px;
+    border-radius: 10px;
+  }
+  .row {
+    margin: 0;
+  }
+  .container {
+    padding: 0;
+  }
+  .candidates {
+    margin-left: 0;
+  }
+  .candidates th,
+  .candidates td {
+    width: auto;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .button-add-candidat {
+    bottom: 35px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+  .button-add-candidat:before,
+  .button-add-candidat:after {
+    width: 24px;
+  }
+  .button-add-candidat:before {
+    left: 8px;
+    bottom: 19px;
+  }
+  .button-add-candidat:after {
+    left: 8px;
+    bottom: 19px;
+  }
+  .select-vacancies,
+  .select-skills,
+  .select-pay,
+  .select-candidates {
+    width: 30px;
+    transition: all .5s;
+    height: 20px;
+  }
+  .select-skills {
+    left: 28%;
+  }
+  .select-vacancies:focus,
+  .select-skills:focus,
+  .select-pay:focus,
+  .select-candidates:focus {
+    width: 80px;
+  }
+  .pages-navigation-panel > div {
+    padding-left: 5px;
+  }
 }
+
 
 .results tr[visible='false'],
 .no-result {

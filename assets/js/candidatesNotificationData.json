@@ -1,0 +1,52 @@
+[
+	{
+		"fullname": "Guy Simple",
+		"salary": 399,
+		"position": "Java Developer"
+	},
+	{
+		"fullname": "John Example",
+		"salary": 700,
+		"position": "JS Developer"
+	},
+	{
+		"fullname": "Terry Rosenberg",
+		"salary": 800,
+		"position": "C++ Developer"
+	},
+	{
+		"fullname": "Lynne Stephens",
+		"salary": 550,
+		"position": "RoR Developer"
+	},
+	{
+		"fullname": "Phyllis McKnight",
+		"salary": 900,
+		"position": "Python Developer"
+	},
+	{
+		"fullname": "Vanessa Melton",
+		"salary": 1500,
+		"position": "Scala Developer"
+	},
+	{
+		"fullname": "Steve Mickey",
+		"salary": 2900,
+		"position": "QA"
+	},
+	{
+		"fullname": "Louis Adcock",
+		"salary": 1700,
+		"position": "JS Developer"
+	},
+	{
+		"fullname": "Alex Starving",
+		"salary": 600,
+		"position": "Java Developer"
+	},
+	{
+		"fullname": "Steve Terryberry",
+		"salary": 1300,
+		"position": "Ruby Developer"
+	}
+]

@@ -1,0 +1,161 @@
+.navbar-menu > li:nth-of-type(3) .menu-nav-checkbox {
+  background: var(--background_sidebar_active);
+}
+.navbar-menu > li:nth-of-type(1) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(2) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.navbar-menu > li:nth-of-type(4) .menu-nav-checkbox {
+  background: var(--background_sidebar);
+}
+.page-one-candidate h4 {
+  color: var(--color-h4-grey);
+}
+.stage-interview {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.navigation-page-one-candidate {
+  padding: 10px;
+  cursor: default;
+}
+.navigation-page-one-candidate,
+.navigation-back-to-vacancies > a {
+  color: var(--color_gray_word);
+}
+.navigation-back-to-vacancies > a {
+  text-decoration: none;
+}
+.navigation-back-to-vacancies,
+.navigation-back-to-vacancies + span {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.navigation-back-to-vacancies:after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  border-right: none;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid var(--color_gray_word);
+  margin-left: 5px;
+}
+.one-candidate-information,
+.all-skills-candidate {
+  border-top: 1px solid var(--border-information-full);
+}
+.mini-and-contact-information {
+  border-right: 1px solid var(--border-information-full);
+  padding: 0;
+}
+.page-candidates-mini-profile {
+  border-bottom: 1px solid var(--border-information-full);
+  margin-right: 0;
+}
+.one-candidate-information .page-candidates-mini-profile {
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+}
+.candidate-phone > p:first-of-type,
+.candidate-email > p:first-of-type,
+.candidate-address > p:first-of-type {
+  font-weight: bold;
+  font-size: 11px;
+  margin-bottom: 0;
+  color: var(--color_gray_word);
+}
+.experience-and-skills {
+  padding-left: 0;
+}
+.overwriting {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  resize: none;
+  overflow: hidden;
+  outline: none;
+  border: none;
+}
+.Experience-h4 {
+  margin: 30px;
+}
+.column-experience-candidate {
+  padding: 20px;
+}
+.row-experience-candidate {
+  display: flex;
+  margin-bottom: 15px;
+}
+.work-time-candidate {
+  border: 1px solid var(--border-information-full);
+  border-radius: 10px;
+  width: 135px;
+  text-align: center;
+  margin: 15px 15px 5px 0;
+}
+.position-candidate {
+  color: var(--color_gray_word);
+  font-size: 12px;
+  text-align: right;
+  margin-right: 15px;
+}
+.description-work-candidate {
+  padding: 10px;
+  border: 1px solid var(--border-information-full);
+  border-radius: 10px;
+  margin-left: 15px;
+  color: var(--black);
+  width: 100%;
+}
+.name-organization-candidate {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.name-organization-candidate > textarea {
+  text-decoration: underline;
+}
+.all-skills-candidate {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.skill-candidate {
+  border: 1px solid var(--border-information-full);
+  border-radius: 10px;
+  margin-right: 15px;
+  padding: 5px 10px;
+  color: var(--color_gray_word);
+  box-sizing: content-box;
+  margin-bottom: 10px;
+}
+.skill-candidate > textarea {
+  text-align: center;
+  height: 24px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.change-information {
+  display: block;
+  padding: 10px;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--background_sidebar);
+  top: calc(100% - 80px);
+  right: 30px;
+  box-shadow: 1px 1px 7px var(--color_plus_button_add_cand);
+  cursor: pointer;
+}
+.change-information.glyphicon.glyphicon-ok {
+  background: var(--color-green);
+}
