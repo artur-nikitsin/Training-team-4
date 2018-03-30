@@ -8,6 +8,10 @@
 
 $(function () {
     var skill = $('#new-skill');
+    var newEmail = $('#email');
+    var newAddress = $('#address');
+    var newTelephone = $('#telephone');
+    var newName = $('#name');
     var id = 1;
     function showSkill(data) {
         $('#skills').append('<span class="skill-candidate">' + data.Skill + '</span>');
@@ -54,7 +58,28 @@ $(function () {
     });
     $('#add-skill').on('click', function () {
         var newSkill = {
-            Name: 'Edmon Dantes',
+            Skill: skill.val(),
+            idCandidate: id
+        };
+        $.ajax({
+            type: 'POST',
+            url: '/skill',
+            data: newSkill,
+            success: function (data) {
+                if (data.length > 0) {
+                    showSkill(data);
+                }
+                else {
+                    alert('No data');
+                }
+            },
+            error: function (xhr, textStatus, error) {
+                console.log(xhr.statusText + ' ' + textStatus + ' ' + error);
+            }
+        });
+    });
+    $('#edit-profile').on('click', function () {
+        var newSkill = {
             Skill: skill.val(),
             idCandidate: id
         };
@@ -75,7 +100,6 @@ $(function () {
             }
         });
     });
-
 
 
 });

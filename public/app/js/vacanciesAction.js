@@ -3,7 +3,6 @@ $(function () {
     var experienceLevel = $('#ExperienceLevel');
     var salaryEstimate = $('#SalaryEstimate');
     var jobType = $('#JobType');
-    var reviewCandidates = $('#ReviewCandidates');
 
     function showData(data) {
         var vacanciesData = '';
@@ -12,7 +11,7 @@ $(function () {
         vacanciesData += '<td>' + data.ExperienceLevel + '</td>';
         vacanciesData += '<td>' + data.SalaryEstimate + '</td>';
         vacanciesData += '<td>' + data.JobType + '</td>';
-        vacanciesData += '<td>' + data.ReviewCandidates + '</td>';
+        vacanciesData += '<td>' + '<a href="#">Show</a> ' + '</td>';
         vacanciesData += '</tr>';
         $('#vacancies-table tbody').append(vacanciesData);
         $('.page-vacancies').jplist({
@@ -46,8 +45,7 @@ $(function () {
             Vacancy: vacancy.val(),
             ExperienceLevel: experienceLevel.val(),
             SalaryEstimate: salaryEstimate.val(),
-            JobType: jobType.val(),
-            ReviewCandidates: reviewCandidates.val()
+            JobType: jobType.val()
         };
         $.ajax({
             type: 'POST',

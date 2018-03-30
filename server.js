@@ -58,8 +58,8 @@ server.post('/vacancies', function (req, res, next) {
 
 //rest api to update record into mysql database
 server.put('/vacancies', function (req, res, next) {
-    connection.query('UPDATE `vacancies` SET `Vacancy`=?,`ExperienceLevel`=?,`SalaryEstimate`=?,`JobType`=?,`ReviewCandidates`=? where `idVacancies`=?',
-        [req.body.Vacancy, req.body.ExperienceLevel, req.body.SalaryEstimate, req.body.JobType, req.body.ReviewCandidates, req.body.idVacancies,], function (error, results, fields) {
+    connection.query('UPDATE `vacancies` SET `Vacancy`=?,`ExperienceLevel`=?,`SalaryEstimate`=?,`JobType`=? where `idVacancies`=?',
+        [req.body.Vacancy, req.body.ExperienceLevel, req.body.SalaryEstimate, req.body.JobType,  req.body.idVacancies,], function (error, results, fields) {
             if (error) throw error;
             res.end(JSON.stringify(results));
         });
@@ -86,7 +86,7 @@ server.get('/candidates', function (req, res, next) {
 
 //rest api to get a single candidate data
 server.get('/candidates/:id', function (req, res, next) {
-    connection.query('SELECT * FROM candidates WHERE idcandidates=?', [req.params.id], function (error, results, fields) {
+    connection.query('SELECT * FROM candidates WHERE idCandidate=?', [req.params.id], function (error, results, fields) {
         if (error) throw error;
         res.end(JSON.stringify(results));
     });
@@ -94,7 +94,7 @@ server.get('/candidates/:id', function (req, res, next) {
 });
 
 server.get('/skill/:id', function (req, res, next) {
-    connection.query('SELECT skills.Skill FROM skills JOIN candidates ON candidates.idcandidates = skills.idCandidate WHERE idcandidates=?', [req.params.id], function (error, results) {
+    connection.query('SELECT skills.Skill FROM skills JOIN candidates ON candidates.idCandidate = skills.idCandidate', [req.params.id], function (error, results) {
         if (error) throw error;
         if (results.length > 0) {
             res.end(JSON.stringify(results));
