@@ -7,18 +7,36 @@
 // Name
 
 $(function () {
+
+    //in future we can use it to take mo params than one(id)
+    function getParams(){
+        var idx = document.URL.indexOf('?');
+        var params = new Array();
+        if (idx != -1) {
+            var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+            for (var i=0; i<pairs.length; i++){
+                nameVal = pairs[i].split('=');
+                params[nameVal[0]] = nameVal[1];
+            }
+        }
+        return params;
+    }
+
+    var allParams = getParams();
+    var id = allParams["id"];
+
     var skill = $('#new-skill');
     var newEmail = $('#email');
     var newAddress = $('#address');
     var newTelephone = $('#telephone');
     var newName = $('#name');
-    var id = 1;
+
     function showSkill(data) {
         $('#skills').append('<span class="skill-candidate">' + data.Skill + '</span>');
     }
 
     $.ajax({
-        url: '/candidates/1',
+        url: '/candidates/' +id,
         type: 'GET',
         dataType: 'json',
         success: function (Results) {
@@ -38,8 +56,9 @@ $(function () {
             alert(err);
         }
     });
+
     $.ajax({
-        url: '/skill/1',
+        url: '/skill/'+ id,
         type: 'GET',
         dataType: 'json',
         success: function (Results) {
@@ -56,6 +75,7 @@ $(function () {
             alert(err);
         }
     });
+
     $('#add-skill').on('click', function () {
         var newSkill = {
             Skill: skill.val(),

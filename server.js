@@ -120,7 +120,7 @@ server.get('/candidates/:id', function (req, res, next) {
 });
 
 server.get('/skill/:id', function (req, res, next) {
-    connection.query('SELECT skills.Skill FROM skills JOIN candidates ON candidates.idCandidate = skills.idCandidate', [req.params.id], function (error, results) {
+    connection.query('SELECT skills.Skill FROM skills JOIN candidates ON candidates.idCandidate = skills.idCandidate AND candidates.idCandidate=?', [req.params.id], function (error, results) {
         if (error) throw error;
         if (results.length > 0) {
             res.end(JSON.stringify(results));

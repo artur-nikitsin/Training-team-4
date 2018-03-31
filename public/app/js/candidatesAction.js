@@ -1,8 +1,9 @@
 $(function () {
+
     function showData(data) {
         var vacanciesData = '';
         vacanciesData += '<tr class="data-tr-from-json">';
-        vacanciesData += '<td>' + '<a href="HR_APP_Page_Mobile_One_Candidate.html">' + data.Name + '</a>' + '</td>';
+        vacanciesData += '<td>' + '<a href="HR_APP_Page_Mobile_One_Candidate.html?id=' + data.idCandidate +'" >' + data.Name + '</a>' + '</td>';
         vacanciesData += '<td>' + data.ExperienceLevel + '</td>';
         vacanciesData += '<td>' + data.Status + '</td>';
         vacanciesData += '<td>' + data.SalaryEstimate + '</td>';
