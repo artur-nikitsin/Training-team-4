@@ -1,17 +1,13 @@
-$(function(){
+$(function () {
     function showData(data) {
         var vacanciesData = '';
         vacanciesData += '<tr class="data-tr-from-json">';
-        vacanciesData += '<td>' + data.Name + '</td>';
-        vacanciesData += '<td>' + data.Vacancy + '</td>';
+        vacanciesData += '<td>' + '<a href="HR_APP_Page_Mobile_One_Candidate.html">' + data.Name + '</a>' + '</td>';
         vacanciesData += '<td>' + data.ExperienceLevel + '</td>';
-        vacanciesData += '<td>' + data.SalaryEstimate + '</td>';
-        vacanciesData += '<td>' + data.JobType + '</td>';
         vacanciesData += '<td>' + data.Status + '</td>';
-        vacanciesData += '<td>' + data.Age + '</td>';
-        vacanciesData += '<td>' + data.Email + '</td>';
+        vacanciesData += '<td>' + data.SalaryEstimate + '</td>';
         vacanciesData += '</tr>';
-        $('#vacancies-table tbody').append(vacanciesData);
+        $('#candidates-table tbody').append(vacanciesData);
         $('.page-vacancies').jplist({
             itemsBox: '.table-data',
             itemPath: '.data-tr-from-json',
@@ -29,7 +25,7 @@ $(function(){
             });
         },
         error: function (xhr, textStatus, error) {
-        console.log(xhr.statusText + ' ' + textStatus + ' ' +error);
-    }
+            console.log(xhr.statusText + ' ' + textStatus + ' ' + error);
+        }
     });
 });

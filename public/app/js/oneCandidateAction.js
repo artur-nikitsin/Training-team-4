@@ -85,7 +85,7 @@ $(function () {
         };
         $.ajax({
             type: 'POST',
-            url: 'skill',
+            url: '/skill',
             data: newSkill,
             success: function (data) {
                 if (data.length > 0) {
